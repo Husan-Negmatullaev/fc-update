@@ -1,0 +1,144 @@
+.footer-second {
+    background-color: #000;
+    color: #fff;
+    padding: rem(15) 0;
+    @media (max-width:$mobile){
+        padding: rem(15) 0 rem(90) 0;
+    }
+    // .footer__top
+
+    &__top {
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+    }
+}
+
+.top-footer {
+
+    // .top-footer__container
+
+    &__container {
+        border-bottom: 0.5px solid #fff;
+        padding: 0px rem(15) rem(10);
+    }
+
+    // .top-footer__body
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(25);
+        @media (max-width:$mobile){
+            flex-direction: column; 
+        }
+    }
+
+    // .top-footer__column
+
+    &__column {
+        flex: 0 1 25%;
+        // .top-footer__column_big
+
+        &_big {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            @media (max-width:$mobile){
+                justify-content: flex-start;                  
+            }
+        }
+    }
+
+    // .top-footer__title
+
+    &__title {
+        &:not(:last-child) {margin-bottom: rem(1.6);}
+    }
+
+    // .top-footer__text
+
+    &__text {
+        font-size: rem(14);
+        &:not(:last-child) {margin-bottom: rem(1.6);}
+        line-height: math.div(20, 14);
+        color: #7d7d7d;
+    }
+
+    // .top-footer__link
+
+    &__link {
+        &:not(:last-child) {margin-bottom: rem(10);}
+        font-weight: 400 !important;
+        display: inline-block;
+        @media (any-hover: hover){
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // .top-footer__social
+
+    &__social {
+
+    }
+}
+
+.bottom-footer {
+
+    // .bottom-footer__container
+
+    &__container {
+        padding: rem(15) rem(15) 0;
+    }
+
+    // .bottom-footer__list
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    // .bottom-footer__item
+
+    &__item {
+    }
+
+    // .bottom-footer__link
+
+    &__link {
+        font-size: rem(14);
+        line-height: math.div(20, 16);
+    }
+}
+
+.top-footer-title {
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: math.div(26, 20);
+}
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    // .footer-social__item
+
+    &__item {
+    }
+
+    // .footer-social__link
+
+    &__link {
+        display: inline-block;
+        img {
+            width: rem(30);
+            height: rem(30);
+        }
+    }
+}

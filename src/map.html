@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+		"title":"Карта"
+	})
+	<body>
+	<div id="loader-wrapper">
+  <div id="loader"></div>
+
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+
+</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__map map">
+					<div style="margin-top: 100px"></div>
+							<div class="main-block__body2">
+
+
+							</div>
+					<div id="map"  style="width: 100%; height: 1000px;" >
+						<div id="loader"></div>
+					</div>
+
+
+
+
+				</section>
+				<section class="inner-wrapper">
+					<div class="page__main main-block" data-fullscreen>
+						<div class="main-block__container">
+
+
+				<section class="page__quiz quiz">
+					<div class="quiz__container">
+						<div class="quiz__body">
+							<div class="quiz__image-ibg"><img data-src="@img/areas/10.png" alt=""></div>
+							<div class="quiz__content">
+								<div class="quiz__icon-success">
+									<img src="@img/success.png" alt="Success icon">
+								</div>
+								<div class="quiz__title">
+									Got Confused? Complete A Quiz & Get The Best Offers
+								</div>
+								<div class="quiz__text">
+									<p>Being qualified property experts with years of experience, we realize how confusing Dubai’s off-plan property market could be for new buyers, as well as for professional investors. Especially when there are thousands of off-plan properties in Dubai.</p>
+									<p>You won’t need to look through countless listings on other the UAE's property websites. We have gathered all available information about off-plan property in one place and created a short quiz for you to find your perfect home in less than two minutes.</p>
+									<p>Follow simple steps on the screen to get your personal selection of projects that meet all your requirements. Explore any project in Dubai relevant to you and contact us!</p>
+								</div>
+								<div class="quiz__actions">
+									<a href="#" class="quiz__button button button_normal">Take A Quick Test</a>
+									<div class="quiz__less-time">
+										<span class="_icon-clock"></span>
+										It takes less than 2 minutes
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="page__social-links social-links">
+					<a href="tel:+971588070001" class="social-links__link social-links__link_phone">
+						<img src="@img/more/24.png" alt="">
+						<span class="social-links__text">
+							Телефон
+						</span>
+					</a>
+					<a href="https://wa.me/971588070001" class="social-links__link social-links__link_whatsapp">
+						<img src="@img/more/25.png" alt="">
+						<span class="social-links__text">
+							Whatsapp
+						</span>
+					</a>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm', {})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,107 @@
+//========================================================================================================================================================
+
+.page {
+
+  // .page__faq
+
+  &__faq {
+  }
+}
+
+.faq {
+  @include adaptiveValue("margin-bottom", 40, 25, $containerWidth, $minWidth, 1);
+  // .faq__container
+
+  &__container {
+  }
+
+  // .faq__body
+
+  &__body {
+  }
+
+  // .faq__item
+
+  &__item {
+      &:not(:last-child) {
+          @include adaptiveValue("margin-bottom", 30, 10, $containerWidth, $minWidth, 1);
+      }
+  }
+}
+.faq-item {
+  // .faq-item__title
+
+  &__title {
+    width: 100%;
+    @include adaptiveValue("padding-left", 15, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-top", 15, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 15, 40, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 15, 10, $containerWidth, $minWidth, 1);
+    background-color: #163F8E;
+    color: #fff;
+    text-align: left;
+    @include adaptiveValue("font-size", 20, 16, $containerWidth, $minWidth, 1);
+    line-height: 1.4;
+    font-weight: 700;
+    position: relative;
+    transition: background-color 0.3s ease 0s;
+
+    &::after,
+    &::before {
+        content:'';
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: rem(25);
+        height: rem(5);
+        border-radius: 10px;
+        background-color: #fff;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+    }
+    &::after{
+        transform: rotate(-90deg) translate(2px, 0);            
+    }
+    &._spoller-active {
+        background-color: #1a3875;
+        &::after{
+            transform: rotate(0deg) translateY(-2px);                
+        }
+    }
+  }
+
+  // .faq-item__content
+
+  &__content {
+      background-color: #163F8E;
+      @include adaptiveValue("padding-left", 15, 10, $containerWidth, $minWidth, 1);
+      @include adaptiveValue("padding-top", 15, 10, $containerWidth, $minWidth, 1);
+      @include adaptiveValue("padding-right", 15, 10, $containerWidth, $minWidth, 1);
+      @include adaptiveValue("padding-bottom", 15, 10, $containerWidth, $minWidth, 1);
+      color: #fff;
+  }
+
+  // .faq-item__text
+
+  &__text {
+      @include adaptiveValue("font-size", 16, 14, $containerWidth, $minWidth, 1);
+      line-height: 1.4;
+      margin-bottom: rem(15);
+  }
+
+  // .faq-item__link
+
+  &__link {
+      color: #fff;
+      border-bottom: 1px dashed white;
+      display: inline-block;
+      line-height: 24px;
+      line-height: math.div(24, 16);
+      @include adaptiveValue("font-size", 16, 14, $containerWidth, $minWidth, 1);
+      font-weight: 700;
+  }
+}
+
+//========================================================================================================================================================

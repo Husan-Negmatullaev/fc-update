@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+		"title":"F&C Properties агентство недвижимости в Дубае | Покупка недвижимости в Дубае"
+	})
+	<body class="grey">
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="inner-wrapper">
+					<section class="page__main main-block">
+						<div class="main-block__container">
+							<div class="main-block__body" data-fullscreen>
+								<div class="main-block__title">
+									<button type="button" data-popup="#video" class="main-block__title title title_w">
+										Найди свой дом
+										<div class="main-block__icon">
+											<span class="_icon-play"></span>
+										</div>
+									</button>
+								</div>
+								<div data-tabs class="main-block__tabs main-block-tabs">
+									<nav data-tabs-titles class="main-block-tabs__navigation">
+										<button type="button" class="main-block-tabs__title _tab-active">Готовые</button>
+										<button type="button" class="main-block-tabs__title">Строящиеся</button>
+									</nav>
+									<div data-tabs-body class="main-block-tabs__content">
+										<div class="main-block-tabs__body">
+											<form action="search.html" enctype="multipart/form-data" class="main-block__form-find form-find">
+												<div class="form-find__wrapper">
+													<div class="form-find__body">
+														<div class="form-find__column">
+															<select name="types" class="form-find__select select">
+																<option value="Type" class="select__option form-find__option">Типы</option>
+																<option value="Apartments" class="select__option form-find__option">Квартира</option>
+																<option value="Penhouses" class="select__option form-find__option">Пентхаусы</option>
+																<option value="Mansions" class="select__option form-find__option">Особняки</option>
+																<option value="Townhouse" class="select__option form-find__option">Таунхаусы</option>
+																<option value="Villa" class="select__option form-find__option">Виллы</option>
+																<option value="Building" class="select__option form-find__option">Здания</option>
+															</select>
+														</div>
+														<div class="form-find__column form-find__column_large">
+															<div class="form-find__item form-find__item_input">
+																<input autocomplete="off" type="text" data-error="Ошибка" placeholder="Поиск по названию проекта" name="search" class="form-find__input input">
+																<button data-da=".form-find__body,479.98,last" type="submit" class="form-find__button button button_large">
+																	<span class="_icon-magnify"></span>
+																	Найти
+																</button>
+															</div>
+														</div>
+														<div class="form-find__column">
+															<select name="developer" class="form-find__select form-find__select-developer select">
+																<option value="" selected="">Застройщики</option>
+															</select>
+														</div>
+														<div class="form-find__column">
+															<select name="developer" class="form-find__select form-find__select-developer select">
+																<option value="" selected="">Спальни</option>
+															</select>
+														</div>
+														<div class="form-find__column">
+															<select name="developer" class="form-find__select form-find__select-developer select">
+																<option value="" selected="">Комнаты</option>
+															</select>
+														</div>
+														<div class="form-find__row">
+															<div class="form-find__column">
+																<select name="min" class="form-find__select select">
+																	<option value="" selected="">Мин. Цена</option>
+																	<option value="500000">$ 500,000</option>
+																	<option value="1000000">$ 1,000,000</option>
+																	<option value="2000000">$ 2,000,000</option>
+																	<option value="3000000">$ 3,000,000</option>
+																	<option value="5000000">$ 5,000,000</option>
+																	<option value="10000000">$ 10,000,000</option>
+																	<option value="20000000">$ 20,000,000</option>
+																	<option value="50000000">$ 50,000,000</option>
+																</select>
+															</div>
+															<div class="form-find__column">
+																<select name="max" class="form-find__select select">
+																	<option value="" selected="">Макс. Цена</option>
+																	<option value="500000">$ 500,000</option>
+																	<option value="1000000">$ 1,000,000</option>
+																	<option value="2000000">$ 2,000,000</option>
+																	<option value="3000000">$ 3,000,000</option>
+																	<option value="5000000">$ 5,000,000</option>
+																	<option value="10000000">$ 10,000,000</option>
+																	<option value="20000000">$ 20,000,000</option>
+																	<option value="50000000">$ 50,000,000</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div class="main-block-tabs__body">
+											<form action="search.html" enctype="multipart/form-data" class="main-block__form-find form-find">
+												<div class="form-find__wrapper">
+													<div class="form-find__body form-find__body_2">
+														<div class="form-find__column">
+															<select name="types" class="form-find__select select">
+																<option value="Type" class="select__option form-find__option">Типы</option>
+																<option value="Apartments" class="select__option form-find__option">Квартира</option>
+																<option value="Penhouses" class="select__option form-find__option">Пентхаусы</option>
+																<option value="Mansions" class="select__option form-find__option">Особняки</option>
+																<option value="Townhouse" class="select__option form-find__option">Таунхаусы</option>
+																<option value="Villa" class="select__option form-find__option">Виллы</option>
+																<option value="Building" class="select__option form-find__option">Здания</option>
+															</select>
+														</div>
+														<div class="form-find__column form-find__column_large">
+															<div class="form-find__item form-find__item_input">
+																<input autocomplete="off" type="text" data-error="Ошибка" placeholder="Поиск по названию проекта" name="search" class="form-find__input input">
+																<button data-da=".form-find__body_2,479.98,last" type="submit" class="form-find__button button button_large">
+																	<span class="_icon-magnify"></span>
+																	Найти
+																</button>
+															</div>
+														</div>
+														<div class="form-find__column">
+															<select name="developer" class="form-find__select form-find__select-developer select">
+																<option value="" selected="">Застройщики</option>
+															</select>
+														</div>
+														<div class="form-find__column">
+															<select name="developer" class="form-find__select form-find__select-developer select">
+																<option value="" selected="">Спальни</option>
+															</select>
+														</div>
+														<div class="form-find__column">
+															<select name="developer" class="form-find__select form-find__select-developer select">
+																<option value="" selected="">Районы</option>
+															</select>
+														</div>
+														<div class="form-find__row form-find__row_2">
+															<div class="form-find__column">
+																<select name="min" class="form-find__select select">
+																	<option value="" selected="">Мин. Цена</option>
+																	<option value="500000">$ 500,000</option>
+																	<option value="1000000">$ 1,000,000</option>
+																	<option value="2000000">$ 2,000,000</option>
+																	<option value="3000000">$ 3,000,000</option>
+																	<option value="5000000">$ 5,000,000</option>
+																	<option value="10000000">$ 10,000,000</option>
+																	<option value="20000000">$ 20,000,000</option>
+																	<option value="50000000">$ 50,000,000</option>
+																</select>
+															</div>
+															<div class="form-find__column">
+																<select name="max" class="form-find__select select">
+																	<option value="" selected="">Макс. Цена</option>
+																	<option value="500000">$ 500,000</option>
+																	<option value="1000000">$ 1,000,000</option>
+																	<option value="2000000">$ 2,000,000</option>
+																	<option value="3000000">$ 3,000,000</option>
+																	<option value="5000000">$ 5,000,000</option>
+																	<option value="10000000">$ 10,000,000</option>
+																	<option value="20000000">$ 20,000,000</option>
+																	<option value="50000000">$ 50,000,000</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="page__products products">
+						<div class="products__container">
+							<h2 class="products__main-title">
+								Популярные недвижимости в Дубае
+							</h2>
+							<div class="products__body">
+								<div class="products__item item-products">
+									<div class="item-products__body">
+										<a href="#" class="item-products__image">
+											<img src="@img/main-page/06.jpg" alt="">
+											<div class="item-products__advantages">
+												<span class="item-products__advanatege">50/50 план оплаты</span>
+												<span class="item-products__advanatege item-products__advanatege_green">сдача 2025 году</span>
+											</div>
+										</a>
+										<div class="item-products__wrapper">
+											<div class="item-products__header">
+												<div class="item-products__content">
+													<div class="item-products__title-actions">
+														<a href="#" class="item-products__text item-products__info">
+															TRIA ОТ DEYAAR
+														</a>
+														<div class="item-products__icons">
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/favourites.png" alt="">
+															</a>
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/mailing.png" alt="">
+															</a>
+														</div>
+													</div>
+													<h3 class="item-products__title">$ 2 999 890</h3>
+													<div class="item-products__advanateges">
+														<h6 class="item-products__apartment-item">
+															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
+															<span class="item-products__apartment-text">DEYARR</span>
+														</h6>
+														
+													</div>
+												</div>
+												<div class="item-products__addres">
+													<div class="item-products__place">
+														<div class="item-products__label">
+															Район: 
+														</div>
+														<p class="item-products__place-text">
+															Silicon Oasis
+														</p>
+													</div>
+													<br>
+													<a href="#" class="item-products__apartment-item">
+														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
+														<span class="item-products__apartment-text">Виде обзор</span>
+													</a>
+												</div>
+											</div>
+											<div class="item-products__footer">
+												<div class="item-products__footer-body">
+													<ul class="item-products__list">
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/phone.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/whatsapp.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/mail.png" alt="">
+															</a>
+														</li>
+													</ul>
+													<a href="#" class="item-products__connection">
+														<img src="@img/icons/wifi.png" alt="">
+														<span class="item-products__conntection-text">FOLLOW</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products__item item-products">
+									<div class="item-products__body">
+										<a href="#" class="item-products__image">
+											<img src="@img/main-page/07.jpg" alt="">
+										</a>
+										<div class="item-products__wrapper">
+											<div class="item-products__header">
+												<div class="item-products__content">
+													<div class="item-products__title-actions">
+														<h3 class="item-products__title">$ 356 000</h3>
+														<div class="item-products__icons">
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/favourites.png" alt="">
+															</a>
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/mailing.png" alt="">
+															</a>
+														</div>
+													</div>
+													<a href="#" class="item-products__text item-products__info">
+														ВИЛЛЫ C 3-6 СПАЛЬНЯМИ | DAMAC Just Cavalli
+													</a>
+													<div class="item-products__advanateges">
+														<h6 class="item-products__apartment-item">
+															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
+															<span class="item-products__apartment-text">DEYARR</span>
+														</h6>
+														
+													</div>
+												</div>
+												<div class="item-products__addres">
+													<div class="item-products__place">
+														<div class="item-products__label">
+															Район: 
+														</div>
+														<p class="item-products__place-text">
+															Silicon Oasis
+														</p>
+													</div>
+													<br>
+													<a href="#" class="item-products__apartment-item">
+														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
+														<span class="item-products__apartment-text">Виде обзор</span>
+													</a>
+												</div>
+											</div>
+											<div class="item-products__footer">
+												<div class="item-products__footer-body">
+													<ul class="item-products__list">
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/phone.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/whatsapp.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/mail.png" alt="">
+															</a>
+														</li>
+													</ul>
+													<a href="#" class="item-products__connection">
+														<img src="@img/icons/wifi.png" alt="">
+														<span class="item-products__conntection-text">FOLLOW</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products__item item-products">
+									<div class="item-products__body">
+										<a href="#" class="item-products__image">
+											<img src="@img/main-page/08.jpg" alt="">
+										</a>
+										<div class="item-products__wrapper">
+											<div class="item-products__header">
+												<div class="item-products__content">
+													<div class="item-products__title-actions">
+														<h3 class="item-products__title">$ 383 900</h3>
+														<div class="item-products__icons">
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/favourites.png" alt="">
+															</a>
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/mailing.png" alt="">
+															</a>
+														</div>
+													</div>
+													<a href="#" class="item-products__text item-products__info">
+														Al Jazi
+													</a>
+													<div class="item-products__advanateges">
+														<h6 class="item-products__apartment-item">
+															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
+															<span class="item-products__apartment-text">DEYARR</span>
+														</h6>
+														
+													</div>
+												</div>
+												<div class="item-products__addres">
+													<div class="item-products__place">
+														<div class="item-products__label">
+															Район: 
+														</div>
+														<p class="item-products__place-text">
+															Silicon Oasis
+														</p>
+													</div>
+													<br>
+													<a href="#" class="item-products__apartment-item">
+														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
+														<span class="item-products__apartment-text">Виде обзор</span>
+													</a>
+												</div>
+											</div>
+											<div class="item-products__footer">
+												<div class="item-products__footer-body">
+													<ul class="item-products__list">
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/phone.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/whatsapp.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/mail.png" alt="">
+															</a>
+														</li>
+													</ul>
+													<a href="#" class="item-products__connection">
+														<img src="@img/icons/wifi.png" alt="">
+														<span class="item-products__conntection-text">FOLLOW</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products__item item-products">
+									<div class="item-products__body">
+										<a href="#" class="item-products__image">
+											<img src="@img/main-page/09.jpg" alt="">
+										</a>
+										<div class="item-products__wrapper">
+											<div class="item-products__header">
+												<div class="item-products__content">
+													<div class="item-products__title-actions">
+														<h3 class="item-products__title">$ 2 365 000</h3>
+														<div class="item-products__icons">
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/favourites.png" alt="">
+															</a>
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/mailing.png" alt="">
+															</a>
+														</div>
+													</div>
+													<a href="#" class="item-products__text item-products__info">
+														MAG CENTRAL PARK
+													</a>
+													<div class="item-products__advanateges">
+														<h6 class="item-products__apartment-item">
+															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
+															<span class="item-products__apartment-text">DEYARR</span>
+														</h6>
+														
+													</div>
+												</div>
+												<div class="item-products__addres">
+													<div class="item-products__place">
+														<div class="item-products__label">
+															Район: 
+														</div>
+														<p class="item-products__place-text">
+															Silicon Oasis
+														</p>
+													</div>
+													<br>
+													<a href="#" class="item-products__apartment-item">
+														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
+														<span class="item-products__apartment-text">Виде обзор</span>
+													</a>
+												</div>
+											</div>
+											<div class="item-products__footer">
+												<div class="item-products__footer-body">
+													<ul class="item-products__list">
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/phone.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/whatsapp.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/mail.png" alt="">
+															</a>
+														</li>
+													</ul>
+													<a href="#" class="item-products__connection">
+														<img src="@img/icons/wifi.png" alt="">
+														<span class="item-products__conntection-text">FOLLOW</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products__item item-products banner__body">
+									<div class="banner__wrapper swiper-wrapper">
+										<div href="#" class="banner__slide swiper-slide">
+											<div class="banner__item">
+												<div class="banner__image">
+													<picture>
+														<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
+														<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
+														<img src="@img/main-page/03.jpg">
+													</picture>
+													<button data-popup="#popup-form" type="button" class="banner__link">
+														Скачать
+													</button>
+													<!-- <img data-src="@img/main-page/03.jpg" alt=""> -->
+												</div>
+											</div>
+										</div>
+										<div href="#" class="banner__slide swiper-slide">
+											<div class="banner__item">
+												<div class="banner__image">
+													<picture>
+														<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
+														<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
+														<img src="@img/main-page/03.jpg">
+													</picture>
+													<button data-popup="#popup-form" type="button" class="banner__link">
+														Скачать
+													</button>
+													<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="banner__pagination">
+
+									</div>
+								</div>
+								<div class="products__item item-products">
+									<div class="item-products__body">
+										<a href="#" class="item-products__image">
+											<img src="@img/main-page/10j.jpg" alt="">
+										</a>
+										<div class="item-products__wrapper">
+											<div class="item-products__header">
+												<div class="item-products__content">
+													<div class="item-products__title-actions">
+														<h3 class="item-products__title">$ 5 214 342</h3>
+														<div class="item-products__icons">
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/favourites.png" alt="">
+															</a>
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/mailing.png" alt="">
+															</a>
+														</div>
+													</div>
+													<a href="#" class="item-products__text item-products__info">
+														MR. C RESIDENCES JUMEIRAH
+													</a>
+													<div class="item-products__advanateges">
+														<h6 class="item-products__apartment-item">
+															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
+															<span class="item-products__apartment-text">DEYARR</span>
+														</h6>
+														
+													</div>
+												</div>
+												<div class="item-products__addres">
+													<div class="item-products__place">
+														<div class="item-products__label">
+															Район: 
+														</div>
+														<p class="item-products__place-text">
+															Silicon Oasis
+														</p>
+													</div>
+													<br>
+													<a href="#" class="item-products__apartment-item">
+														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
+														<span class="item-products__apartment-text">Виде обзор</span>
+													</a>
+												</div>
+											</div>
+											<div class="item-products__footer">
+												<div class="item-products__footer-body">
+													<ul class="item-products__list">
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/phone.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/whatsapp.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/mail.png" alt="">
+															</a>
+														</li>
+													</ul>
+													<a href="#" class="item-products__connection">
+														<img src="@img/icons/wifi.png" alt="">
+														<span class="item-products__conntection-text">FOLLOW</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products__item item-products">
+									<div class="item-products__body">
+										<a href="#" class="item-products__image">
+											<img src="@img/main-page/11j.jpg" alt="">
+										</a>
+										<div class="item-products__wrapper">
+											<div class="item-products__header">
+												<div class="item-products__content">
+													<div class="item-products__title-actions">
+														<h3 class="item-products__title">$ 613 000</h3>
+														<div class="item-products__icons">
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/favourites.png" alt="">
+															</a>
+															<a href="#" class="item-products__icon">
+																<img src="@img/icons/mailing.png" alt="">
+															</a>
+														</div>
+													</div>
+													<a href="#" class="item-products__text item-products__info">
+														ADDRESS THE BAY
+													</a>
+													<div class="item-products__advanateges">
+														<h6 class="item-products__apartment-item">
+															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
+															<span class="item-products__apartment-text">DEYARR</span>
+														</h6>
+														
+													</div>
+												</div>
+												<div class="item-products__addres">
+													<div class="item-products__place">
+														<div class="item-products__label">
+															Район: 
+														</div>
+														<p class="item-products__place-text">
+															Silicon Oasis
+														</p>
+													</div>
+													<br>
+													<a href="#" class="item-products__apartment-item">
+														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
+														<span class="item-products__apartment-text">Виде обзор</span>
+													</a>
+												</div>
+											</div>
+											<div class="item-products__footer">
+												<div class="item-products__footer-body">
+													<ul class="item-products__list">
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/phone.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/whatsapp.png" alt="">
+															</a>
+														</li>
+														<li class="item-products__item">
+															<a href="#" class="item-products__link">
+																<img src="@img/icons/mail.png" alt="">
+															</a>
+														</li>
+													</ul>
+													<a href="#" class="item-products__connection">
+														<img src="@img/icons/wifi.png" alt="">
+														<span class="item-products__conntection-text">FOLLOW</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="products__link">
+								Показать ещё
+							</a>
+						</div>
+					</section>
+					<section class="page__banner banner">
+						<div class="banner__container">
+							<div class="banner__body">
+								<div class="banner__wrapper swiper-wrapper">
+									<div class="banner__slide swiper-slide">
+										<div class="banner__item">
+											<div class="banner__image">
+												<picture>
+													<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
+													<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
+													<img src="@img/main-page/03.jpg">
+												</picture>
+												<button data-popup="#popup-form" type="button" class="banner__link">
+													Скачать
+												</button>
+												<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
+											</div>
+										</div>
+									</div>
+									<div class="banner__slide swiper-slide">
+										<div class="banner__item">
+											<div class="banner__image">
+												<picture>
+													<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
+													<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
+													<img src="@img/main-page/03.jpg">
+												</picture>
+												<button data-popup="#popup-form" type="button" class="banner__link">
+													Скачать
+												</button>
+												<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="banner__pagination">
+
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="page__image-bottle image-bottle">
+						<div class="image-bottle__container">
+							<div class="image-bottle__image-ibg"><img data-src="@img/image-bottle/0.png" alt=""></div>
+						</div>
+					</section>
+					<section class="page__banner banner banner_pc">
+						<div class="banner__container">
+							<div class="banner__body">
+								<div class="banner__wrapper swiper-wrapper">
+									<div href="#" class="banner__slide swiper-slide">
+										<div class="banner__item">
+											<div class="banner__image">
+												<picture>
+													<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
+													<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
+													<img src="@img/main-page/03.jpg">
+												</picture>
+												<button data-popup="#popup-form" type="button" class="banner__link">
+													Скачать
+												</button>
+												<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
+											</div>
+										</div>
+									</div>
+									<div href="#" class="banner__slide swiper-slide">
+										<div class="banner__item">
+											<div class="banner__image">
+												<picture>
+													<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
+													<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
+													<img src="@img/main-page/03.jpg">
+												</picture>
+												<button data-popup="#popup-form" type="button" class="banner__link">
+													Скачать
+												</button>
+												<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="banner__pagination">
+
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- <div class="page__send-detail send-detail">
+						<div class="send-detail__container">
+							<div class="send-detail__body">
+								<div class="send-detail__message">
+									<div class="send-detail__image">
+										<img src="@img/main-page/4.png" alt="">
+									</div>
+									<div class="send-detail__title title">Отправьте свои данные для бесплатной консультации</div>
+								</div>
+								<div class="send-detail__consultation">
+									<form action="#" method="get" enctype="multipart/form-data" class="send-detail__form send-detail-form">
+										<div class="send-detail-form__block">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" required placeholder="Имя*" class="send-detail-form__input">
+										</div>
+										<div class="send-detail-form__block">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" required placeholder="Почта*" class="send-detail-form__input">
+										</div>
+									</form>
+									<a href="" class="send-detail__button button button_red">
+										Бесплатная консультация
+									</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</section>
+				<section class="page__map map">
+					<div class="map__container">
+						<div class="map__title title title_w">Карта проектов недвижимости в Дубае</div>
+					</div>
+					<div id="map" style="width: auto; height: 500px;" >
+						<div id="loader"></div>
+					</div>
+				</section>
+				<section class="page__lead lead">
+					<div class="lead__container">
+						<div class="lead__title title">Ведущие застройщики Дубая</div>
+						<div class="lead__body">
+							<div class="lead__controls lead-controls">
+								<div class="lead-controls__arrows slider-arrows">
+									<button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
+									<button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
+								</div>
+							</div>
+							<div class="swiper-wrapper lead__wrapper">
+								<a href="" class="lead__card lead-card swiper-slide">
+									<div class="lead-card__body">
+										<div class="lead-card__image-ibg"><img data-src="@img/properties/4.png" alt=""></div>
+										<div class="lead-card__company-logo">
+											<img src="@img/properties/7.png" alt="">
+										</div>
+										<div class="lead-card__content">
+											<div class="lead-card__title title">Emaar</div>
+											<div class="lead-card__text">One of the best Dubai's real estate developer with an expertise in retail, hospitality and leisure. Emaar developed most of the popular projects in Dubai such as Burj Khalifa, Downtown Dubai, Emaar Beachfront, Dubai Hills Estate, Dubai Creek</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="lead__card lead-card swiper-slide">
+									<div class="lead-card__body">
+										<div class="lead-card__image-ibg"><img data-src="@img/properties/5.png" alt=""></div>
+										<div class="lead-card__company-logo">
+											<img src="@img/properties/8.png" alt="">
+										</div>
+										<div class="lead-card__content">
+											<div class="lead-card__title title">Emaar</div>
+											<div class="lead-card__text">One of the best Dubai's real estate developer with an expertise in retail, hospitality and leisure. Emaar developed most of the popular projects in Dubai such as Burj Khalifa, Downtown Dubai, Emaar Beachfront, Dubai Hills Estate, Dubai Creek</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="lead__card lead-card swiper-slide">
+									<div class="lead-card__body">
+										<div class="lead-card__image-ibg"><img data-src="@img/properties/6.png" alt=""></div>
+										<div class="lead-card__company-logo">
+											<img src="@img/properties/9.png" alt="">
+										</div>
+										<div class="lead-card__content">
+											<div class="lead-card__title title">Emaar</div>
+											<div class="lead-card__text">One of the best Dubai's real estate developer with an expertise in retail, hospitality and leisure. Emaar developed most of the popular projects in Dubai such as Burj Khalifa, Downtown Dubai, Emaar Beachfront, Dubai Hills Estate, Dubai Creek</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="lead__card lead-card swiper-slide">
+									<div class="lead-card__body">
+										<div class="lead-card__image-ibg"><img data-src="@img/properties/6.png" alt=""></div>
+										<div class="lead-card__company-logo">
+											<img src="@img/properties/9.png" alt="">
+										</div>
+										<div class="lead-card__content">
+											<div class="lead-card__title title">Emaar</div>
+											<div class="lead-card__text">One of the best Dubai's real estate developer with an expertise in retail, hospitality and leisure. Emaar developed most of the popular projects in Dubai such as Burj Khalifa, Downtown Dubai, Emaar Beachfront, Dubai Hills Estate, Dubai Creek</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="lead__pagination pagination-control"></div>
+						</div>
+						<div class="lead__developers">
+							<a href="/developers.html" class="lead__button button button_red-square">Все застройщики в Дубае</a>
+							<div class="lead__developer-img">
+								<img src="@img/developers/01.png" alt="Emaar Developers">
+							</div>
+							<div class="lead__developer-img">
+								<img src="@img/developers/02.png" alt="Damac Developers">
+							</div>
+							<div class="lead__developer-img">
+								<img src="@img/developers/03.png" alt="Sobha Developers">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__overviews-slider overviews-slider">
+					<div class="overviews-slider__container">
+						<div class="overviews-slider__title title">Лучшие обзоры видео о недвижимости в Дубае</div>
+						<div class="overviews-slider__body">
+							<div class="overviews-slider__controls controls-overviews-slider" data-da=".overviews-slider__body,1570,first">
+								<div class="controls-overviews-slider__arrows slider-arrows">
+									<button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
+									<button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
+								</div>
+							</div>
+							<div class="overviews-slider__wrapper swiper-wrapper">
+								<div class="swiper-slide overviews-slider__slide">
+									<a href="" class="overviews-slider__image-ibg"><img data-src="@img/oveviews/01.png" alt=""></a>
+									<div class="overviews-slider__subtitle">Omniyat The Sterling</div>
+									<a href="" class="button button_small overviews-slider__button">Video Overview</a>
+								</div>
+								<div class="swiper-slide overviews-slider__slide">
+									<a href="" class="overviews-slider__image-ibg"><img data-src="@img/oveviews/01.png" alt=""></a>
+									<div class="overviews-slider__subtitle">Omniyat The Sterling</div>
+									<a href="" class="button button_small overviews-slider__button">Video Overview</a>
+								</div>
+								<div class="swiper-slide overviews-slider__slide">
+									<a href="" class="overviews-slider__image-ibg"><img data-src="@img/oveviews/01.png" alt=""></a>
+									<div class="overviews-slider__subtitle">Omniyat The Sterling</div>
+									<a href="" class="button button_small overviews-slider__button">Video Overview</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__news news">
+					<div class="news__container">
+						<div class="news__title title">Новости недвижимости, идеи и советы</div>
+						<div class="news__body">
+							<div class="news__controls news-controls">
+								<div class="news-controls__arrows slider-arrows">
+									<button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
+									<button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
+								</div>
+							</div>
+							<div class="news__wrappr swiper-wrapper">
+								<div class="news__card swiper-slide card-news">
+									<div class="card-news__body">
+										<a href="" class="card-news__image-ibg"><img data-src="@img/news/01.png" alt=""></a>
+										<div class="card-news__date">
+											<span class="card-news__icon _icon-calendar"></span>
+											<span class="card-news__date-text">
+												11 <sup>th</sup> March  2022
+											</span>
+										</div>
+										<div class="card-news__content">
+											<div class="card-news__type-projects">
+												NEW PROJECTS
+											</div>
+											<div class="card-news__title">New Phase of Emaar Creek Palace</div>
+											<div class="card-news__text">The new phase of the Creek Palace which includes branded 1, 2 and 3-bedroom apartments, has been launched by Emaar. The complex, which consists of two high-rise modern towers with 44 floors, is the very first Palace branded residential building</div>
+											<a href="" class="card-news__button button button_small">
+												Video Overview
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="news__card swiper-slide card-news">
+									<div class="card-news__body">
+										<a href="" class="card-news__image-ibg"><img data-src="@img/news/01.png" alt=""></a>
+										<div class="card-news__date">
+											<span class="card-news__icon _icon-calendar"></span>
+											<span class="card-news__date-text">
+												11 <sup>th</sup> March  2022
+											</span>
+										</div>
+										<div class="card-news__content">
+											<div class="card-news__type-projects">
+												NEW PROJECTS
+											</div>
+											<div class="card-news__title">New Phase of Emaar Creek Palace</div>
+											<div class="card-news__text">The new phase of the Creek Palace which includes branded 1, 2 and 3-bedroom apartments, has been launched by Emaar. The complex, which consists of two high-rise modern towers with 44 floors, is the very first Palace branded residential building</div>
+											<a href="" class="card-news__button button button_small">
+												Video Overview
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="news__pagination pagination-control"></div>
+						</div>
+					</div>
+				</section>
+				<section class="page__quiz quiz">
+					<div class="quiz__container">
+						<div class="quiz__body">
+							<div class="quiz__image-ibg"><img data-src="@img/areas/10.png" alt=""></div>
+							<div class="quiz__content">
+								<div class="quiz__icon-success">
+									<img src="@img/success.png" alt="Success icon">
+								</div>
+								<div class="quiz__title">
+									Запутались? Пройдите тест и получите лучшие предложения
+								</div>
+								<div class="quiz__text">
+									<p>Будучи квалифицированными экспертами в области недвижимости с многолетним опытом, мы понимаем, насколько запутанным может быть рынок незавершенной недвижимости Дубая для новых покупателей, а также для профессиональных инвесторов. Особенно, когда в Дубае тысячи незавершенных объектов.</p>
+									<p>Вам не нужно будет просматривать бесчисленные списки на других сайтах недвижимости ОАЭ. Мы собрали всю доступную информацию о строящейся недвижимости в одном месте и создали небольшой тест, чтобы вы могли найти свой идеальный дом менее чем за две минуты.</p>
+									<p>Следуйте простым шагам на экране, чтобы получить персональную подборку проектов, отвечающих всем вашим требованиям. Изучите любой интересующий вас проект в Дубае и свяжитесь с нами!</p>
+								</div>
+								<div class="quiz__actions">
+									<a href="#" class="quiz__button button button_normal">Пройдите быстрый тест</a>
+									<div class="quiz__less-time">
+										<span class="_icon-clock"></span>
+										Это занимает менее 2 минут
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="page__social-links social-links">
+					<a href="tel:+971588070001" class="social-links__link social-links__link_phone">
+						<img src="@img/more/24.png" alt="">
+						<span class="social-links__text">
+							Телефон
+						</span>
+					</a>
+					<a href="https://wa.me/971588070001" class="social-links__link social-links__link_whatsapp">
+						<img src="@img/more/25.png" alt="">
+						<span class="social-links__text">
+							Whatsapp
+						</span>
+					</a>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

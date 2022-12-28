@@ -1,0 +1,320 @@
+/* Pre Loader */
+
+/* Demo Styles */
+#content {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 80%;
+  max-width: 978px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* The Loader */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+}
+.no-js #loader-wrapper {
+  display: none;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #0033ff;
+  -webkit-animation: spin 1.7s linear infinite;
+          animation: spin 1.7s linear infinite;
+  z-index: 11;
+}
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #0033ff;
+  -webkit-animation: spin-reverse 0.6s linear infinite;
+          animation: spin-reverse 0.6s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #0033ff;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #fff;
+  z-index: 10;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded styles */
+.loaded #loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.3s 1s ease-out;
+}
+
+
+
+
+
+.form-box {
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  background: #c7c7c7;
+  border: 10px solid #f2f2f2;
+}
+
+h1, p {
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+   /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+    margin-top: 100px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  padding: 20px;
+
+  width: 80%;
+    height: 80%;
+}
+
+.back{
+
+    background-size:600px;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: auto;
+     padding: 20px;
+
+     width: 40%;
+     height: 100%;
+    z-index: 1;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+	z-index: 3;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+//====================================================================================================
+
+.main-blog {
+    @include adaptiveValue("margin-bottom", 85, 40, $containerWidth, $minWidth, 1);
+    // .main-blog__container
+
+    &_developers {
+      @include adaptiveValue("margin-bottom", 50, 20, $containerWidth, $minWidth, 1);
+    }
+
+    &.main-block-js {
+      @include adaptiveValue("margin-bottom", 120, 90, $containerWidth, 767.98, 1);
+    }
+
+    &__container {
+    }
+
+    // .main-blog__body
+
+    &__body {
+        position: relative;
+    }
+
+    &__wrapper {
+        position: relative;
+        @include adaptiveValue("padding-top", 160, 100, $containerWidth, 767.98, 1);
+        @include adaptiveValue("padding-bottom", 50, 25, $containerWidth, $minWidth, 1);
+        &::before{
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: block;
+            background-color: rgba(22, 62, 142, 0.9);
+            z-index: 1;
+        }
+    }
+
+    // .main-blog__title
+
+    &__title {
+        @include adaptiveValue("font-size", 43, 25, $containerWidth, $minWidth, 1);
+        color: #fff;
+        line-height: 1;
+        text-align: center;
+        font-weight: 700;
+        position: relative;
+        cursor: auto;
+        z-index: 2;
+    }
+
+    // .main-blog__image-ibg
+
+    &__image-ibg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+// ==================
+
+.page {
+
+  &__news-blog {
+
+  }
+}
+
+.news-blog {
+
+    // .news-blog__container
+
+    &__container {
+    }
+
+    // .news-blog__body
+
+    &__body {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px -20px;
+    }
+
+    // .news-blog__card
+
+    &__card {
+        @media (max-width:$tablet){
+			flex: 0 1 100%;
+		}
+		flex: 0 1 50%;
+		padding: 0 20px;
+    }
+}
+
+
+//====================================================================================================
