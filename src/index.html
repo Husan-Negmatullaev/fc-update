@@ -1,1004 +1,1444 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-		"title":"F&C Properties агентство недвижимости в Дубае | Покупка недвижимости в Дубае"
-	})
-	<body class="grey">
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="inner-wrapper">
-					<section class="page__main main-block">
-						<div class="main-block__container">
-							<div class="main-block__body" data-fullscreen>
-								<div class="main-block__title">
-									<button type="button" data-popup="#video" class="main-block__title title title_w">
-										Найди свой дом
-										<div class="main-block__icon">
-											<span class="_icon-play"></span>
-										</div>
-									</button>
-								</div>
-								<div data-tabs class="main-block__tabs main-block-tabs">
-									<nav data-tabs-titles class="main-block-tabs__navigation">
-										<button type="button" class="main-block-tabs__title _tab-active">Готовые</button>
-										<button type="button" class="main-block-tabs__title">Строящиеся</button>
-									</nav>
-									<div data-tabs-body class="main-block-tabs__content">
-										<div class="main-block-tabs__body">
-											<form action="search.html" enctype="multipart/form-data" class="main-block__form-find form-find">
-												<div class="form-find__wrapper">
-													<div class="form-find__body">
-														<div class="form-find__column">
-															<select name="types" class="form-find__select select">
-																<option value="Type" class="select__option form-find__option">Типы</option>
-																<option value="Apartments" class="select__option form-find__option">Квартира</option>
-																<option value="Penhouses" class="select__option form-find__option">Пентхаусы</option>
-																<option value="Mansions" class="select__option form-find__option">Особняки</option>
-																<option value="Townhouse" class="select__option form-find__option">Таунхаусы</option>
-																<option value="Villa" class="select__option form-find__option">Виллы</option>
-																<option value="Building" class="select__option form-find__option">Здания</option>
-															</select>
-														</div>
-														<div class="form-find__column form-find__column_large">
-															<div class="form-find__item form-find__item_input">
-																<input autocomplete="off" type="text" data-error="Ошибка" placeholder="Поиск по названию проекта" name="search" class="form-find__input input">
-																<button data-da=".form-find__body,479.98,last" type="submit" class="form-find__button button button_large">
-																	<span class="_icon-magnify"></span>
-																	Найти
-																</button>
-															</div>
-														</div>
-														<div class="form-find__column">
-															<select name="developer" class="form-find__select form-find__select-developer select">
-																<option value="" selected="">Застройщики</option>
-															</select>
-														</div>
-														<div class="form-find__column">
-															<select name="developer" class="form-find__select form-find__select-developer select">
-																<option value="" selected="">Спальни</option>
-															</select>
-														</div>
-														<div class="form-find__column">
-															<select name="developer" class="form-find__select form-find__select-developer select">
-																<option value="" selected="">Комнаты</option>
-															</select>
-														</div>
-														<div class="form-find__row">
-															<div class="form-find__column">
-																<select name="min" class="form-find__select select">
-																	<option value="" selected="">Мин. Цена</option>
-																	<option value="500000">$ 500,000</option>
-																	<option value="1000000">$ 1,000,000</option>
-																	<option value="2000000">$ 2,000,000</option>
-																	<option value="3000000">$ 3,000,000</option>
-																	<option value="5000000">$ 5,000,000</option>
-																	<option value="10000000">$ 10,000,000</option>
-																	<option value="20000000">$ 20,000,000</option>
-																	<option value="50000000">$ 50,000,000</option>
-																</select>
-															</div>
-															<div class="form-find__column">
-																<select name="max" class="form-find__select select">
-																	<option value="" selected="">Макс. Цена</option>
-																	<option value="500000">$ 500,000</option>
-																	<option value="1000000">$ 1,000,000</option>
-																	<option value="2000000">$ 2,000,000</option>
-																	<option value="3000000">$ 3,000,000</option>
-																	<option value="5000000">$ 5,000,000</option>
-																	<option value="10000000">$ 10,000,000</option>
-																	<option value="20000000">$ 20,000,000</option>
-																	<option value="50000000">$ 50,000,000</option>
-																</select>
-															</div>
-														</div>
-													</div>
-												</div>
-											</form>
-										</div>
-										<div class="main-block-tabs__body">
-											<form action="search.html" enctype="multipart/form-data" class="main-block__form-find form-find">
-												<div class="form-find__wrapper">
-													<div class="form-find__body form-find__body_2">
-														<div class="form-find__column">
-															<select name="types" class="form-find__select select">
-																<option value="Type" class="select__option form-find__option">Типы</option>
-																<option value="Apartments" class="select__option form-find__option">Квартира</option>
-																<option value="Penhouses" class="select__option form-find__option">Пентхаусы</option>
-																<option value="Mansions" class="select__option form-find__option">Особняки</option>
-																<option value="Townhouse" class="select__option form-find__option">Таунхаусы</option>
-																<option value="Villa" class="select__option form-find__option">Виллы</option>
-																<option value="Building" class="select__option form-find__option">Здания</option>
-															</select>
-														</div>
-														<div class="form-find__column form-find__column_large">
-															<div class="form-find__item form-find__item_input">
-																<input autocomplete="off" type="text" data-error="Ошибка" placeholder="Поиск по названию проекта" name="search" class="form-find__input input">
-																<button data-da=".form-find__body_2,479.98,last" type="submit" class="form-find__button button button_large">
-																	<span class="_icon-magnify"></span>
-																	Найти
-																</button>
-															</div>
-														</div>
-														<div class="form-find__column">
-															<select name="developer" class="form-find__select form-find__select-developer select">
-																<option value="" selected="">Застройщики</option>
-															</select>
-														</div>
-														<div class="form-find__column">
-															<select name="developer" class="form-find__select form-find__select-developer select">
-																<option value="" selected="">Спальни</option>
-															</select>
-														</div>
-														<div class="form-find__column">
-															<select name="developer" class="form-find__select form-find__select-developer select">
-																<option value="" selected="">Районы</option>
-															</select>
-														</div>
-														<div class="form-find__row form-find__row_2">
-															<div class="form-find__column">
-																<select name="min" class="form-find__select select">
-																	<option value="" selected="">Мин. Цена</option>
-																	<option value="500000">$ 500,000</option>
-																	<option value="1000000">$ 1,000,000</option>
-																	<option value="2000000">$ 2,000,000</option>
-																	<option value="3000000">$ 3,000,000</option>
-																	<option value="5000000">$ 5,000,000</option>
-																	<option value="10000000">$ 10,000,000</option>
-																	<option value="20000000">$ 20,000,000</option>
-																	<option value="50000000">$ 50,000,000</option>
-																</select>
-															</div>
-															<div class="form-find__column">
-																<select name="max" class="form-find__select select">
-																	<option value="" selected="">Макс. Цена</option>
-																	<option value="500000">$ 500,000</option>
-																	<option value="1000000">$ 1,000,000</option>
-																	<option value="2000000">$ 2,000,000</option>
-																	<option value="3000000">$ 3,000,000</option>
-																	<option value="5000000">$ 5,000,000</option>
-																	<option value="10000000">$ 10,000,000</option>
-																	<option value="20000000">$ 20,000,000</option>
-																	<option value="50000000">$ 50,000,000</option>
-																</select>
-															</div>
-														</div>
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="page__products products">
-						<div class="products__container">
-							<h2 class="products__main-title">
-								Популярные недвижимости в Дубае
-							</h2>
-							<div class="products__body">
-								<div class="products__item item-products">
-									<div class="item-products__body">
-										<a href="#" class="item-products__image">
-											<img src="@img/main-page/06.jpg" alt="">
-											<div class="item-products__advantages">
-												<span class="item-products__advanatege">50/50 план оплаты</span>
-												<span class="item-products__advanatege item-products__advanatege_green">сдача 2025 году</span>
-											</div>
-										</a>
-										<div class="item-products__wrapper">
-											<div class="item-products__header">
-												<div class="item-products__content">
-													<div class="item-products__title-actions">
-														<a href="#" class="item-products__text item-products__info">
-															TRIA ОТ DEYAAR
-														</a>
-														<div class="item-products__icons">
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/favourites.png" alt="">
-															</a>
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/mailing.png" alt="">
-															</a>
-														</div>
-													</div>
-													<h3 class="item-products__title">$ 2 999 890</h3>
-													<div class="item-products__advanateges">
-														<h6 class="item-products__apartment-item">
-															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
-															<span class="item-products__apartment-text">DEYARR</span>
-														</h6>
-														
-													</div>
-												</div>
-												<div class="item-products__addres">
-													<div class="item-products__place">
-														<div class="item-products__label">
-															Район: 
-														</div>
-														<p class="item-products__place-text">
-															Silicon Oasis
-														</p>
-													</div>
-													<br>
-													<a href="#" class="item-products__apartment-item">
-														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
-														<span class="item-products__apartment-text">Виде обзор</span>
-													</a>
-												</div>
-											</div>
-											<div class="item-products__footer">
-												<div class="item-products__footer-body">
-													<ul class="item-products__list">
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/phone.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/whatsapp.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/mail.png" alt="">
-															</a>
-														</li>
-													</ul>
-													<a href="#" class="item-products__connection">
-														<img src="@img/icons/wifi.png" alt="">
-														<span class="item-products__conntection-text">FOLLOW</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="products__item item-products">
-									<div class="item-products__body">
-										<a href="#" class="item-products__image">
-											<img src="@img/main-page/07.jpg" alt="">
-										</a>
-										<div class="item-products__wrapper">
-											<div class="item-products__header">
-												<div class="item-products__content">
-													<div class="item-products__title-actions">
-														<h3 class="item-products__title">$ 356 000</h3>
-														<div class="item-products__icons">
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/favourites.png" alt="">
-															</a>
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/mailing.png" alt="">
-															</a>
-														</div>
-													</div>
-													<a href="#" class="item-products__text item-products__info">
-														ВИЛЛЫ C 3-6 СПАЛЬНЯМИ | DAMAC Just Cavalli
-													</a>
-													<div class="item-products__advanateges">
-														<h6 class="item-products__apartment-item">
-															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
-															<span class="item-products__apartment-text">DEYARR</span>
-														</h6>
-														
-													</div>
-												</div>
-												<div class="item-products__addres">
-													<div class="item-products__place">
-														<div class="item-products__label">
-															Район: 
-														</div>
-														<p class="item-products__place-text">
-															Silicon Oasis
-														</p>
-													</div>
-													<br>
-													<a href="#" class="item-products__apartment-item">
-														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
-														<span class="item-products__apartment-text">Виде обзор</span>
-													</a>
-												</div>
-											</div>
-											<div class="item-products__footer">
-												<div class="item-products__footer-body">
-													<ul class="item-products__list">
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/phone.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/whatsapp.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/mail.png" alt="">
-															</a>
-														</li>
-													</ul>
-													<a href="#" class="item-products__connection">
-														<img src="@img/icons/wifi.png" alt="">
-														<span class="item-products__conntection-text">FOLLOW</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="products__item item-products">
-									<div class="item-products__body">
-										<a href="#" class="item-products__image">
-											<img src="@img/main-page/08.jpg" alt="">
-										</a>
-										<div class="item-products__wrapper">
-											<div class="item-products__header">
-												<div class="item-products__content">
-													<div class="item-products__title-actions">
-														<h3 class="item-products__title">$ 383 900</h3>
-														<div class="item-products__icons">
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/favourites.png" alt="">
-															</a>
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/mailing.png" alt="">
-															</a>
-														</div>
-													</div>
-													<a href="#" class="item-products__text item-products__info">
-														Al Jazi
-													</a>
-													<div class="item-products__advanateges">
-														<h6 class="item-products__apartment-item">
-															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
-															<span class="item-products__apartment-text">DEYARR</span>
-														</h6>
-														
-													</div>
-												</div>
-												<div class="item-products__addres">
-													<div class="item-products__place">
-														<div class="item-products__label">
-															Район: 
-														</div>
-														<p class="item-products__place-text">
-															Silicon Oasis
-														</p>
-													</div>
-													<br>
-													<a href="#" class="item-products__apartment-item">
-														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
-														<span class="item-products__apartment-text">Виде обзор</span>
-													</a>
-												</div>
-											</div>
-											<div class="item-products__footer">
-												<div class="item-products__footer-body">
-													<ul class="item-products__list">
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/phone.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/whatsapp.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/mail.png" alt="">
-															</a>
-														</li>
-													</ul>
-													<a href="#" class="item-products__connection">
-														<img src="@img/icons/wifi.png" alt="">
-														<span class="item-products__conntection-text">FOLLOW</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="products__item item-products">
-									<div class="item-products__body">
-										<a href="#" class="item-products__image">
-											<img src="@img/main-page/09.jpg" alt="">
-										</a>
-										<div class="item-products__wrapper">
-											<div class="item-products__header">
-												<div class="item-products__content">
-													<div class="item-products__title-actions">
-														<h3 class="item-products__title">$ 2 365 000</h3>
-														<div class="item-products__icons">
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/favourites.png" alt="">
-															</a>
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/mailing.png" alt="">
-															</a>
-														</div>
-													</div>
-													<a href="#" class="item-products__text item-products__info">
-														MAG CENTRAL PARK
-													</a>
-													<div class="item-products__advanateges">
-														<h6 class="item-products__apartment-item">
-															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
-															<span class="item-products__apartment-text">DEYARR</span>
-														</h6>
-														
-													</div>
-												</div>
-												<div class="item-products__addres">
-													<div class="item-products__place">
-														<div class="item-products__label">
-															Район: 
-														</div>
-														<p class="item-products__place-text">
-															Silicon Oasis
-														</p>
-													</div>
-													<br>
-													<a href="#" class="item-products__apartment-item">
-														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
-														<span class="item-products__apartment-text">Виде обзор</span>
-													</a>
-												</div>
-											</div>
-											<div class="item-products__footer">
-												<div class="item-products__footer-body">
-													<ul class="item-products__list">
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/phone.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/whatsapp.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/mail.png" alt="">
-															</a>
-														</li>
-													</ul>
-													<a href="#" class="item-products__connection">
-														<img src="@img/icons/wifi.png" alt="">
-														<span class="item-products__conntection-text">FOLLOW</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="products__item item-products banner__body">
-									<div class="banner__wrapper swiper-wrapper">
-										<div href="#" class="banner__slide swiper-slide">
-											<div class="banner__item">
-												<div class="banner__image">
-													<picture>
-														<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
-														<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
-														<img src="@img/main-page/03.jpg">
-													</picture>
-													<button data-popup="#popup-form" type="button" class="banner__link">
-														Скачать
-													</button>
-													<!-- <img data-src="@img/main-page/03.jpg" alt=""> -->
-												</div>
-											</div>
-										</div>
-										<div href="#" class="banner__slide swiper-slide">
-											<div class="banner__item">
-												<div class="banner__image">
-													<picture>
-														<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
-														<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
-														<img src="@img/main-page/03.jpg">
-													</picture>
-													<button data-popup="#popup-form" type="button" class="banner__link">
-														Скачать
-													</button>
-													<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="banner__pagination">
-
-									</div>
-								</div>
-								<div class="products__item item-products">
-									<div class="item-products__body">
-										<a href="#" class="item-products__image">
-											<img src="@img/main-page/10j.jpg" alt="">
-										</a>
-										<div class="item-products__wrapper">
-											<div class="item-products__header">
-												<div class="item-products__content">
-													<div class="item-products__title-actions">
-														<h3 class="item-products__title">$ 5 214 342</h3>
-														<div class="item-products__icons">
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/favourites.png" alt="">
-															</a>
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/mailing.png" alt="">
-															</a>
-														</div>
-													</div>
-													<a href="#" class="item-products__text item-products__info">
-														MR. C RESIDENCES JUMEIRAH
-													</a>
-													<div class="item-products__advanateges">
-														<h6 class="item-products__apartment-item">
-															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
-															<span class="item-products__apartment-text">DEYARR</span>
-														</h6>
-														
-													</div>
-												</div>
-												<div class="item-products__addres">
-													<div class="item-products__place">
-														<div class="item-products__label">
-															Район: 
-														</div>
-														<p class="item-products__place-text">
-															Silicon Oasis
-														</p>
-													</div>
-													<br>
-													<a href="#" class="item-products__apartment-item">
-														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
-														<span class="item-products__apartment-text">Виде обзор</span>
-													</a>
-												</div>
-											</div>
-											<div class="item-products__footer">
-												<div class="item-products__footer-body">
-													<ul class="item-products__list">
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/phone.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/whatsapp.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/mail.png" alt="">
-															</a>
-														</li>
-													</ul>
-													<a href="#" class="item-products__connection">
-														<img src="@img/icons/wifi.png" alt="">
-														<span class="item-products__conntection-text">FOLLOW</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="products__item item-products">
-									<div class="item-products__body">
-										<a href="#" class="item-products__image">
-											<img src="@img/main-page/11j.jpg" alt="">
-										</a>
-										<div class="item-products__wrapper">
-											<div class="item-products__header">
-												<div class="item-products__content">
-													<div class="item-products__title-actions">
-														<h3 class="item-products__title">$ 613 000</h3>
-														<div class="item-products__icons">
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/favourites.png" alt="">
-															</a>
-															<a href="#" class="item-products__icon">
-																<img src="@img/icons/mailing.png" alt="">
-															</a>
-														</div>
-													</div>
-													<a href="#" class="item-products__text item-products__info">
-														ADDRESS THE BAY
-													</a>
-													<div class="item-products__advanateges">
-														<h6 class="item-products__apartment-item">
-															<img src="@img/icons/building.svg" class="item-products__apartments-icon" alt="Building icon">
-															<span class="item-products__apartment-text">DEYARR</span>
-														</h6>
-														
-													</div>
-												</div>
-												<div class="item-products__addres">
-													<div class="item-products__place">
-														<div class="item-products__label">
-															Район: 
-														</div>
-														<p class="item-products__place-text">
-															Silicon Oasis
-														</p>
-													</div>
-													<br>
-													<a href="#" class="item-products__apartment-item">
-														<img src="@img/icons/youtube.svg" class="item-products__apartments-icon" alt="Youtube icon">
-														<span class="item-products__apartment-text">Виде обзор</span>
-													</a>
-												</div>
-											</div>
-											<div class="item-products__footer">
-												<div class="item-products__footer-body">
-													<ul class="item-products__list">
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/phone.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/whatsapp.png" alt="">
-															</a>
-														</li>
-														<li class="item-products__item">
-															<a href="#" class="item-products__link">
-																<img src="@img/icons/mail.png" alt="">
-															</a>
-														</li>
-													</ul>
-													<a href="#" class="item-products__connection">
-														<img src="@img/icons/wifi.png" alt="">
-														<span class="item-products__conntection-text">FOLLOW</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<a href="#" class="products__link">
-								Показать ещё
-							</a>
-						</div>
-					</section>
-					<section class="page__banner banner">
-						<div class="banner__container">
-							<div class="banner__body">
-								<div class="banner__wrapper swiper-wrapper">
-									<div class="banner__slide swiper-slide">
-										<div class="banner__item">
-											<div class="banner__image">
-												<picture>
-													<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
-													<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
-													<img src="@img/main-page/03.jpg">
-												</picture>
-												<button data-popup="#popup-form" type="button" class="banner__link">
-													Скачать
-												</button>
-												<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
-											</div>
-										</div>
-									</div>
-									<div class="banner__slide swiper-slide">
-										<div class="banner__item">
-											<div class="banner__image">
-												<picture>
-													<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
-													<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
-													<img src="@img/main-page/03.jpg">
-												</picture>
-												<button data-popup="#popup-form" type="button" class="banner__link">
-													Скачать
-												</button>
-												<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="banner__pagination">
-
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="page__image-bottle image-bottle">
-						<div class="image-bottle__container">
-							<div class="image-bottle__image-ibg"><img data-src="@img/image-bottle/0.png" alt=""></div>
-						</div>
-					</section>
-					<section class="page__banner banner banner_pc">
-						<div class="banner__container">
-							<div class="banner__body">
-								<div class="banner__wrapper swiper-wrapper">
-									<div href="#" class="banner__slide swiper-slide">
-										<div class="banner__item">
-											<div class="banner__image">
-												<picture>
-													<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
-													<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
-													<img src="@img/main-page/03.jpg">
-												</picture>
-												<button data-popup="#popup-form" type="button" class="banner__link">
-													Скачать
-												</button>
-												<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
-											</div>
-										</div>
-									</div>
-									<div href="#" class="banner__slide swiper-slide">
-										<div class="banner__item">
-											<div class="banner__image">
-												<picture>
-													<source media="(min-width: 479.98px)" srcset="@img/main-page/03.jpg">
-													<source media="(max-width: 479.98px)" srcset="@img/main-page/02.jpg">
-													<img src="@img/main-page/03.jpg">
-												</picture>
-												<button data-popup="#popup-form" type="button" class="banner__link">
-													Скачать
-												</button>
-												<!-- <img data-src="@img/main-page/03.JPG" alt=""> -->
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="banner__pagination">
-
-								</div>
-							</div>
-						</div>
-					</section>
-					<!-- <div class="page__send-detail send-detail">
-						<div class="send-detail__container">
-							<div class="send-detail__body">
-								<div class="send-detail__message">
-									<div class="send-detail__image">
-										<img src="@img/main-page/4.png" alt="">
-									</div>
-									<div class="send-detail__title title">Отправьте свои данные для бесплатной консультации</div>
-								</div>
-								<div class="send-detail__consultation">
-									<form action="#" method="get" enctype="multipart/form-data" class="send-detail__form send-detail-form">
-										<div class="send-detail-form__block">
-											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" required placeholder="Имя*" class="send-detail-form__input">
-										</div>
-										<div class="send-detail-form__block">
-											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" required placeholder="Почта*" class="send-detail-form__input">
-										</div>
-									</form>
-									<a href="" class="send-detail__button button button_red">
-										Бесплатная консультация
-									</a>
-								</div>
-							</div>
-						</div>
-					</div> -->
-				</section>
-				<section class="page__map map">
-					<div class="map__container">
-						<div class="map__title title title_w">Карта проектов недвижимости в Дубае</div>
-					</div>
-					<div id="map" style="width: auto; height: 500px;" >
-						<div id="loader"></div>
-					</div>
-				</section>
-				<section class="page__lead lead">
-					<div class="lead__container">
-						<div class="lead__title title">Ведущие застройщики Дубая</div>
-						<div class="lead__body">
-							<div class="lead__controls lead-controls">
-								<div class="lead-controls__arrows slider-arrows">
-									<button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
-									<button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
-								</div>
-							</div>
-							<div class="swiper-wrapper lead__wrapper">
-								<a href="" class="lead__card lead-card swiper-slide">
-									<div class="lead-card__body">
-										<div class="lead-card__image-ibg"><img data-src="@img/properties/4.png" alt=""></div>
-										<div class="lead-card__company-logo">
-											<img src="@img/properties/7.png" alt="">
-										</div>
-										<div class="lead-card__content">
-											<div class="lead-card__title title">Emaar</div>
-											<div class="lead-card__text">One of the best Dubai's real estate developer with an expertise in retail, hospitality and leisure. Emaar developed most of the popular projects in Dubai such as Burj Khalifa, Downtown Dubai, Emaar Beachfront, Dubai Hills Estate, Dubai Creek</div>
-										</div>
-									</div>
-								</a>
-								<a href="" class="lead__card lead-card swiper-slide">
-									<div class="lead-card__body">
-										<div class="lead-card__image-ibg"><img data-src="@img/properties/5.png" alt=""></div>
-										<div class="lead-card__company-logo">
-											<img src="@img/properties/8.png" alt="">
-										</div>
-										<div class="lead-card__content">
-											<div class="lead-card__title title">Emaar</div>
-											<div class="lead-card__text">One of the best Dubai's real estate developer with an expertise in retail, hospitality and leisure. Emaar developed most of the popular projects in Dubai such as Burj Khalifa, Downtown Dubai, Emaar Beachfront, Dubai Hills Estate, Dubai Creek</div>
-										</div>
-									</div>
-								</a>
-								<a href="" class="lead__card lead-card swiper-slide">
-									<div class="lead-card__body">
-										<div class="lead-card__image-ibg"><img data-src="@img/properties/6.png" alt=""></div>
-										<div class="lead-card__company-logo">
-											<img src="@img/properties/9.png" alt="">
-										</div>
-										<div class="lead-card__content">
-											<div class="lead-card__title title">Emaar</div>
-											<div class="lead-card__text">One of the best Dubai's real estate developer with an expertise in retail, hospitality and leisure. Emaar developed most of the popular projects in Dubai such as Burj Khalifa, Downtown Dubai, Emaar Beachfront, Dubai Hills Estate, Dubai Creek</div>
-										</div>
-									</div>
-								</a>
-								<a href="" class="lead__card lead-card swiper-slide">
-									<div class="lead-card__body">
-										<div class="lead-card__image-ibg"><img data-src="@img/properties/6.png" alt=""></div>
-										<div class="lead-card__company-logo">
-											<img src="@img/properties/9.png" alt="">
-										</div>
-										<div class="lead-card__content">
-											<div class="lead-card__title title">Emaar</div>
-											<div class="lead-card__text">One of the best Dubai's real estate developer with an expertise in retail, hospitality and leisure. Emaar developed most of the popular projects in Dubai such as Burj Khalifa, Downtown Dubai, Emaar Beachfront, Dubai Hills Estate, Dubai Creek</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="lead__pagination pagination-control"></div>
-						</div>
-						<div class="lead__developers">
-							<a href="/developers.html" class="lead__button button button_red-square">Все застройщики в Дубае</a>
-							<div class="lead__developer-img">
-								<img src="@img/developers/01.png" alt="Emaar Developers">
-							</div>
-							<div class="lead__developer-img">
-								<img src="@img/developers/02.png" alt="Damac Developers">
-							</div>
-							<div class="lead__developer-img">
-								<img src="@img/developers/03.png" alt="Sobha Developers">
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="page__overviews-slider overviews-slider">
-					<div class="overviews-slider__container">
-						<div class="overviews-slider__title title">Лучшие обзоры видео о недвижимости в Дубае</div>
-						<div class="overviews-slider__body">
-							<div class="overviews-slider__controls controls-overviews-slider" data-da=".overviews-slider__body,1570,first">
-								<div class="controls-overviews-slider__arrows slider-arrows">
-									<button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
-									<button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
-								</div>
-							</div>
-							<div class="overviews-slider__wrapper swiper-wrapper">
-								<div class="swiper-slide overviews-slider__slide">
-									<a href="" class="overviews-slider__image-ibg"><img data-src="@img/oveviews/01.png" alt=""></a>
-									<div class="overviews-slider__subtitle">Omniyat The Sterling</div>
-									<a href="" class="button button_small overviews-slider__button">Video Overview</a>
-								</div>
-								<div class="swiper-slide overviews-slider__slide">
-									<a href="" class="overviews-slider__image-ibg"><img data-src="@img/oveviews/01.png" alt=""></a>
-									<div class="overviews-slider__subtitle">Omniyat The Sterling</div>
-									<a href="" class="button button_small overviews-slider__button">Video Overview</a>
-								</div>
-								<div class="swiper-slide overviews-slider__slide">
-									<a href="" class="overviews-slider__image-ibg"><img data-src="@img/oveviews/01.png" alt=""></a>
-									<div class="overviews-slider__subtitle">Omniyat The Sterling</div>
-									<a href="" class="button button_small overviews-slider__button">Video Overview</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="page__news news">
-					<div class="news__container">
-						<div class="news__title title">Новости недвижимости, идеи и советы</div>
-						<div class="news__body">
-							<div class="news__controls news-controls">
-								<div class="news-controls__arrows slider-arrows">
-									<button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
-									<button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
-								</div>
-							</div>
-							<div class="news__wrappr swiper-wrapper">
-								<div class="news__card swiper-slide card-news">
-									<div class="card-news__body">
-										<a href="" class="card-news__image-ibg"><img data-src="@img/news/01.png" alt=""></a>
-										<div class="card-news__date">
-											<span class="card-news__icon _icon-calendar"></span>
-											<span class="card-news__date-text">
-												11 <sup>th</sup> March  2022
-											</span>
-										</div>
-										<div class="card-news__content">
-											<div class="card-news__type-projects">
-												NEW PROJECTS
-											</div>
-											<div class="card-news__title">New Phase of Emaar Creek Palace</div>
-											<div class="card-news__text">The new phase of the Creek Palace which includes branded 1, 2 and 3-bedroom apartments, has been launched by Emaar. The complex, which consists of two high-rise modern towers with 44 floors, is the very first Palace branded residential building</div>
-											<a href="" class="card-news__button button button_small">
-												Video Overview
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="news__card swiper-slide card-news">
-									<div class="card-news__body">
-										<a href="" class="card-news__image-ibg"><img data-src="@img/news/01.png" alt=""></a>
-										<div class="card-news__date">
-											<span class="card-news__icon _icon-calendar"></span>
-											<span class="card-news__date-text">
-												11 <sup>th</sup> March  2022
-											</span>
-										</div>
-										<div class="card-news__content">
-											<div class="card-news__type-projects">
-												NEW PROJECTS
-											</div>
-											<div class="card-news__title">New Phase of Emaar Creek Palace</div>
-											<div class="card-news__text">The new phase of the Creek Palace which includes branded 1, 2 and 3-bedroom apartments, has been launched by Emaar. The complex, which consists of two high-rise modern towers with 44 floors, is the very first Palace branded residential building</div>
-											<a href="" class="card-news__button button button_small">
-												Video Overview
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="news__pagination pagination-control"></div>
-						</div>
-					</div>
-				</section>
-				<section class="page__quiz quiz">
-					<div class="quiz__container">
-						<div class="quiz__body">
-							<div class="quiz__image-ibg"><img data-src="@img/areas/10.png" alt=""></div>
-							<div class="quiz__content">
-								<div class="quiz__icon-success">
-									<img src="@img/success.png" alt="Success icon">
-								</div>
-								<div class="quiz__title">
-									Запутались? Пройдите тест и получите лучшие предложения
-								</div>
-								<div class="quiz__text">
-									<p>Будучи квалифицированными экспертами в области недвижимости с многолетним опытом, мы понимаем, насколько запутанным может быть рынок незавершенной недвижимости Дубая для новых покупателей, а также для профессиональных инвесторов. Особенно, когда в Дубае тысячи незавершенных объектов.</p>
-									<p>Вам не нужно будет просматривать бесчисленные списки на других сайтах недвижимости ОАЭ. Мы собрали всю доступную информацию о строящейся недвижимости в одном месте и создали небольшой тест, чтобы вы могли найти свой идеальный дом менее чем за две минуты.</p>
-									<p>Следуйте простым шагам на экране, чтобы получить персональную подборку проектов, отвечающих всем вашим требованиям. Изучите любой интересующий вас проект в Дубае и свяжитесь с нами!</p>
-								</div>
-								<div class="quiz__actions">
-									<a href="#" class="quiz__button button button_normal">Пройдите быстрый тест</a>
-									<div class="quiz__less-time">
-										<span class="_icon-clock"></span>
-										Это занимает менее 2 минут
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<div class="page__social-links social-links">
-					<a href="tel:+971588070001" class="social-links__link social-links__link_phone">
-						<img src="@img/more/24.png" alt="">
-						<span class="social-links__text">
-							Телефон
-						</span>
-					</a>
-					<a href="https://wa.me/971588070001" class="social-links__link social-links__link_whatsapp">
-						<img src="@img/more/25.png" alt="">
-						<span class="social-links__text">
-							Whatsapp
-						</span>
-					</a>
-				</div>
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm', { "title": "F&C Properties агентство недвижимости в Дубае" } )
+  <body class="index-home">
+    <div class="wrapper">
+      @@include('html/_header-index.htm',{})
+      <main class="page">
+        <section class="page__main-index main-index">
+          <div class="main-index__container-min">
+            <div class="main-index__body" data-fullscreen>
+              <h1 class="main-index__title">Find your Home</h1>
+              <div data-tabs class="main-index__tabs main-index-tabs">
+                <div data-tabs-titles class="main-index-tabs__tabs-button">
+                  <button type="button" class="main-index-tabs__tab _tab-active">
+                    Residential
+                  </button>
+                  <button type="button" class="main-index-tabs__tab">Ready property</button>
+                  <button type="button" class="main-index-tabs__tab">Off-Plan</button>
+                </div>
+                <div data-tabs-body class="main-index-tabs__body">
+                  <div class="main-index-tabs__content">
+                    <form
+                      action="#"
+                      method="post"
+                      enctype="multipart/form-data"
+                      class="main-index-tabs__form main-index-tabs-form"
+                    >
+                      <div class="main-index-tabs-form__input-wrapper">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          name="form[search]"
+                          data-error="Не нйдено"
+                          placeholder="Key words"
+                          class="main-index-tabs-form__input _req"
+                        />
+                        <button
+                          type="submit"
+                          class="main-index-tabs-form__button _icon-magnify"
+                        ></button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="main-index-tabs__content">
+                    <form
+                      action="#"
+                      method="post"
+                      enctype="multipart/form-data"
+                      class="main-index-tabs__form main-index-tabs-form"
+                    >
+                      <div class="main-index-tabs-form__input-wrapper">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          name="form[search]"
+                          data-error="Не нйдено"
+                          placeholder="Key words"
+                          class="main-index-tabs-form__input _req"
+                        />
+                        <button
+                          type="submit"
+                          class="main-index-tabs-form__button _icon-magnify"
+                        ></button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="main-index-tabs__content">
+                    <form
+                      action="#"
+                      method="post"
+                      enctype="multipart/form-data"
+                      class="main-index-tabs__form main-index-tabs-form"
+                    >
+                      <div class="main-index-tabs-form__input-wrapper">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          name="form[search]"
+                          data-error="Не нйдено"
+                          placeholder="Key words"
+                          class="main-index-tabs-form__input _req"
+                        />
+                        <button
+                          type="submit"
+                          class="main-index-tabs-form__button _icon-magnify"
+                        ></button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-index__image">
+            <picture>
+              <!-- <source media="(min-width: 320px)" data-srcset="@img/areas/11.png" type="image/png" /> -->
+              <source
+                media="(max-width: 767.98px)"
+                data-srcset="@img/areas/12.jpg"
+                type="image/jpg"
+              />
+              <img data-src="@img/areas/11.png" alt="Dubai islands" />
+            </picture>
+          </div>
+        </section>
+        <section class="page__index-advantages index-advantages">
+          <div class="index-advantages__container-min">
+            <div class="index-advantages__body">
+              <div class="index-advantages__item advantage-item">
+                <div class="advantage-item__icon">
+                  <picture>
+                    <source srcset="@img/icons/build-blue.svg" media="(max-width: 767.98px)" />
+                    <img src="@img/icons/build.svg" alt="" />
+                  </picture>
+                </div>
+                <div class="advantage-item__content">
+                  <h4 class="advantage-item__title">New Projects</h4>
+                  <span class="advantage-item__count">10</span>
+                </div>
+              </div>
+              <div class="index-advantages__item advantage-item">
+                <div class="advantage-item__icon">
+                  <picture>
+                    <source srcset="@img/icons/build-area-blue.svg" media="(max-width: 767.98px)" />
+                    <img src="@img/icons/build-area.svg" alt="" />
+                  </picture>
+                </div>
+                <div class="advantage-item__content">
+                  <h4 class="advantage-item__title">Dubai Projects Map</h4>
+                  <span class="advantage-item__count">56</span>
+                </div>
+              </div>
+              <div class="index-advantages__item advantage-item">
+                <div class="advantage-item__icon">
+                  <picture>
+                    <source srcset="@img/icons/build-mark-blue.svg" media="(max-width: 767.98px)" />
+                    <img src="@img/icons/build-mark.svg" alt="" />
+                  </picture>
+                </div>
+                <div class="advantage-item__content">
+                  <h4 class="advantage-item__title">Dubai Areas</h4>
+                  <span class="advantage-item__count">48</span>
+                </div>
+              </div>
+              <div class="index-advantages__item advantage-item">
+                <div class="advantage-item__icon">
+                  <picture>
+                    <source srcset="@img/icons/build-mark-blue.svg" media="(max-width: 767.98px)" />
+                    <img src="@img/icons/build-mark.svg" alt="" />
+                  </picture>
+                </div>
+                <div class="advantage-item__content">
+                  <h4 class="advantage-item__title">Ready Properties</h4>
+                  <span class="advantage-item__count">1380</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="index-advantages__image">
+            <img src="@img/areas/11.jpg" alt="" />
+          </div>
+        </section>
+        <section class="page__hot-project hot-project">
+          <div class="hot-project__container-min">
+            <h2 class="hot-project__title">Hot projects in Dubai</h2>
+            <div class="hot-project__body">
+              <div class="hot-project__slider swiper-wrapper">
+                <article class="hot-project__project hot-project-item swiper-slide">
+                  <div class="hot-project-item__images hot-project-images">
+                    <div class="hot-project-images__types">
+                      <div class="hot-project-images__type">20/80 Payment plan</div>
+                      <div class="hot-project-images__type">By Degrisogono</div>
+                    </div>
+                    <div class="hot-project-images__body">
+                      <div class="hot-project-images__slider swiper-wrapper">
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/01.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/02.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/03.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="hot-project-images__pagination"></div>
+                    </div>
+                    <div class="hot-project-images__background">
+                      <div class="hot-project-images__slider swiper-wrapper">
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/01.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/02.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/03.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-project-item__body hot-project-body">
+                    <div class="hot-project-body__content">
+                      <div class="hot-project-body__info">
+                        <h4 class="hot-project-body__title">Safa Two</h4>
+                        <div class="hot-project-body__area _icon-location-mark">Al Safa</div>
+                        <a href="" class="hot-project-body__apartment">Apartment</a>
+                      </div>
+                      <a href="" class="hot-project-body__go-link _icon-arrow-right"></a>
+                    </div>
+                    <div class="hot-project-body__footer">
+                      <div class="hot-project-body__profile">
+                        <a href="" class="hot-project-body__profile-image">
+                          <img src="@img/hot-projects/04.jpg" alt="Profile user" />
+                        </a>
+                        <div class="hot-project-body__profile-content">
+                          <a href="" class="hot-project-body__profile-name">Yullia Roshkovich</a>
+                          <div class="hot-project-body__profile-profession">District Manager</div>
+                        </div>
+                      </div>
+                      <a href="" class="hot-project-body__whatsapp">
+                        <img src="@img/icons/whatsapp-vector.svg" alt="Whatsapp icon" />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article class="hot-project__project hot-project-item swiper-slide">
+                  <div class="hot-project-item__images hot-project-images">
+                    <div class="hot-project-images__types">
+                      <div class="hot-project-images__type">20/80 Payment plan</div>
+                      <div class="hot-project-images__type">By Degrisogono</div>
+                    </div>
+                    <div class="hot-project-images__body">
+                      <div class="hot-project-images__slider swiper-wrapper">
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/02.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/03.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/01.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="hot-project-images__pagination"></div>
+                    </div>
+                    <div class="hot-project-images__background">
+                      <div class="hot-project-images__slider swiper-wrapper">
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/02.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/03.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/01.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-project-item__body hot-project-body">
+                    <div class="hot-project-body__content">
+                      <div class="hot-project-body__info">
+                        <h4 class="hot-project-body__title">Safa Two</h4>
+                        <div class="hot-project-body__area _icon-location-mark">Al Safa</div>
+                        <a href="" class="hot-project-body__apartment">Apartment</a>
+                      </div>
+                      <a href="" class="hot-project-body__go-link _icon-arrow-right"></a>
+                    </div>
+                    <div class="hot-project-body__footer">
+                      <div class="hot-project-body__profile">
+                        <a href="" class="hot-project-body__profile-image">
+                          <img src="@img/hot-projects/04.jpg" alt="Profile user" />
+                        </a>
+                        <div class="hot-project-body__profile-content">
+                          <a href="" class="hot-project-body__profile-name">Yullia Roshkovich</a>
+                          <a class="hot-project-body__profile-profession"> District Manager </a>
+                        </div>
+                      </div>
+                      <a href="" class="hot-project-body__whatsapp">
+                        <img src="@img/icons/whatsapp-vector.svg" alt="Whatsapp icon" />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article class="hot-project__project hot-project-item swiper-slide">
+                  <div class="hot-project-item__images hot-project-images">
+                    <div class="hot-project-images__types">
+                      <div class="hot-project-images__type">20/80 Payment plan</div>
+                      <div class="hot-project-images__type">By Degrisogono</div>
+                    </div>
+                    <div class="hot-project-images__body">
+                      <div class="hot-project-images__slider swiper-wrapper">
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/03.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/01.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/02.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="hot-project-images__pagination"></div>
+                    </div>
+                    <div class="hot-project-images__background">
+                      <div class="hot-project-images__slider swiper-wrapper">
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/03.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/01.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/02.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-project-item__body hot-project-body">
+                    <div class="hot-project-body__content">
+                      <div class="hot-project-body__info">
+                        <h4 class="hot-project-body__title">Safa Two</h4>
+                        <div class="hot-project-body__area _icon-location-mark">Al Safa</div>
+                        <a href="" class="hot-project-body__apartment">Apartment</a>
+                      </div>
+                      <a href="" class="hot-project-body__go-link _icon-arrow-right"></a>
+                    </div>
+                    <div class="hot-project-body__footer">
+                      <div class="hot-project-body__profile">
+                        <a href="" class="hot-project-body__profile-image">
+                          <img src="@img/hot-projects/04.jpg" alt="Profile user" />
+                        </a>
+                        <div class="hot-project-body__profile-content">
+                          <a href="" class="hot-project-body__profile-name">Yullia Roshkovich</a>
+                          <a class="hot-project-body__profile-profession"> District Manager </a>
+                        </div>
+                      </div>
+                      <a href="" class="hot-project-body__whatsapp">
+                        <img src="@img/icons/whatsapp-vector.svg" alt="Whatsapp icon" />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article class="hot-project__project hot-project-item swiper-slide">
+                  <div class="hot-project-item__images hot-project-images">
+                    <div class="hot-project-images__types">
+                      <div class="hot-project-images__type">20/80 Payment plan</div>
+                      <div class="hot-project-images__type">By Degrisogono</div>
+                    </div>
+                    <div class="hot-project-images__body">
+                      <div class="hot-project-images__slider swiper-wrapper">
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/03.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/01.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <a href="" class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/02.jpg" alt="Dubai islands and towns" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="hot-project-images__pagination"></div>
+                    </div>
+                    <div class="hot-project-images__background">
+                      <div class="hot-project-images__slider swiper-wrapper">
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/03.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/01.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                        <div class="hot-project-images__slide swiper-slide">
+                          <div class="hot-project-images__image-link">
+                            <img src="@img/hot-projects/02.jpg" alt="Dubai islands and towns" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hot-project-item__body hot-project-body">
+                    <div class="hot-project-body__content">
+                      <div class="hot-project-body__info">
+                        <h4 class="hot-project-body__title">Safa Two</h4>
+                        <div class="hot-project-body__area _icon-location-mark">Al Safa</div>
+                        <a href="" class="hot-project-body__apartment">Apartment</a>
+                      </div>
+                      <a href="" class="hot-project-body__go-link _icon-arrow-right"></a>
+                    </div>
+                    <div class="hot-project-body__footer">
+                      <div class="hot-project-body__profile">
+                        <a href="" class="hot-project-body__profile-image">
+                          <img src="@img/hot-projects/04.jpg" alt="Profile user" />
+                        </a>
+                        <div class="hot-project-body__profile-content">
+                          <a href="" class="hot-project-body__profile-name">Yullia Roshkovich</a>
+                          <a class="hot-project-body__profile-profession"> District Manager </a>
+                        </div>
+                      </div>
+                      <a href="" class="hot-project-body__whatsapp">
+                        <img src="@img/icons/whatsapp-vector.svg" alt="Whatsapp icon" />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="hot-project__pagination"></div>
+            </div>
+            <div class="hot-project__line-image">
+              <img src="@img/hot-projects/line.svg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="page__questions questions">
+          <div class="questions__container-min">
+            <div class="questions__content">
+              <h2 class="questions__title">
+                Why <br />
+                we ARE?
+              </h2>
+              <div class="questions__text">
+                <p>
+                  F&C Properties operates in one of the most significant international hubs of the
+                  21’st century, Dubai - where culture co-exists with cutting-edge technologies, in
+                  the city committed to excellence, that has grown into a vibrant cosmopolitan
+                  community.
+                </p>
+                <p>
+                  F&C Properties welcomes customers from all over the globe with a wide range of
+                  real-estate-focused services in affiliation with the top–of–the–range developers
+                  of Dubai like Emaar, Dubai Holding, Meeras, District One, Sobha, SLS, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="questions__images">
+            <picture>
+              <source
+                srcset="@img/hot-projects/10.jpg"
+                media="(max-width: 500px)"
+                type="image/jpg"
+                class="questions__image questions__image_first"
+              />
+              <img
+                class="questions__image questions__image_first"
+                src="@img/hot-projects/07.jpg"
+                alt="Dubai island towns"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="@img/hot-projects/11.jpg"
+                media="(max-width: 500px)"
+                type="image/jpg"
+                class="questions__image questions__image_second"
+              />
+              <img
+                class="questions__image questions__image_second"
+                src="@img/hot-projects/08.jpg"
+                alt="Dubai town"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="@img/hot-projects/12.jpg"
+                media="(max-width: 500px)"
+                type="image/jpg"
+                class="questions__image questions__image_third"
+              />
+              <img
+                class="questions__image questions__image_third"
+                src="@img/hot-projects/09.jpg"
+                alt="Dubai town"
+              />
+            </picture>
+          </div>
+        </section>
+        <section class="page__google-reviews google-reviews">
+          <div class="google-reviews__container-min">
+            <h2 class="google-reviews__title">Google Reviews</h2>
+            <div class="google-reviews__reviews reviews">
+              <div class="reviews__wrapper swiper-wrapper">
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__body">
+                    <div class="reviews__header">
+                      <div class="reviews__stars">
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                      </div>
+                      <div class="reviews__profile">
+                        <div class="reviews__profile-image">
+                          <img src="@img/google-reviews/01.jpg" alt="" />
+                        </div>
+                        <div class="reviews__profile-name">Elizaveta Glazova</div>
+                      </div>
+                    </div>
+                    <div class="reviews__content reviews-review">
+                      <div data-showmore class="reviews-review__show">
+                        <div data-showmore-content="110" class="reviews-review__content">
+                          We had great experience working with the agent Parvizkhon. He helped us
+                          find an apartment in Dubai for investment. He was very friendly, answered
+                          all our questions, supported us during all process of buying the
+                          apartment, listened to all our wishes. Would definitely recommend! We had
+                          great experience working with the agent Parvizkhon. He helped us find an
+                          apartment in Dubai for investment. He was very friendly, answered all our
+                          questions, supported us during all process of buying the apartment,
+                          listened to all our wishes. Would definitely recommend!
+                        </div>
+                        <button
+                          hidden
+                          data-showmore-button
+                          type="button"
+                          class="reviews-review__more"
+                        >
+                          <span class="reviews-review__first"> ......read more...... </span>
+                          <span class="reviews-review__last"> ......remove...... </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__agent">
+                    <div class="reviews__agent-image">
+                      <img src="@img/google-reviews/02.jpg" alt="" />
+                    </div>
+                    <div class="reviews__agent-info">
+                      <div class="reviews__agent-job">Parvizkhon</div>
+                      <div class="reviews__agent-name">District manager</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__body">
+                    <div class="reviews__header">
+                      <div class="reviews__stars">
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                      </div>
+                      <div class="reviews__profile">
+                        <div class="reviews__profile-image">
+                          <img src="@img/google-reviews/03.jpg" alt="" />
+                        </div>
+                        <div class="reviews__profile-name">Elena LANSKI</div>
+                      </div>
+                    </div>
+                    <div class="reviews__content reviews-review">
+                      <div data-showmore class="reviews-review__show">
+                        <div data-showmore-content="110" class="reviews-review__content">
+                          Thank u F&C for providing a great experience. From the 1st day been
+                          communicating with Mokhir Muminkhodjaev. Found me exactly what I wanted.
+                          Always in touch and answering all my questions, solving all the problems
+                          with payments that I had due to circumstances.Thank u F&C for providing a
+                          great experience. From the 1st day been communicating with Mokhir
+                          Muminkhodjaev. Found me exactly what I wanted. Always in touch and
+                          answering all my questions, solving all the problems with payments that I
+                          had due to circumstances.
+                        </div>
+                        <button
+                          hidden
+                          data-showmore-button
+                          type="button"
+                          class="reviews-review__more"
+                        >
+                          <span class="reviews-review__first"> ......read more...... </span>
+                          <span class="reviews-review__last"> ......remove...... </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__agent">
+                    <div class="reviews__agent-image">
+                      <img src="@img/google-reviews/04.jpg" alt="" />
+                    </div>
+                    <div class="reviews__agent-info">
+                      <div class="reviews__agent-job">Mokhir</div>
+                      <div class="reviews__agent-name">District manager</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__body">
+                    <div class="reviews__header">
+                      <div class="reviews__stars">
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                      </div>
+                      <div class="reviews__profile">
+                        <div class="reviews__profile-image">
+                          <img src="@img/google-reviews/05.jpg" alt="" />
+                        </div>
+                        <div class="reviews__profile-name">Claudines Empire</div>
+                      </div>
+                    </div>
+                    <div class="reviews__content reviews-review">
+                      <div data-showmore class="reviews-review__show">
+                        <div data-showmore-content="120" class="reviews-review__content">
+                          She's simply the best agent I have come across , I have dealt with many
+                          agents in my line of work but She's different and help anytime shes called
+                          upon, Chioma Chigbu is the best agent I know at the moment, thank you for
+                          being good at your job.
+                        </div>
+                        <button
+                          hidden
+                          data-showmore-button
+                          type="button"
+                          class="reviews-review__more"
+                        >
+                          <span class="reviews-review__first"> ......read more...... </span>
+                          <span class="reviews-review__last"> ......remove...... </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__agent">
+                    <div class="reviews__agent-image">
+                      <img src="@img/google-reviews/06.jpg" alt="" />
+                    </div>
+                    <div class="reviews__agent-info">
+                      <div class="reviews__agent-job">Chioma</div>
+                      <div class="reviews__agent-name">District manager</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__body">
+                    <div class="reviews__header">
+                      <div class="reviews__stars">
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                        <img src="@img/icons/star.svg" alt="" />
+                      </div>
+                      <div class="reviews__profile">
+                        <div class="reviews__profile-image">
+                          <img src="@img/google-reviews/05.jpg" alt="" />
+                        </div>
+                        <div class="reviews__profile-name">Claudines Empire</div>
+                      </div>
+                    </div>
+                    <div class="reviews__content reviews-review">
+                      <div data-showmore class="reviews-review__show">
+                        <div data-showmore-content="120" class="reviews-review__content">
+                          She's simply the best agent I have come across , I have dealt with many
+                          agents in my line of work but She's different and help anytime shes called
+                          upon, Chioma Chigbu is the best agent I know at the moment, thank you for
+                          being good at your job.
+                        </div>
+                        <button
+                          hidden
+                          data-showmore-button
+                          type="button"
+                          class="reviews-review__more"
+                        >
+                          <span class="reviews-review__first"> ......read more...... </span>
+                          <span class="reviews-review__last"> ......remove...... </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__agent">
+                    <div class="reviews__agent-image">
+                      <img src="@img/google-reviews/06.jpg" alt="" />
+                    </div>
+                    <div class="reviews__agent-info">
+                      <div class="reviews__agent-job">Chioma</div>
+                      <div class="reviews__agent-name">District manager</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__index-partners index-partners">
+          <div class="index-partners__container-min">
+            <h2 class="index-partners__title">Our Partners</h2>
+            <div class="index-partners__body">
+              <div class="index-partners__parnters index-partners__parnters_top">
+                <div class="index-partners__item">
+                  <img src="@img/developers/01.png" alt="Logo EMAAR Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/02.png" alt="Logo Damac Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/05.png" alt="Logo Meydan Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/10.png" alt="Logo Meraas Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/06.png" alt="Logo Select-Group Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/07.png" alt="Logo Ellington Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/08.png" alt="Logo Dubai-Holding Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/09.png" alt="Logo Danube-Partners Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/04.png" alt="Logo Sobha-Reality Developer" />
+                </div>
+              </div>
+              <div class="index-partners__parnters index-partners__parnters_bottom">
+                <div class="index-partners__item">
+                  <img src="@img/developers/07.png" alt="Logo Ellington Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/08.png" alt="Logo Dubai-Holding Developer" />
+                </div>
+                <div class="index-partners__item index-partners__item_title">
+                  <div class="index-partners__title-partner">Our Partners</div>
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/09.png" alt="Logo Danube-Partners Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/04.png" alt="Logo Sobha-Reality Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/01.png" alt="Logo EMAAR Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/02.png" alt="Logo Damac Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/05.png" alt="Logo Meydan Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/10.png" alt="Logo Meraas Developer" />
+                </div>
+                <div class="index-partners__item">
+                  <img src="@img/developers/06.png" alt="Logo Select-Group Developer" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__index-news index-news">
+          <div class="index-news__container-min">
+            <h2 class="index-news__title">Last News</h2>
+            <div class="index-news__body">
+              <div class="index-news__wrapper swiper-wrapper">
+                <article class="index-news__item-news swiper-slide news-item">
+                  <a href="#" class="news-item__image">
+                    <img data-src="@img/areas/12.png" alt="" />
+                    <div class="news-item__events">
+                      <div class="news-item__date">
+                        <div class="news-item__icon">
+                          <img src="@img/icons/calendar.svg" alt="" />
+                        </div>
+                        <div class="news-item__date-value">14 April, 2022</div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="news-item__content">
+                    <div class="news-item__top">
+                      <h4 class="news-item__title">
+                        <a href="" class="news-item__link">Damac Safa one | Luxury life</a>
+                      </h4>
+                      <div class="news-item__text">
+                        <p>Luxury Apartments, located in the heart of Dubai.</p>
+                      </div>
+                    </div>
+                    <div class="news-item__bottom">
+                      <div class="news-item__type">New Project</div>
+                      <div class="news-item__comment">
+                        <div class="news-item__comment-icon">
+                          <img src="@img/icons/comment.svg" alt="" />
+                        </div>
+                        <div class="news-item__count">6</div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="index-news__item-news swiper-slide news-item">
+                  <a href="#" class="news-item__image">
+                    <img data-src="@img/areas/12.png" alt="" />
+                    <div class="news-item__events">
+                      <div class="news-item__date">
+                        <div class="news-item__icon">
+                          <img src="@img/icons/calendar.svg" alt="" />
+                        </div>
+                        <div class="news-item__date-value">14 April, 2022</div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="news-item__content">
+                    <div class="news-item__top">
+                      <h4 class="news-item__title">
+                        <a href="" class="news-item__link">Damac Safa one | Luxury life</a>
+                      </h4>
+                      <div class="news-item__text">
+                        <p>Luxury Apartments, located in the heart of Dubai.</p>
+                      </div>
+                    </div>
+                    <div class="news-item__bottom">
+                      <div class="news-item__type">New Project</div>
+                      <div class="news-item__comment">
+                        <div class="news-item__comment-icon">
+                          <img src="@img/icons/comment.svg" alt="" />
+                        </div>
+                        <div class="news-item__count">6</div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="index-news__item-news swiper-slide news-item">
+                  <a href="#" class="news-item__image">
+                    <img data-src="@img/areas/12.png" alt="" />
+                    <div class="news-item__events">
+                      <div class="news-item__date">
+                        <div class="news-item__icon">
+                          <img src="@img/icons/calendar.svg" alt="" />
+                        </div>
+                        <div class="news-item__date-value">14 April, 2022</div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="news-item__content">
+                    <div class="news-item__top">
+                      <h4 class="news-item__title">
+                        <a href="" class="news-item__link">Damac Safa one | Luxury life</a>
+                      </h4>
+                      <div class="news-item__text">
+                        <p>Luxury Apartments, located in the heart of Dubai.</p>
+                      </div>
+                    </div>
+                    <div class="news-item__bottom">
+                      <div class="news-item__type">New Project</div>
+                      <div class="news-item__comment">
+                        <div class="news-item__comment-icon">
+                          <img src="@img/icons/comment.svg" alt="" />
+                        </div>
+                        <div class="news-item__count">6</div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="index-news__pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="page__index-property index-property">
+          <div class="index-property__container-min">
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">About fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Join fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Contact us</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Location Map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate Blog</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate FAQ's</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Management</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Score</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Loan Mortgage Calculator</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">360 Tour Properties</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai property prices 2022</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Areas prices tracker map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Sell your property in Dubai</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties for Sale</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Penthouse for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Mansion for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Apartment for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Villa for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Houses for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Office for sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Villas in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Townhouse for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Townhouses in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Lands in Dubai for Sale</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">About fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Join fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Contact us</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Location Map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate Blog</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate FAQ's</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Management</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Score</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Loan Mortgage Calculator</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">360 Tour Properties</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai property prices 2022</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Areas prices tracker map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Sell your property in Dubai</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties for Sale</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Penthouse for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Mansion for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Apartment for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Villa for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Houses for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Office for sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Villas in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Townhouse for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Townhouses in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Lands in Dubai for Sale</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">About fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Join fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Contact us</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Location Map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate Blog</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate FAQ's</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Management</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Score</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Loan Mortgage Calculator</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">360 Tour Properties</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai property prices 2022</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Areas prices tracker map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Sell your property in Dubai</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties for Sale</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Penthouse for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Mansion for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Apartment for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Villa for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Houses for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Office for sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Villas in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Townhouse for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Townhouses in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Lands in Dubai for Sale</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">About fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Join fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Contact us</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Location Map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate Blog</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate FAQ's</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Management</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Score</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Loan Mortgage Calculator</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">360 Tour Properties</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai property prices 2022</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Areas prices tracker map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Sell your property in Dubai</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties for Sale</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Penthouse for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Mansion for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Apartment for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Villa for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Houses for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Office for sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Villas in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Townhouse for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Townhouses in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Lands in Dubai for Sale</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">About fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Join fam</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Contact us</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Location Map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate Blog</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Real Estate FAQ's</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Management</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Property Score</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Loan Mortgage Calculator</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">360 Tour Properties</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai property prices 2022</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Areas prices tracker map</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Sell your property in Dubai</a>
+                </li>
+              </ul>
+            </div>
+            <div class="index-property__item">
+              <h5 class="index-property__title">Dubai Properties for Sale</h5>
+              <ul class="index-property__list">
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Penthouse for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Mansion for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Apartment for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Dubai Villa for Sale</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Houses for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Office for sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Plot in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Apartments in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Villas in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Townhouse for Sale in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Buy Ready Townhouses in Dubai</a>
+                </li>
+                <li class="index-property__item-list">
+                  <a href="" class="index-property__link">Lands in Dubai for Sale</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="page__get-consultation get-consultation">
+          <div class="get-consultation__container-min">
+            <div class="get-consultation__body">
+              <div class="get-consultation__content">
+                <h1 class="get-consultation__title">Получить консультацию</h1>
+                <p class="get-consultation__subtitle">
+                  От наших агентов по любому интересующему вас вопросу
+                </p>
+                <form
+                  action="#"
+                  method="post"
+                  enctype="multipart/form-data"
+                  class="get-consultation__form form-consultation"
+                >
+                  <div class="form-consultation__body">
+                    <div class="form-consultation__row">
+                      <div class="form-consultation__column">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          name="form[name]"
+                          data-validate
+                          data-error="Поле не должно быть пустым"
+                          placeholder="Ваше Имя"
+                          data-required
+                          class="form-consultation__input"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-consultation__row">
+                      <div class="form-consultation__column">
+                        <input
+                          autocomplete="off"
+                          type="tel"
+                          inputmode="tel"
+                          name="form[phone]"
+                          class="form-consultation__input form-consultation__input_phone country-phones"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-consultation__row">
+                      <div class="form-consultation__column">
+                        <input
+                          autocomplete="off"
+                          type="email"
+                          name="form[email]"
+                          data-validate
+                          data-error="Неправильно заполнено поле"
+                          placeholder="E-mail"
+                          data-required="email"
+                          class="form-consultation__input"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="form-consultation__button">
+                    Получить консультацию
+                  </button>
+                </form>
+                <div class="form-consultation__media">
+                  <a href="" class="form-consultation__logo">
+                    <img src="@img/logo.svg" alt="" />
+                  </a>
+                  <p class="form-consultation__text">город Дубай улица Bay Square 13 здания, 704</p>
+                </div>
+              </div>
+              <div class="get-consultation__picture">
+                <div class="get-consultation__image">
+                  <img src="@img/properties/consultant.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer-index.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    @@include('html/_js.htm',{})
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  </body>
 </html>

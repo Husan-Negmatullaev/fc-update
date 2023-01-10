@@ -23,6 +23,7 @@
 		"del": "latest",
 		"file-include-webpack-plugin-replace": "latest",
 		"fls-bemtree-from-html": "^1.0.0",
+		"gsap": "^3.11.4",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",

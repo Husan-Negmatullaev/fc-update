@@ -12,7 +12,7 @@
 */
 
 // Включить/выключить FLS (Full Logging System) (в работе)
-window['FLS'] = true;
+window['FLS'] = false;
 
 // Подключение основного файла стилей
 import "../scss/style.scss";
@@ -34,8 +34,6 @@ flsFunctions.isWebp();
 flsFunctions.menuInit();
 /* Учет плавающей панели на мобильных устройствах при 100vh */
 flsFunctions.fullVHfix();
-
-/* Добавить Yandex карту карту */
 
 /*
 Модуль работы со спойлерами
@@ -76,7 +74,7 @@ import * as flsForms from "./files/forms/forms.js";
 flsForms.formFieldsInit({ viewPass: false });
 
 /* Oтправка формы */
-// flsForms.formSubmit();
+flsForms.formSubmit();
 
 /* Модуль формы "колличество" */
 // flsForms.formQuantity();
@@ -138,13 +136,13 @@ import './files/scroll/lazyload.js';
 // import './libs/watcher.js'
 
 // Функции работы скроллом
-// import * as flsScroll from "./files/scroll/scroll.js";
+import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавная навигация по странице
 // flsScroll.pageNavigation();
 
 // Функционал добавления классов к хедеру при прокрутке
-// flsScroll.headerScroll();
+flsScroll.headerScroll();
 
 // Функционал липкого блока
 // flsScroll.stickyBlock();
@@ -172,6 +170,8 @@ import "./libs/isotope.pkgd.min.js";
 /* Форматирование чисел */
 // import './libs/wNumb.min.js';
 
+import "./files/animation.js"
+
 // ========================================================================================================================================================================================================================================================
 // Прочее ========================================================================================================================================================================================================================================================
 // ========================================================================================================================================================================================================================================================
@@ -181,8 +181,8 @@ import "./files/script.js";
 
 // Добавление методов
 Date.prototype.addDays = function (days) {
-    this.setDate(this.getDate() + parseInt(days));
-    return this;
+  this.setDate(this.getDate() + parseInt(days));
+  return this;
 }
 
 // Api Pages
@@ -195,30 +195,6 @@ import * as api from "./files/api-pages/home.js";
 
 api.pageHome()
 
-// import * as search from "./files/api-pages/search.js";
-
-// search.pageSearch()
-
-// import * as blog from "./files/api-pages/blog.js";
-
-// blog.pageBlog()
-
 import * as map from "./files/api-pages/map.js";
 
 map.pageMap()
-
-// import * as developers from "./files/api-pages/developers.js";
-
-// developers.pageDevelopers()
-
-// import * as areas from "./files/api-pages/areas.js";
-
-// areas.pageAreas()
-
-// import * as faq from "./files/api-pages/faq.js";
-
-// faq.pageFaq()
-
-// import * as subBlog from "./files/api-pages/sub-blog.js";
-
-// subBlog.pageSubBlog()

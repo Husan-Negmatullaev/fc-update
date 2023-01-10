@@ -4,12 +4,13 @@
 @import "base/mixins";
 
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
-@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800');
-@import url('https://fonts.googleapis.com/css?family=Philosopher:700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700,80&display=swa');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swa');
+@import url('https://fonts.googleapis.com/css?family=Philosopher:700&display=swa');
 //&display=swap &subset=cyrillic-ext - добавить при подключении через плагин
 
 // Подключить если есть локальные файлы шрифтов
-// @import "fonts/fonts";
+@import "fonts/fonts";
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
@@ -55,44 +56,51 @@ $responsiveType: 1;
 // @import "base/tabs";
 
 body {
-	height: 100%;
-	// Скролл заблокирован
-	.lock & {
-		overflow: hidden;
-		touch-action: none;
-	}
-	// Сайт загружен
-	.loaded & {
-	}
+  height: 100%;
+
+  // Скролл заблокирован
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  &.index-home {}
+
+  // Сайт загружен
+  .loaded & {}
 }
 
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	position: relative;
-	// Прижимаем footer
-	> main {
-		flex: 1 1 auto;
-	}
-	// Фикс для слайдеров
-	> * {
-		min-width: 0;
-	}
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  // Прижимаем footer
+  >main {
+    flex: 1 1 auto;
+  }
+
+  // Фикс для слайдеров
+  >* {
+    min-width: 0;
+  }
 }
 
 .inner-wrapper {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	position: relative;
-	@media (min-width:$mobile){
-		background: url('@img/main-page/2.png') rem(-144) rem(130) no-repeat;
-	}
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width:$mobile) {
+    background: url('@img/main-page/2.png') rem(-144) rem(130) no-repeat;
+  }
 }
+
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
 /*
@@ -102,42 +110,66 @@ body {
 Снипет (HTML): cnt
 */
 @if ($responsiveType==1) {
-	// Отзывчивая
-	[class*="__container"] {
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-			margin: 0 auto;
-		}
-		@if ($containerPadding>0) {
-			padding: 0 rem(math.div($containerPadding, 2));
-		}
-	}
-} @else {
-	// По брейк-поинтам
-	[class*="__container"] {
-		margin: 0 auto;
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-		} @else {
-			@if ($containerPadding>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-		@media (max-width: $pc) {
-			max-width: rem(970);
-		}
-		@media (max-width: $tablet) {
-			max-width: rem(750);
-		}
-		@media (max-width: $mobile) {
-			max-width: none;
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-	}
+
+  // Отзывчивая
+  [class*="__container"] {
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+      margin: 0 auto;
+    }
+
+    @if ($containerPadding>0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+
+  [class*="__container-min"] {
+    @if ($maxWidthContainer>0) {
+      max-width: rem(980);
+      box-sizing: content-box;
+      margin: 0 auto;
+    }
+
+    @if ($containerPadding>0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+}
+
+@else {
+
+  // По брейк-поинтам
+  [class*="__container"] {
+    margin: 0 auto;
+
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+    }
+
+    @else {
+      @if ($containerPadding>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
+
+    @media (max-width: $pc) {
+      max-width: rem(970);
+    }
+
+    @media (max-width: $tablet) {
+      max-width: rem(750);
+    }
+
+    @media (max-width: $mobile) {
+      max-width: none;
+
+      @if ($containerPadding>0 and $maxWidthContainer>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
+  }
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
@@ -149,8 +181,10 @@ body {
 
 // Подключение стилей отдельных блоков
 @import "header";
+@import "header-index";
 // @import "header-second";
 @import "footer";
+@import "footer-index";
 // @import "footer-second";
 
 // Подключение стилей отдельных страниц
@@ -166,89 +200,101 @@ body {
 // ============================
 
 .page {
-	&__social-links {
+  &__social-links {}
 
-	}
+  // Page Main
 
-	// Page Main
+  &__main {}
 
-	&__main {
-	}
+  &__properties {}
 
-	&__properties {
-	}
+  &__image-bottle {}
 
-	&__image-bottle {
-	}
+  &__banner {}
 
-	&__banner {
-	}
+  &__area {}
 
-	&__area {
-	}
+  &__property {}
 
-	&__property {
-	}
+  &__best-area {}
 
-	&__best-area {
-	}
+  &__products {}
 
-	&__products {
-	}
+  &__map {}
 
-	&__map {
-	}
+  &__lead {}
 
-	&__lead {
-	}
+  &__overviews-slider {}
 
-	&__overviews-slider {
-	}
+  &__news {}
 
-	&__news {
-	}
+  &__expert-appeal {}
 
-	&__expert-appeal {
-	}
+  &__quiz {}
 
-	&__quiz {
-	}
+  // ============================== Page More
 
-	// ============================== Page More
+  &__aprtments {}
 
-	&__aprtments {
-		
-	}
+  &__discover {}
 
-	&__discover {
-    }
+  &__advantages {}
 
-	&__advantages {
-    }
+  &__gallery {}
 
-	&__gallery {
-    }
+  &__located {}
 
-	&__located {
-    }
+  &__arrival-time {}
 
-	&__arrival-time {
-	}
+  &__bedroom {}
 
-	&__bedroom {
-    }
+  &__fc-video {}
 
-	&__fc-video {
-    }
+  &__payment {}
 
-	&__payment {
-    }
+  // ============================= Page Blog
 
-	// ============================= Page Blog
+  &__main-blog {}
 
-	&__main-blog {
+  //========================================================================================================================================================
 
-	}
+  // --------------------------------------------------- index html page
+
+  // .page__main-index
+
+  &__main-index {}
+
+  // .page__index-news
+
+  &__index-news {}
+
+  // .page__index-property
+
+  &__index-property {}
+
+  // .page__get-consultation
+
+  &__get-consultation {}
+
+  // .page__google-reviews
+
+  &__google-reviews {}
+
+  // .page__index-advantages
+
+  &__index-advantages {}
+
+  // .page__hot-project
+
+  &__hot-project {}
+
+  // .page__questions
+
+  &__questions {}
+
+  // .page__index-partners
+
+  &__index-partners {}
 }
 
 // =========================
@@ -256,116 +302,128 @@ body {
 // Social Links
 
 .social-links {
-	position: fixed;
-	@include adaptiveValue("bottom", 80, 20, $containerWidth, $minWidth, 1);
-    right: rem(20);
-	z-index: 10;
-	@media (max-width:$tablet){
-		bottom: 0;
-		left: 0;
-		display: flex; 
-		width: 100%;
-	}
-	// .social-links__link
+  position: fixed;
+  @include adaptiveValue("bottom", 80, 20, $containerWidth, $minWidth, 1);
+  right: rem(20);
+  z-index: 10;
 
-	&__link {
-		@media (max-width:$tablet){
-			flex: 1 1 50%;
-			display: flex;
-			align-items: center;
-			gap: 10px;
-			padding: rem(10);
-		}
-		display: block;
-		position: relative;
-		z-index: 5;
-		img {
-			@media (min-width:$tablet){
-				@include adaptiveValue("width", 67, 57, $containerWidth, $minWidth, 1);
-				@include adaptiveValue("height", 67, 57, $containerWidth, $minWidth, 1); 
-			}
-			@media (max-width:$tablet){
-				@include adaptiveValue("width", 67, 37, $containerWidth, $minWidth, 1);
-				@include adaptiveValue("height", 67, 37, $containerWidth, $minWidth, 1);
-			}
-			position: relative;
-		}
-		@media (min-width:$tablet){
-			&:not(:last-child) {
-				margin-bottom: 30px;
-			}
-		}
-		@media (min-width:$tablet){
-			&::before{
-				content:'';
-				position: absolute;
-				border-radius: 50%;
-				width: 100%;
-				height: 100%;
-				background-color: rgb(255, 255, 255, 0.4);
-				transform: scale(0);
-				animation: pulse 2s cubic-bezier(0.23, 1, 0.32, 1) infinite;
-			}  
+  @media (max-width:$tablet) {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+  }
 
-			&_phone {
-				&::before{
-					background-color: rgba(17, 66, 151, 0.6);
-				}
-			}
-	
-			&_whatsapp {
-				&::before{
-					background-color: rgba(86, 208, 98, 0.6);
-					animation-duration: 2.5s;
-					animation-delay: 2.5s;
-				}
-			}
-		}
-		&_phone {
-			@media (max-width:$tablet) {
-				background-color: rgb(17, 66, 151);
-			}
-		}
+  // .social-links__link
 
-		&_whatsapp {
-			@media (max-width:$tablet){
-				background-color: rgb(86, 208, 98);
-			}
-		}
-	}
+  &__link {
+    @media (max-width:$tablet) {
+      flex: 1 1 50%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: rem(10);
+    }
 
-	&__text {
-		@media (min-width:$tablet){
-			display: none; 
-		}
-		@media (max-width:$tablet){
-			@include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1); 
-			color: #fff;
-			font-weight: 700;
-		}
-	}
-	
+    display: block;
+    position: relative;
+    z-index: 5;
+
+    img {
+      @media (min-width:$tablet) {
+        @include adaptiveValue("width", 67, 57, $containerWidth, $minWidth, 1);
+        @include adaptiveValue("height", 67, 57, $containerWidth, $minWidth, 1);
+      }
+
+      @media (max-width:$tablet) {
+        @include adaptiveValue("width", 67, 37, $containerWidth, $minWidth, 1);
+        @include adaptiveValue("height", 67, 37, $containerWidth, $minWidth, 1);
+      }
+
+      position: relative;
+    }
+
+    @media (min-width:$tablet) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (min-width:$tablet) {
+      &::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255, 0.4);
+        transform: scale(0);
+        animation: pulse 2s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+      }
+
+      &_phone {
+        &::before {
+          background-color: rgba(17, 66, 151, 0.6);
+        }
+      }
+
+      &_whatsapp {
+        &::before {
+          background-color: rgba(86, 208, 98, 0.6);
+          animation-duration: 2.5s;
+          animation-delay: 2.5s;
+        }
+      }
+    }
+
+    &_phone {
+      @media (max-width:$tablet) {
+        background-color: rgb(17, 66, 151);
+      }
+    }
+
+    &_whatsapp {
+      @media (max-width:$tablet) {
+        background-color: rgb(86, 208, 98);
+      }
+    }
+  }
+
+  &__text {
+    @media (min-width:$tablet) {
+      display: none;
+    }
+
+    @media (max-width:$tablet) {
+      @include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0);
-		opacity: 1;
-	}
-	80% {
-		opacity: 0.8;
-	}
-	100% {
-		opacity: 0;
-		transform: scale(1.3);
-	}
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
 }
 
 // =========================
 
 #chat-widget-container {
-	@media (max-width:$mobile){
-		bottom: 57px !important;
-		left: -10px !important;	  
-	}
+  @media (max-width:$mobile) {
+    bottom: 57px !important;
+    left: -10px !important;
+  }
 }
