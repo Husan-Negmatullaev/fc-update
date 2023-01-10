@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{ "title":"Проекты" })
-<body>
+  @@include('html/_head.htm',{ "title":"Проекты" })
+  <body>
     <div class="wrapper">
-        @@include('html/_header.htm',{})
-        <main class="page">
-            <section class="page__aprtments apartments">
-                <div class="apartments__container">
-                    <div class="apartments__body">
-                        <div class="apartments__content">
-                            <div class="apartments__title title">TRIA ОТ DEYAAR</div>
-                            <div class="apartments__safe">
-                                <div class="apartments__text">
-                                    <p>
-                                        КВАРТИРЫ В НЕБОСКРЕБЕ ДУБАЯ В ЭЛИТНОМ РАЙОНЕ DUBAI SILICON
-                                        OASIS
-                                    </p>
-                                    <p>
-                                        Комплекс Tria – это огромный выбор различных по площади и планировки помещений, начиная от просторных студий, заканчивая подиумными таунхаусами, дуплексами и пентхаусами.
-                                    </p>
-                                </div>
-                                <div class="apartments__actions" data-da=".apartments__safe,1100.98,last">
-                                    <button data-popup="#form-discover" data-popup-content="string-content,addres,addres-2" type="button" class="apartments__button button button_extra-large">
-                                        Узнать больше
-                                    </button>
-                                    <button data-popup="#form-discover" data-popup-content="string-content-2,addres-2" class="apartments__button button button_extra-large-grey">
-                                        Получить брошюру проекта
-                                    </button>
-                                    <a href="" class="apartments__button apartments__button_download button button_extra-large">Скачать брошюру</a>
-                                </div>
-                                <div class="apartments__statistics statistics-apartments">
-                                    <div class="statistics-apartments__body">
-                                        <div class="statistics-apartments__item">
-                                            <img src="@img/icons/wallet.svg" class="statistics-apartments__image" alt="">
-                                            <div class="statistics-apartments__content">
-                                                <h4 class="statistics-apartments__title">$ 300,000</h4>
-                                                <p class="statistics-apartments__text">Starting Price</p>
-                                            </div>
-                                        </div>
-                                        <div class="statistics-apartments__item">
-                                            <img src="@img/icons/percent.svg" class="statistics-apartments__image" alt="">
-                                            <div class="statistics-apartments__content">
-                                                <h4 class="statistics-apartments__title">Easy 80/20</h4>
-                                                <p class="statistics-apartments__text">Payment Plan</p>
-                                            </div>
-                                        </div>
-                                        <div class="statistics-apartments__item">
-                                            <img src="@img/icons/home.svg" class="statistics-apartments__image" alt="">
-                                            <div class="statistics-apartments__content">
-                                                <h4 class="statistics-apartments__title">Q4 2026</h4>
-                                                <p class="statistics-apartments__text">Handover</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="apartments__statistics">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__aprtments apartments">
+          <div class="apartments__container">
+            <div class="apartments__body">
+              <div class="apartments__content">
+                <div class="apartments__title title">TRIA ОТ DEYAAR</div>
+                <div class="apartments__safe">
+                  <div class="apartments__text">
+                    <p>КВАРТИРЫ В НЕБОСКРЕБЕ ДУБАЯ В ЭЛИТНОМ РАЙОНЕ DUBAI SILICON OASIS</p>
+                    <p>
+                      Комплекс Tria – это огромный выбор различных по площади и планировки
+                      помещений, начиная от просторных студий, заканчивая подиумными таунхаусами,
+                      дуплексами и пентхаусами.
+                    </p>
+                  </div>
+                  <div class="apartments__actions" data-da=".apartments__safe,1100.98,last">
+                    <button
+                      data-popup="#form-discover"
+                      data-popup-content="string-content,addres,addres-2"
+                      type="button"
+                      class="apartments__button button button_extra-large"
+                    >
+                      Узнать больше
+                    </button>
+                    <button
+                      data-popup="#form-discover"
+                      data-popup-content="string-content-2,addres-2"
+                      class="apartments__button button button_extra-large-grey"
+                    >
+                      Получить брошюру проекта
+                    </button>
+                    <a
+                      href=""
+                      class="apartments__button apartments__button_download button button_extra-large"
+                      >Скачать брошюру</a
+                    >
+                  </div>
+                  <div class="apartments__statistics statistics-apartments">
+                    <div class="statistics-apartments__body">
+                      <div class="statistics-apartments__item">
+                        <img
+                          src="@img/icons/wallet.svg"
+                          class="statistics-apartments__image"
+                          alt=""
+                        />
+                        <div class="statistics-apartments__content">
+                          <h4 class="statistics-apartments__title">$ 300,000</h4>
+                          <p class="statistics-apartments__text">Starting Price</p>
+                        </div>
+                      </div>
+                      <div class="statistics-apartments__item">
+                        <img
+                          src="@img/icons/percent.svg"
+                          class="statistics-apartments__image"
+                          alt=""
+                        />
+                        <div class="statistics-apartments__content">
+                          <h4 class="statistics-apartments__title">Easy 80/20</h4>
+                          <p class="statistics-apartments__text">Payment Plan</p>
+                        </div>
+                      </div>
+                      <div class="statistics-apartments__item">
+                        <img
+                          src="@img/icons/home.svg"
+                          class="statistics-apartments__image"
+                          alt=""
+                        />
+                        <div class="statistics-apartments__content">
+                          <h4 class="statistics-apartments__title">Q4 2026</h4>
+                          <p class="statistics-apartments__text">Handover</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="apartments__statistics">
                                     <div class="apartments__info">
                                         <img class="apartments__image _lazy-loaded" data-src="img/more/01.png" alt="" src="img/more/01.png" />
                                         <div class="apartments__main-info">
@@ -91,514 +115,607 @@
                                         </div>
                                     </div>
                                 </div> -->
-                            </div>
-                        </div>
-                        <div data-da=".apartments__body,1100,first" class="apartments__slider apartments-slider">
-                            <div class="apartments-slider__body">
-                                <div class="apartments-slider__wrapper">
-                                    <div class="apartments-slider__slide">
-                                        <div class="apartments-slider__image-ibg">
-                                            <img src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_5.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </section>
-            <section class="page__discover discover">
-                <div class="discover__container">
-                    <div class="discover__body">
-                        <div class="discover__content-image discover-content-image">
-                            <div class="discover-content-image__title title title_large">
-                                ИНВЕСТИЦИИ В НЕДВИЖИМОСТЬ В ОАЭ
-                            </div>
-                            <div class="discover-content-image__image">
-                                <div class="discover-content-image__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_3.jpg" alt="" />
-                                </div>
-                                <img src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_1.jpg" alt="" class="discover-content-image__image-small" />
-                            </div>
-                        </div>
-                        <div class="discover__content" data-showmore>
-                            <div class="discover__text" data-showmore-content="710">
-                                <div data-showmore class="block">
-                                    <div data-showmore-content class="block__content"></div>
-                                    <button hidden data-showmore-button type="button" class="block__more"><span>Показать еще</span><span>Скыть</span></button>
-                                </div>
-                                <p class="MsoNormal">
-                                    Комплекс Tria – это огромный выбор различных по площади и
-                                    планировки помещений, начиная от просторных студий,
-                                    заканчивая подиумными таунхаусами, дуплексами и пентхаусами.
-                                </p>
-                                <p class="MsoNormal">
-                                    Creek Beach Grove —комплекс из 5 жилых домов, расположенный Dubai Creek Harbour, в новом развивающемся районе Дубая, &nbsp;комьюнити имеет колоссальные размеры и рассчитано на 200 000 жителей. Комплекс планируется сдать в середине 2025 года.
-                                    В продаже представлены квартиры различной планировки с 1-3 спальнями и пентхаусы на верхних этажах зданий. Внутренние интерьеры выполнены в светлой цветовой гамме, отделочные материалы, преимущественно, имеют натуральную основу, преобладает дерево, камень, золото в декоре. Общие площади квартир начинаются от 83 квадратных метров. Во всех квартирах есть балкон или просторные террасы с организованной зоной для отдыха. Светлые просторные помещения&nbsp; дополняют панорамные окна в пол, открывающие великолепный вид на остров Creek Island Dubai. Во всех зданиях предусмотрена верхняя терраса на крыше дома с бассейном и тренажерным залом.
-                                    Район имеет всю необходимую инфраструктуру, сады и зеленые парки, открытые бассейны и зоны для занятия спортом, зоны для отдыха и барбекю, частный песочный пляж, торговые центры, кафе и рестораны в округе.
-                                    Creek Beach Grove находится в районе Дубая Dubai Creek Harbour. Эта территория содержит в себе всю необходимую для роскошной и размеренной жизни: торговые зоны, офисные здания, сады и парки, детские площадки. В будущем, в этом районе планируется строительство Dubai Creek Tower, башня, которая, пока на этапе своих чертежей, превышает размеры самой высокой в мире башни&nbsp;Burj&nbsp;Khalifa.
-                                    Район имеет удачное расположение и удобные выезды на главную магистраль города Ras Al Khor Road. Помимо этого, жители и гости Creek Beach Grove смогут воспользоваться наземным метро, автобусами и водным такси.
-                                    В ближайшей доступности находятся такие достопримечательности Дубая как: главные финансовые центры Downtown Dubai и Business Bay, заповедник дикой природы Ras Al Khor Wildlife Sanctuary, живописный берег Персидского залива,&nbsp;международный аэропорт Дубая.                        
-                                </p>
-                            </div>
-                            <button type="button" class="discover__button button button_extra-large"
-                                onclick="Marquiz.showModal('62a9d7fb7cd214004ab0c35a')">
-                                Узнать больше
-                            </button>
-                            <button hidden data-showmore-button type="button" class="discover__button button button_extra-large">
-                                <span>Показать еще</span>
-                                <span>Скыть</span>
-                            </button>
-                        </div>
+              </div>
+              <div
+                data-da=".apartments__body,1100,first"
+                class="apartments__slider apartments-slider"
+              >
+                <div class="apartments-slider__body">
+                  <div class="apartments-slider__wrapper">
+                    <div class="apartments-slider__slide">
+                      <div class="apartments-slider__image-ibg">
+                        <img
+                          src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_5.jpg"
+                          alt=""
+                        />
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
-            <section class="page__advantages advantages">
-                <div class="advantages__container">
-                    <div class="advantages__body">
-                        <div class="advantages__card advantages-card">
-                            <div class="advantages-card__content">
-                                <div class="advantages-card__image">
-                                    <img src="@img/more/07.png" alt="">
-                                </div>
-                                <h4 class="advantages-card__title">Green</h4>
-                                <h5 class="advantages-card__subtitle">Community</h5>
-                            </div>
-                        </div>
-                        <div class="advantages__card advantages-card">
-                            <div class="advantages-card__content">
-                                <div class="advantages-card__image">
-                                    <img src="@img/more/08.png" alt="">
-                                </div>
-                                <h4 class="advantages-card__title">24/7</h4>
-                                <h5 class="advantages-card__subtitle">Security</h5>
-                            </div>
-                        </div>
-                        <div class="advantages__card advantages-card">
-                            <div class="advantages-card__content">
-                                <div class="advantages-card__image">
-                                    <img src="@img/more/09.png" alt="">
-                                </div>
-                                <h4 class="advantages-card__title">Outdoor</h4>
-                                <h5 class="advantages-card__subtitle">Pool</h5>
-                            </div>
-                        </div>
-                        <div class="advantages__card advantages-card">
-                            <div class="advantages-card__content">
-                                <div class="advantages-card__image">
-                                    <img src="@img/more/10.png" alt="">
-                                </div>
-                                <h4 class="advantages-card__title">Beach</h4>
-                                <h5 class="advantages-card__subtitle">f</h5>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__discover discover">
+          <div class="discover__container">
+            <div class="discover__body">
+              <div class="discover__content-image discover-content-image">
+                <div class="discover-content-image__title title title_large">
+                  ИНВЕСТИЦИИ В НЕДВИЖИМОСТЬ В ОАЭ
                 </div>
-            </section>
-            <section class="page__gallery gallery">
-                <div class="gallery__container">
-                    <!-- <div class="gallery__title title title_large">Beachfront Lives & Miami Vibes</div> -->
-                    <div data-tabs class="gallery__tab tab-gallery">
-                        <nav data-tabs-titles class="tab-gallery__titles">
-                            <button type="button" class="title title_large tab-gallery__title _tab-active">Interior</button>
-                            /
-                            <button type="button" class="title title_large tab-gallery__title ">Exterior</button>
-                        </nav>
-                        <div class="tab-gallery__content" data-tabs-body>
-                            <div class="tab-gallery__body gallery-interier">
-                                <div class="gallery-interier__content">
-                                    <div class="gallery-interier__controls">
-                                        <div class="inline-gallery-slider__arrows slider-arrows">
-                                            <button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
-                                            <button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-interier__wrapper swiper-wrapper">
-                                        <div class="gallery-interier__slide swiper-slide">
-                                            <div class="gallery-interier__image-ibg">
-                                                <img src="@img/main-page/06.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="gallery-interier__slide swiper-slide">
-                                            <div class="gallery-interier__image-ibg">
-                                                <img src="@img/main-page/06.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="gallery-interier__slide swiper-slide">
-                                            <div class="gallery-interier__image-ibg">
-                                                <img src="@img/main-page/06.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-gallery__body gallery-exterier">
-                                <div class="gallery-exterier__content">
-                                    <div class="gallery-exterier__controls">
-                                        <div class="inline-gallery-slider__arrows slider-arrows">
-                                            <button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
-                                            <button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-exterier__wrapper swiper-wrapper">
-                                        <div class="gallery-exterier__slide swiper-slide">
-                                            <div class="gallery-exterier__image-ibg">
-                                                <img src="@img/main-page/06.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="gallery-exterier__slide swiper-slide">
-                                            <div class="gallery-exterier__image-ibg">
-                                                <img src="@img/main-page/06.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="gallery-exterier__slide swiper-slide">
-                                            <div class="gallery-exterier__image-ibg">
-                                                <img src="@img/main-page/06.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="discover-content-image__image">
+                  <div class="discover-content-image__image-ibg">
+                    <img
+                      src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <img
+                    src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_1.jpg"
+                    alt=""
+                    class="discover-content-image__image-small"
+                  />
                 </div>
-            </section>
-            <section class="page__located located">
-                <div class="located__container">
-                    <div class="located__top located-top">
-                        <div class="located-top__image-1-ibg">
-                            <img data-src="img/more/15.png" 
-                                src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_3_bADyLrA.jpg"/>
-                        </div>
-                        <div class="located-top__image-2-ibg">
-                            <img data-src="img/more/16.png" 
-                                src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_1_jdPwit8.jpg"/>
-                        </div>
-                        <div class="located-top__title">КВАРТИРЫ В НЕБОСКРЕБЕ ДУБАЯ</div>
-                    </div>
-                    <div class="located__bottom located-bottom">
-                        <div class="located-bottom__body">
-                            <div class="located-bottom__image-ibg">
-                                <img data-src="img/more/17.png" 
-                                    src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_3_epIOaj1.jpg"/>
-                            </div>
-                            <div class="located-bottom__text">
-                                <p class="MsoNormal">
-                                    Резидентам небоскреба Tria доступен ряд привилегий, среди
-                                    которых: бассейн с оборудованными зонами отдыха, тренажерный
-                                    зал с силовыми и кардио установками, отдельный зал для йоги
-                                    и растяжки, сауна с парной, детские игровые зоны, спортивные
-                                    площадки для занятия теннисом и сквошем, караоке-зал,
-                                    кинотеатр на открытом воздухе, библиотека, и ряд магазинов
-                                    на первом этаже.
-                                </p>
-                                <p></p>
-                                <p class="MsoNormal">
-                                    Башня Tria находится в районе Dubai Silicon Oasis. Рядом
-                                    удобный выезд на шоссе Sheikh Mohammed Bin Zayed Road и Al
-                                    Ain Dubai Road – это основные автомобильные магистрали
-                                    города. Район полностью обеспечен всей необходимой
-                                    социальной инфраструктурой. Рядом детские сады, школы с
-                                    международной системой обучения, университеты, частные и
-                                    государственные медицинские клиники, крупные торговые
-                                    центры, бутики с брэндовой одеждой. В двадцати минутах езды
-                                    находятся центральные пляжи Дубая, международный аэропорт, а
-                                    так же тематические парки и зоопарк
-                                    <span lang="EN-US">Dubai</span><span lang="EN-US"> </span><span
-                                        lang="EN-US">Safari</span><span lang="EN-US"> </span><span
-                                        lang="EN-US">Park</span>, поло-клуб
-                                    <span lang="EN-US">Al</span><span lang="EN-US"> </span><span
-                                        lang="EN-US">Habtoor</span><span lang="EN-US"> </span><span
-                                        lang="EN-US">Polo</span><span lang="EN-US"> </span><span
-                                        lang="EN-US">Resort</span><span lang="EN-US"> </span><span
-                                        lang="EN-US">and</span><span lang="EN-US"> </span><span
-                                        lang="EN-US">Club</span>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="discover__content" data-showmore>
+                <div class="discover__text" data-showmore-content="710">
+                  <div data-showmore class="block">
+                    <div data-showmore-content class="block__content"></div>
+                    <button hidden data-showmore-button type="button" class="block__more">
+                      <span>Показать еще</span><span>Скыть</span>
+                    </button>
+                  </div>
+                  <p class="MsoNormal">
+                    Комплекс Tria – это огромный выбор различных по площади и планировки помещений,
+                    начиная от просторных студий, заканчивая подиумными таунхаусами, дуплексами и
+                    пентхаусами.
+                  </p>
+                  <p class="MsoNormal">
+                    Creek Beach Grove —комплекс из 5 жилых домов, расположенный Dubai Creek Harbour,
+                    в новом развивающемся районе Дубая, &nbsp;комьюнити имеет колоссальные размеры и
+                    рассчитано на 200 000 жителей. Комплекс планируется сдать в середине 2025 года.
+                    В продаже представлены квартиры различной планировки с 1-3 спальнями и пентхаусы
+                    на верхних этажах зданий. Внутренние интерьеры выполнены в светлой цветовой
+                    гамме, отделочные материалы, преимущественно, имеют натуральную основу,
+                    преобладает дерево, камень, золото в декоре. Общие площади квартир начинаются от
+                    83 квадратных метров. Во всех квартирах есть балкон или просторные террасы с
+                    организованной зоной для отдыха. Светлые просторные помещения&nbsp; дополняют
+                    панорамные окна в пол, открывающие великолепный вид на остров Creek Island
+                    Dubai. Во всех зданиях предусмотрена верхняя терраса на крыше дома с бассейном и
+                    тренажерным залом. Район имеет всю необходимую инфраструктуру, сады и зеленые
+                    парки, открытые бассейны и зоны для занятия спортом, зоны для отдыха и барбекю,
+                    частный песочный пляж, торговые центры, кафе и рестораны в округе. Creek Beach
+                    Grove находится в районе Дубая Dubai Creek Harbour. Эта территория содержит в
+                    себе всю необходимую для роскошной и размеренной жизни: торговые зоны, офисные
+                    здания, сады и парки, детские площадки. В будущем, в этом районе планируется
+                    строительство Dubai Creek Tower, башня, которая, пока на этапе своих чертежей,
+                    превышает размеры самой высокой в мире башни&nbsp;Burj&nbsp;Khalifa. Район имеет
+                    удачное расположение и удобные выезды на главную магистраль города Ras Al Khor
+                    Road. Помимо этого, жители и гости Creek Beach Grove смогут воспользоваться
+                    наземным метро, автобусами и водным такси. В ближайшей доступности находятся
+                    такие достопримечательности Дубая как: главные финансовые центры Downtown Dubai
+                    и Business Bay, заповедник дикой природы Ras Al Khor Wildlife Sanctuary,
+                    живописный берег Персидского залива,&nbsp;международный аэропорт Дубая.
+                  </p>
                 </div>
-            </section>
-            <section class="page__arrival-time advantages advantages-time">
-                <div class="advantages__container">
-                    <div class="advantages__body advantages-time__body">
-                        <div class="advantages__card advantages-card">
-                            <div class="advantages-card__content">
-                                <div class="advantages-card__image">
-                                    <img data-src="img/more/18.png" alt="">
-                                </div>
-                                <div class="advantages-card__title">15 Minutes</div>
-                                <div class="advantages-card__subtitle">to Downtown Dubai</div>
-                            </div>
-                        </div>
-                        <div class="advantages__card advantages-card">
-                            <div class="advantages-card__content">
-                                <div class="advantages-card__image">
-                                    <img data-src="img/more/19.png" alt="">
-                                </div>
-                                <div class="advantages-card__title">25 Minutes</div>
-                                <div class="advantages-card__subtitle">to Dubai Marina</div>
-                            </div>
-                        </div>
-                        <div class="advantages__card advantages-card">
-                            <div class="advantages-card__content">
-                                <div class="advantages-card__image">
-                                    <img data-src="img/more/20.png" alt="">
-                                </div>
-                                <div class="advantages-card__title">30 Minutes</div>
-                                <div class="advantages-card__subtitle">to DXB Airport</div>
-                            </div>
-                        </div>
-                        <div class="advantages__card advantages-card">
-                            <div class="advantages-card__content">
-                                <div class="advantages-card__image">
-                                    <img data-src="img/more/21.png" alt="">
-                                </div>
-                                <div class="advantages-card__title">40 Minutes</div>
-                                <div class="advantages-card__subtitle">to DWC Airport</div>
-                            </div>
-                        </div>
-                    </div>
+                <button
+                  type="button"
+                  class="discover__button button button_extra-large"
+                  onclick="Marquiz.showModal('62a9d7fb7cd214004ab0c35a')"
+                >
+                  Узнать больше
+                </button>
+                <button
+                  hidden
+                  data-showmore-button
+                  type="button"
+                  class="discover__button button button_extra-large"
+                >
+                  <span>Показать еще</span>
+                  <span>Скыть</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__advantages advantages">
+          <div class="advantages__container">
+            <div class="advantages__body">
+              <div class="advantages__card advantages-card">
+                <div class="advantages-card__content">
+                  <div class="advantages-card__image">
+                    <img src="@img/more/07.png" alt="" />
+                  </div>
+                  <h4 class="advantages-card__title">Green</h4>
+                  <h5 class="advantages-card__subtitle">Community</h5>
                 </div>
-            </section>
-            <section class="page__bedroom bedroom">
-                <div class="bedroom__container">
-                    <div class="bedroom__title title title_large">
-                        Планы этажей Sobha Hartland Crest Grande
+              </div>
+              <div class="advantages__card advantages-card">
+                <div class="advantages-card__content">
+                  <div class="advantages-card__image">
+                    <img src="@img/more/08.png" alt="" />
+                  </div>
+                  <h4 class="advantages-card__title">24/7</h4>
+                  <h5 class="advantages-card__subtitle">Security</h5>
+                </div>
+              </div>
+              <div class="advantages__card advantages-card">
+                <div class="advantages-card__content">
+                  <div class="advantages-card__image">
+                    <img src="@img/more/09.png" alt="" />
+                  </div>
+                  <h4 class="advantages-card__title">Outdoor</h4>
+                  <h5 class="advantages-card__subtitle">Pool</h5>
+                </div>
+              </div>
+              <div class="advantages__card advantages-card">
+                <div class="advantages-card__content">
+                  <div class="advantages-card__image">
+                    <img src="@img/more/10.png" alt="" />
+                  </div>
+                  <h4 class="advantages-card__title">Beach</h4>
+                  <h5 class="advantages-card__subtitle">f</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__gallery gallery">
+          <div class="gallery__container">
+            <!-- <div class="gallery__title title title_large">Beachfront Lives & Miami Vibes</div> -->
+            <div data-tabs class="gallery__tab tab-gallery">
+              <nav data-tabs-titles class="tab-gallery__titles">
+                <button type="button" class="title title_large tab-gallery__title _tab-active">
+                  Interior
+                </button>
+                /
+                <button type="button" class="title title_large tab-gallery__title">Exterior</button>
+              </nav>
+              <div class="tab-gallery__content" data-tabs-body>
+                <div class="tab-gallery__body gallery-interier">
+                  <div class="gallery-interier__content">
+                    <div class="gallery-interier__controls">
+                      <div class="inline-gallery-slider__arrows slider-arrows">
+                        <button
+                          type="button"
+                          class="slider-arrow slider-arrow_prev _icon-angle-right"
+                        ></button>
+                        <button
+                          type="button"
+                          class="slider-arrow slider-arrow_next _icon-angle-left"
+                        ></button>
+                      </div>
                     </div>
-                    <div class="bedroom__body">
-                        <div class="bedroom-tabs tabs">
-                            <div class="bedroom-tabs__content tabs__content">
-                                <div class="bedroom-tabs-pagination" data-pagination="1 комнатаб, 2 комната, some комната">
-                                    <!-- <span class="swiper-pagination-bullet bedroom-tabs-pagination__item">Plan 1</span>
+                    <div class="gallery-interier__wrapper swiper-wrapper">
+                      <div class="gallery-interier__slide swiper-slide">
+                        <div class="gallery-interier__image-ibg">
+                          <img src="@img/main-page/06.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="gallery-interier__slide swiper-slide">
+                        <div class="gallery-interier__image-ibg">
+                          <img src="@img/main-page/06.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="gallery-interier__slide swiper-slide">
+                        <div class="gallery-interier__image-ibg">
+                          <img src="@img/main-page/06.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-gallery__body gallery-exterier">
+                  <div class="gallery-exterier__content">
+                    <div class="gallery-exterier__controls">
+                      <div class="inline-gallery-slider__arrows slider-arrows">
+                        <button
+                          type="button"
+                          class="slider-arrow slider-arrow_prev _icon-angle-right"
+                        ></button>
+                        <button
+                          type="button"
+                          class="slider-arrow slider-arrow_next _icon-angle-left"
+                        ></button>
+                      </div>
+                    </div>
+                    <div class="gallery-exterier__wrapper swiper-wrapper">
+                      <div class="gallery-exterier__slide swiper-slide">
+                        <div class="gallery-exterier__image-ibg">
+                          <img src="@img/main-page/06.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="gallery-exterier__slide swiper-slide">
+                        <div class="gallery-exterier__image-ibg">
+                          <img src="@img/main-page/06.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="gallery-exterier__slide swiper-slide">
+                        <div class="gallery-exterier__image-ibg">
+                          <img src="@img/main-page/06.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__located located">
+          <div class="located__container">
+            <div class="located__top located-top">
+              <div class="located-top__image-1-ibg">
+                <img
+                  data-src="img/more/15.png"
+                  src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_3_bADyLrA.jpg"
+                />
+              </div>
+              <div class="located-top__image-2-ibg">
+                <img
+                  data-src="img/more/16.png"
+                  src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_1_jdPwit8.jpg"
+                />
+              </div>
+              <div class="located-top__title">КВАРТИРЫ В НЕБОСКРЕБЕ ДУБАЯ</div>
+            </div>
+            <div class="located__bottom located-bottom">
+              <div class="located-bottom__body">
+                <div class="located-bottom__image-ibg">
+                  <img
+                    data-src="img/more/17.png"
+                    src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_3_epIOaj1.jpg"
+                  />
+                </div>
+                <div class="located-bottom__text">
+                  <p class="MsoNormal">
+                    Резидентам небоскреба Tria доступен ряд привилегий, среди которых: бассейн с
+                    оборудованными зонами отдыха, тренажерный зал с силовыми и кардио установками,
+                    отдельный зал для йоги и растяжки, сауна с парной, детские игровые зоны,
+                    спортивные площадки для занятия теннисом и сквошем, караоке-зал, кинотеатр на
+                    открытом воздухе, библиотека, и ряд магазинов на первом этаже.
+                  </p>
+                  <p></p>
+                  <p class="MsoNormal">
+                    Башня Tria находится в районе Dubai Silicon Oasis. Рядом удобный выезд на шоссе
+                    Sheikh Mohammed Bin Zayed Road и Al Ain Dubai Road – это основные автомобильные
+                    магистрали города. Район полностью обеспечен всей необходимой социальной
+                    инфраструктурой. Рядом детские сады, школы с международной системой обучения,
+                    университеты, частные и государственные медицинские клиники, крупные торговые
+                    центры, бутики с брэндовой одеждой. В двадцати минутах езды находятся
+                    центральные пляжи Дубая, международный аэропорт, а так же тематические парки и
+                    зоопарк
+                    <span lang="EN-US">Dubai</span><span lang="EN-US"> </span
+                    ><span lang="EN-US">Safari</span><span lang="EN-US"> </span
+                    ><span lang="EN-US">Park</span>, поло-клуб <span lang="EN-US">Al</span
+                    ><span lang="EN-US"> </span><span lang="EN-US">Habtoor</span
+                    ><span lang="EN-US"> </span><span lang="EN-US">Polo</span
+                    ><span lang="EN-US"> </span><span lang="EN-US">Resort</span
+                    ><span lang="EN-US"> </span><span lang="EN-US">and</span
+                    ><span lang="EN-US"> </span><span lang="EN-US">Club</span>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__arrival-time advantages advantages-time">
+          <div class="advantages__container">
+            <div class="advantages__body advantages-time__body">
+              <div class="advantages__card advantages-card">
+                <div class="advantages-card__content">
+                  <div class="advantages-card__image">
+                    <img data-src="img/more/18.png" alt="" />
+                  </div>
+                  <div class="advantages-card__title">15 Minutes</div>
+                  <div class="advantages-card__subtitle">to Downtown Dubai</div>
+                </div>
+              </div>
+              <div class="advantages__card advantages-card">
+                <div class="advantages-card__content">
+                  <div class="advantages-card__image">
+                    <img data-src="img/more/19.png" alt="" />
+                  </div>
+                  <div class="advantages-card__title">25 Minutes</div>
+                  <div class="advantages-card__subtitle">to Dubai Marina</div>
+                </div>
+              </div>
+              <div class="advantages__card advantages-card">
+                <div class="advantages-card__content">
+                  <div class="advantages-card__image">
+                    <img data-src="img/more/20.png" alt="" />
+                  </div>
+                  <div class="advantages-card__title">30 Minutes</div>
+                  <div class="advantages-card__subtitle">to DXB Airport</div>
+                </div>
+              </div>
+              <div class="advantages__card advantages-card">
+                <div class="advantages-card__content">
+                  <div class="advantages-card__image">
+                    <img data-src="img/more/21.png" alt="" />
+                  </div>
+                  <div class="advantages-card__title">40 Minutes</div>
+                  <div class="advantages-card__subtitle">to DWC Airport</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__bedroom bedroom">
+          <div class="bedroom__container">
+            <div class="bedroom__title title title_large">
+              Планы этажей Sobha Hartland Crest Grande
+            </div>
+            <div class="bedroom__body">
+              <div class="bedroom-tabs tabs">
+                <div class="bedroom-tabs__content tabs__content">
+                  <div
+                    class="bedroom-tabs-pagination"
+                    data-pagination="1 комнатаб, 2 комната, some комната"
+                  >
+                    <!-- <span class="swiper-pagination-bullet bedroom-tabs-pagination__item">Plan 1</span>
                                     <span class="swiper-pagination-bullet bedroom-tabs-pagination__item">Plan 2</span>
                                     <span class="swiper-pagination-bullet bedroom-tabs-pagination__item swiper-pagination-bullet-active">Plan 3</span> -->
-                                </div>
-                                <div class="bedroom-tabs__controls bedroom-tabs-controls">
-                                    <div class="bedroom-tabs-controls__arrows slider-arrows">
-                                        <button type="button" class="slider-arrow slider-arrow_prev _icon-angle-right"></button>
-                                        <button type="button" class="slider-arrow slider-arrow_next _icon-angle-left"></button>
-                                    </div>
-                                </div>
-                                <div class="bedroom-tabs__wrapper swiper-wrapper">
-                                    <div class="bedroom-tabs-content__body swiper-slide">
-                                        <div class="bedroom-tabs-content__content">
-                                            <div class="bedroom-tabs-content__title">Studio units 1</div>
-                                            <div class="bedroom-tabs-content__area-info">
-                                                <div class="bedroom-tabs-content__area">
-                                                    <span class="_icon-suite-area"></span>
-                                                    Suite Area: 224,31 sqft
-                                                </div>
-                                                <div class="bedroom-tabs-content__area">
-                                                    <span class="_icon-total-area"></span>
-                                                    Total Area: 256,50 sqft
-                                                </div>
-                                            </div>
-                                            <a href="" class="bedroom-tabs-content__button button button_small-large">Get all flore plans</a>
-                                            <br>
-                                            <a href="" class="bedroom-tabs-content__button button button_small-large-transparent">Download Brochure</a>
-                                        </div>
-                                        <div class="bedroom-tabs-content__image">
-                                            <div class="bedroom-tabs-content__image-ibg"><img data-src="img/more/22.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div class="bedroom-tabs-content__body swiper-slide">
-                                        <div class="bedroom-tabs-content__content">
-                                            <div class="bedroom-tabs-content__title">Studio units 2</div>
-                                            <div class="bedroom-tabs-content__area-info">
-                                                <div class="bedroom-tabs-content__area">
-                                                    <span class="_icon-suite-area"></span>
-                                                    Suite Area: 224,31 sqft
-                                                </div>
-                                                <div class="bedroom-tabs-content__area">
-                                                    <span class="_icon-total-area"></span>
-                                                    Total Area: 256,50 sqft
-                                                </div>
-                                            </div>
-                                            <a href="" class="bedroom-tabs-content__button button button_small-large">Get all flore plans</a>
-                                            <br>
-                                            <a href="" class="bedroom-tabs-content__button button button_small-large-transparent">Download Brochure</a>
-                                        </div>
-                                        <div class="bedroom-tabs-content__image">
-                                            <div class="bedroom-tabs-content__image-ibg"><img data-src="img/more/22.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div class="bedroom-tabs-content__body swiper-slide">
-                                        <div class="bedroom-tabs-content__content">
-                                            <div class="bedroom-tabs-content__title">Studio units 2</div>
-                                            <div class="bedroom-tabs-content__area-info">
-                                                <div class="bedroom-tabs-content__area">
-                                                    <span class="_icon-suite-area"></span>
-                                                    Suite Area: 224,31 sqft
-                                                </div>
-                                                <div class="bedroom-tabs-content__area">
-                                                    <span class="_icon-total-area"></span>
-                                                    Total Area: 256,50 sqft
-                                                </div>
-                                            </div>
-                                            <a href="" class="bedroom-tabs-content__button button button_small-large">Get all flore plans</a>
-                                            <br>
-                                            <a href="" class="bedroom-tabs-content__button button button_small-large-transparent">Download Brochure</a>
-                                        </div>
-                                        <div class="bedroom-tabs-content__image">
-                                            <div class="bedroom-tabs-content__image-ibg"><img data-src="img/more/22.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="bedroom-tabs__controls bedroom-tabs-controls">
+                    <div class="bedroom-tabs-controls__arrows slider-arrows">
+                      <button
+                        type="button"
+                        class="slider-arrow slider-arrow_prev _icon-angle-right"
+                      ></button>
+                      <button
+                        type="button"
+                        class="slider-arrow slider-arrow_next _icon-angle-left"
+                      ></button>
                     </div>
-                </div>
-            </section>
-            <section class="page__fc-video fc-video">
-                <div class="fc-video__container">
-                    <div class="fc-video__body">
-                        <button type="button" data-popup="#video" data-popup-youtube="Q52LJes0LxY" class="fc-video__button _icon-play"></button>
-                        <div class="fc-video__image-ibg">
-                            <img data-src="img/more/23.png"  src="img/more/23.png"/>
+                  </div>
+                  <div class="bedroom-tabs__wrapper swiper-wrapper">
+                    <div class="bedroom-tabs-content__body swiper-slide">
+                      <div class="bedroom-tabs-content__content">
+                        <div class="bedroom-tabs-content__title">Studio units 1</div>
+                        <div class="bedroom-tabs-content__area-info">
+                          <div class="bedroom-tabs-content__area">
+                            <span class="_icon-suite-area"></span>
+                            Suite Area: 224,31 sqft
+                          </div>
+                          <div class="bedroom-tabs-content__area">
+                            <span class="_icon-total-area"></span>
+                            Total Area: 256,50 sqft
+                          </div>
                         </div>
+                        <a href="" class="bedroom-tabs-content__button button button_small-large"
+                          >Get all flore plans</a
+                        >
+                        <br />
+                        <a
+                          href=""
+                          class="bedroom-tabs-content__button button button_small-large-transparent"
+                          >Download Brochure</a
+                        >
+                      </div>
+                      <div class="bedroom-tabs-content__image">
+                        <div class="bedroom-tabs-content__image-ibg">
+                          <img data-src="img/more/22.png" alt="" />
+                        </div>
+                      </div>
                     </div>
-                </div>
-            </section>
-            <section class="page__payment payment">
-                <div class="payment__container">
-                    <div class="payment__title title title_large">
-                        70/30 3 года После сдачи
+                    <div class="bedroom-tabs-content__body swiper-slide">
+                      <div class="bedroom-tabs-content__content">
+                        <div class="bedroom-tabs-content__title">Studio units 2</div>
+                        <div class="bedroom-tabs-content__area-info">
+                          <div class="bedroom-tabs-content__area">
+                            <span class="_icon-suite-area"></span>
+                            Suite Area: 224,31 sqft
+                          </div>
+                          <div class="bedroom-tabs-content__area">
+                            <span class="_icon-total-area"></span>
+                            Total Area: 256,50 sqft
+                          </div>
+                        </div>
+                        <a href="" class="bedroom-tabs-content__button button button_small-large"
+                          >Get all flore plans</a
+                        >
+                        <br />
+                        <a
+                          href=""
+                          class="bedroom-tabs-content__button button button_small-large-transparent"
+                          >Download Brochure</a
+                        >
+                      </div>
+                      <div class="bedroom-tabs-content__image">
+                        <div class="bedroom-tabs-content__image-ibg">
+                          <img data-src="img/more/22.png" alt="" />
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="payment__body">
-                    <div class="payment__content">
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
+                    <div class="bedroom-tabs-content__body swiper-slide">
+                      <div class="bedroom-tabs-content__content">
+                        <div class="bedroom-tabs-content__title">Studio units 2</div>
+                        <div class="bedroom-tabs-content__area-info">
+                          <div class="bedroom-tabs-content__area">
+                            <span class="_icon-suite-area"></span>
+                            Suite Area: 224,31 sqft
+                          </div>
+                          <div class="bedroom-tabs-content__area">
+                            <span class="_icon-total-area"></span>
+                            Total Area: 256,50 sqft
+                          </div>
                         </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
+                        <a href="" class="bedroom-tabs-content__button button button_small-large"
+                          >Get all flore plans</a
+                        >
+                        <br />
+                        <a
+                          href=""
+                          class="bedroom-tabs-content__button button button_small-large-transparent"
+                          >Download Brochure</a
+                        >
+                      </div>
+                      <div class="bedroom-tabs-content__image">
+                        <div class="bedroom-tabs-content__image-ibg">
+                          <img data-src="img/more/22.png" alt="" />
                         </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
-                        </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
-                        </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
-                        </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
-                        </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
-                        </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
-                        </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
-                        </div>
-                        <div class="payment__item item-payment">
-                            <div class="item-payment__body">
-                                <div class="item-payment__title">10%</div>
-                                <div class="item-payment__text">On Booking</div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
-            <section class="page__quiz quiz quiz-more">
-                <div class="quiz__container">
-                    <div class="quiz__body">
-                        <div class="quiz__image-ibg">
-                            <img data-src="img/areas/10.png"  src="img/areas/10.png"/>
-                        </div>
-                        <div class="quiz__content">
-                            <div class="quiz__icon-success">
-                                <img src="img/success.png" alt="Success icon" />
-                            </div>
-                            <div class="quiz__title">
-                                Запутались? Пройдите тест и получите лучшие предложения
-                            </div>
-                            <div class="quiz__text">
-                                <p>
-                                    Будучи квалифицированными экспертами по недвижимости с
-                                    многолетним опытом, мы понимаем, как запутанно Рынок
-                                    незавершенной недвижимости Дубая может быть как для новых
-                                    покупателей, так и для профессиональные инвесторы. Особенно,
-                                    когда есть тысячи объектов вне плана. В Дубаи.
-                                </p>
-                                <p>
-                                    Вам не нужно будет просматривать бесчисленные объявления о
-                                    другой недвижимости в ОАЭ. сайты. Мы собрали всю доступную
-                                    информацию о строящейся недвижимости в одном место и создал
-                                    короткую викторину для вас, чтобы найти свой идеальный дом
-                                    менее чем за два минут.
-                                </p>
-                                <p>
-                                    Следуйте простым шагам на экране, чтобы получить личный
-                                    выбор проектов, которые удовлетворить все ваши требования.
-                                    Изучите любой интересующий вас проект в Дубае и свяжитесь с
-                                    нами нас!
-                                </p>
-                            </div>
-                            <div class="quiz__actions">
-                                <a href="#" class="quiz__button button button_normal">Пройдите быстрый тест</a>
-                                <div class="quiz__less-time">
-                                    <span class="_icon-clock"></span>
-                                    Это занимает менее 2 минут
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__fc-video fc-video">
+          <div class="fc-video__container">
+            <div class="fc-video__body">
+              <button
+                type="button"
+                data-popup="#video"
+                data-popup-youtube="Q52LJes0LxY"
+                class="fc-video__button _icon-play"
+              ></button>
+              <div class="fc-video__image-ibg">
+                <img data-src="img/more/23.png" src="img/more/23.png" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__payment payment">
+          <div class="payment__container">
+            <div class="payment__title title title_large">70/30 3 года После сдачи</div>
+          </div>
+          <div class="payment__body">
+            <div class="payment__content">
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
                 </div>
-            </section>
-            <section class="page__properties properties properties-filter">
-                <div class="properties__container">
-                    <div class="properties__body">
-                        <div class="properties-filter__meta">
-                            <h2 class="properties-filter__title title">
-                                Внеплановая недвижимость на продажу в Дубае
-                            </h2>
-                            <div class="properties-filter__actions">
-                                <button type="button" data-filter=".Apartments" class="properties-filter__button">
-                                    Апартаменты
-                                </button>
-                                <button type="button" data-filter=".Townhouses" class="properties-filter__button">
-                                    Таунхаусы
-                                </button>
-                                <button type="button" data-filter=".Villas"
-                                    class="properties-filter__button is-checked">
-                                    Виллы
-                                </button>
-                            </div>
-                        </div>
-                        <div class="properties__content">
-                        <!--<div class="properties__item item-properties">
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+              <div class="payment__item item-payment">
+                <div class="item-payment__body">
+                  <div class="item-payment__title">10%</div>
+                  <div class="item-payment__text">On Booking</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__quiz quiz quiz-more">
+          <div class="quiz__container">
+            <div class="quiz__body">
+              <div class="quiz__image-ibg">
+                <img data-src="img/areas/10.png" src="img/areas/10.png" />
+              </div>
+              <div class="quiz__content">
+                <div class="quiz__icon-success">
+                  <img src="img/success.png" alt="Success icon" />
+                </div>
+                <div class="quiz__title">
+                  Запутались? Пройдите тест и получите лучшие предложения
+                </div>
+                <div class="quiz__text">
+                  <p>
+                    Будучи квалифицированными экспертами по недвижимости с многолетним опытом, мы
+                    понимаем, как запутанно Рынок незавершенной недвижимости Дубая может быть как
+                    для новых покупателей, так и для профессиональные инвесторы. Особенно, когда
+                    есть тысячи объектов вне плана. В Дубаи.
+                  </p>
+                  <p>
+                    Вам не нужно будет просматривать бесчисленные объявления о другой недвижимости в
+                    ОАЭ. сайты. Мы собрали всю доступную информацию о строящейся недвижимости в
+                    одном место и создал короткую викторину для вас, чтобы найти свой идеальный дом
+                    менее чем за два минут.
+                  </p>
+                  <p>
+                    Следуйте простым шагам на экране, чтобы получить личный выбор проектов, которые
+                    удовлетворить все ваши требования. Изучите любой интересующий вас проект в Дубае
+                    и свяжитесь с нами нас!
+                  </p>
+                </div>
+                <div class="quiz__actions">
+                  <a href="#" class="quiz__button button button_normal">Пройдите быстрый тест</a>
+                  <div class="quiz__less-time">
+                    <span class="_icon-clock"></span>
+                    Это занимает менее 2 минут
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__properties properties properties-filter">
+          <div class="properties__container">
+            <div class="properties__body">
+              <div class="properties-filter__meta">
+                <h2 class="properties-filter__title title">
+                  Внеплановая недвижимость на продажу в Дубае
+                </h2>
+                <div class="properties-filter__actions">
+                  <button type="button" data-filter=".Apartments" class="properties-filter__button">
+                    Апартаменты
+                  </button>
+                  <button type="button" data-filter=".Townhouses" class="properties-filter__button">
+                    Таунхаусы
+                  </button>
+                  <button
+                    type="button"
+                    data-filter=".Villas"
+                    class="properties-filter__button is-checked"
+                  >
+                    Виллы
+                  </button>
+                </div>
+              </div>
+              <div class="properties__content">
+                <!--<div class="properties__item item-properties">
                                 <a href="" class="item-properties__image-ibg">
                                     <img data-src="img/properties/0.png" alt="">
                                 </a>
@@ -635,501 +752,542 @@
                                     </a>
                                 </div>
                             </div> -->
-                            <div class="properties__item item-properties Апартаменты Townhouses Студии Пентхаусы">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_5.jpg"
-                                        alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">Silicon Oasis</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value">
-                                                Silicon Oasis
-                                            </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">DEYAAR</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от $ 224 000
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#48" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Виллы Townhouses">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/m1.jpg" alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">
-                                            Just Cavalli villas
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value">
-                                                Just Cavalli villas
-                                            </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Damac</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от 356 000 $
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#6" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Апартаменты">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/01_WkNwVDu.jpg" alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">Madinat Jumeirah</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value">
-                                                Madinat Jumeirah
-                                            </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Meraas</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от 383 900 $
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#7" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Виллы Townhouses">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/08.jpg" alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">Mag City</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value"> Mag City </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Mag Group</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от 2 365 000 $
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#8" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Пентхаусы">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/Mr-C-Residences-Duba.jpg"
-                                        alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">Jumeirah</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value"> Jumeirah </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Mr.C</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от $5 214 342
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#19" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Студии Апартаменты">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/EBF_ATB_RENDERS3.jpg"
-                                        alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">Emaar Beachfront</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value">
-                                                Emaar Beachfront
-                                            </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Emaar</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от 613 000 $
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#9" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Апартаменты">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/1_1_Q5F1oKT.jpg" alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">Palm Jumeirah</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value">
-                                                Palm Jumeirah
-                                            </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Omniyat</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цена По запросу
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#32" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Townhouses">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/orania_the_valley_em.jpg"
-                                        alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">ORANIA</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value"> ORANIA </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Emaar</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от $ 416 000
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#49" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Апартаменты">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/2000xxs.jpg" alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">
-                                            Дубай Крик Харбор
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value">
-                                                Дубай Крик Харбор
-                                            </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Emaar</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от $556,200
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#17" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Апартаменты Студии Пентхаусы">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/danube_gemz_10_PrXF7vD.jpg"
-                                        alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">AL FURJAN</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value"> AL FURJAN </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">DANUBE PROPERTIES</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от $ 242 000
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#54" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="properties__item item-properties Апартаменты">
-                                <a href="/project.html" class="item-properties__image-ibg">
-                                    <img src="https://kvartirivdubai.ru/mediafiles/images/1_WDqvcdh.jpg" alt="" />
-                                </a>
-                                <div class="item-properties__content">
-                                    <div class="item-properties__body">
-                                        <div class="item-properties__title">Jumeirah</div>
-                                        <div class="item-properties__subtitle">
-                                            Area:
-                                            <span class="item-properties__value"> Jumeirah </span>
-                                        </div>
-                                        <div class="item-properties__position">
-                                            <img src="./img/icons/building.svg" class="item-properties__icon"
-                                                alt="Building icon" />
-                                            <span class="item-properties__value">Al Ain Holdings</span>
-                                        </div>
-                                        <div class="item-properties__info">
-                                            <a href="null" class="item-properties__col">
-                                                <img src="./img/icons/youtube.svg" class="item-properties__icon"
-                                                    alt="Youtube icon" />
-                                                <span class="item-properties__subtitle">
-                                                    Посмотреть видео
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="item-properties__subtitle">
-                                            <span class="item-properties__price">
-                                                Цены от $425,000
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <a href="/project.html#23" class="item-properties__next">
-                                        <span class="_icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="properties-filter__block-show-more">
-                            <a href="" class="properties-filter__show-more">
-                                Показать больше
-                            </a>
-                        </div>
+                <div
+                  class="properties__item item-properties Апартаменты Townhouses Студии Пентхаусы"
+                >
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img
+                      src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_5.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Silicon Oasis</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Silicon Oasis </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">DEYAAR</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от $ 224 000 </span>
+                      </div>
                     </div>
+                    <a href="/project.html#48" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
                 </div>
-            </section>
-            <section class="page__expert-appeal expert-appeal">
-                <div class="expert-appeal__container">
-                    <div class="expert-appeal__body">
-                        <div class="expert-appeal__appeal appeal">
-                            <div class="appeal__body" action="#" method="GET" enctype="multipart/form-data">
-                                <div class="appeal__title">
-                                    Our Expert Will Help You Buy
-                                    <br>
-                                    <span class="appeal__subtitle">
-                                        The Best Residence in Dubai
-                                    </span>
-                                </div>
-                                <form action="#" method="GET" enctype="multipart/form-data" class="appeal__form">
-                                    <div class="appeal__col">
-                                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Full name *" class="appeal__input">
-                                    </div>
-                                    <div class="appeal__col">
-                                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Phone number *" class="appeal__input">
-                                    </div>
-                                    <div class="appeal__col">
-                                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="E-mail *" class="appeal__input">
-                                    </div>
-                                    <button type="submit" class="appeal__button button button_small">Take a Quick Test</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="expert-appeal__profile-expert profile-expert">
-                            <div class="profile-expert__image"><img data-src="@img/main-page/01.jpg" alt=""></div>
-                            <div class="profile-expert__content">
-                                <div class="profile-expert__info-name">
-                                    <div class="profile-expert__full-name">Юля Рошкович</div>
-                                    <div class="profile-expert__profession">
-                                        Региональный менеджер
-                                    </div>
-                                </div>
-                                <div class="profile-expert__info-expert">
-                                    <div class="profile-expert__icon _icon-phone-call"></div>
-                                    <a href="tel:971588070001" class="profile-expert__text">+971 58 807 0001</a>
-                                </div>
-                                <div class="profile-expert__info-expert">
-                                    <div class="profile-expert__icon _icon-location-mark"></div>
-                                    <div class="profile-expert__text">
-                                        Дубай, Business Bay, Bay Square, Building 13 - Дубай
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="properties__item item-properties Виллы Townhouses">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img src="https://kvartirivdubai.ru/mediafiles/images/m1.jpg" alt="" />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Just Cavalli villas</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Just Cavalli villas </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Damac</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от 356 000 $ </span>
+                      </div>
                     </div>
+                    <a href="/project.html#6" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
                 </div>
-            </section>
-            <section class="page__social-links social-links">
-                <a href="tel:971588070001" class="social-links__link social-links__link_phone">
-                    <img src="https://static3.tildacdn.com/tild6636-6437-4261-b163-373962623765/phone.png" alt="" />
-                    <span class="social-links__text"> Телефон </span>
-                </a>
-                <a href="https://wa.me/971588070001" class="social-links__link social-links__link_whatsapp">
-                    <img src="https://static3.tildacdn.com/tild3432-6463-4763-b730-333161663965/WhatsApp-Logo-1-01-c.png"
-                        alt="" />
-                    <span class="social-links__text"> Whatsapp </span>
-                </a>
-            </section>
-        </main>
-		@@include('html/_footer.htm',{})
-        @@include('html/_popup.htm',{})
+                <div class="properties__item item-properties Апартаменты">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img src="https://kvartirivdubai.ru/mediafiles/images/01_WkNwVDu.jpg" alt="" />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Madinat Jumeirah</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Madinat Jumeirah </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Meraas</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от 383 900 $ </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#7" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="properties__item item-properties Виллы Townhouses">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img src="https://kvartirivdubai.ru/mediafiles/images/08.jpg" alt="" />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Mag City</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Mag City </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Mag Group</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от 2 365 000 $ </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#8" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="properties__item item-properties Пентхаусы">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img
+                      src="https://kvartirivdubai.ru/mediafiles/images/Mr-C-Residences-Duba.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Jumeirah</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Jumeirah </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Mr.C</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от $5 214 342 </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#19" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="properties__item item-properties Студии Апартаменты">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img
+                      src="https://kvartirivdubai.ru/mediafiles/images/EBF_ATB_RENDERS3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Emaar Beachfront</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Emaar Beachfront </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Emaar</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от 613 000 $ </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#9" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="properties__item item-properties Апартаменты">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img src="https://kvartirivdubai.ru/mediafiles/images/1_1_Q5F1oKT.jpg" alt="" />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Palm Jumeirah</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Palm Jumeirah </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Omniyat</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цена По запросу </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#32" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="properties__item item-properties Townhouses">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img
+                      src="https://kvartirivdubai.ru/mediafiles/images/orania_the_valley_em.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">ORANIA</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> ORANIA </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Emaar</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от $ 416 000 </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#49" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="properties__item item-properties Апартаменты">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img src="https://kvartirivdubai.ru/mediafiles/images/2000xxs.jpg" alt="" />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Дубай Крик Харбор</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Дубай Крик Харбор </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Emaar</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от $556,200 </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#17" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="properties__item item-properties Апартаменты Студии Пентхаусы">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img
+                      src="https://kvartirivdubai.ru/mediafiles/images/danube_gemz_10_PrXF7vD.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">AL FURJAN</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> AL FURJAN </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">DANUBE PROPERTIES</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от $ 242 000 </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#54" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="properties__item item-properties Апартаменты">
+                  <a href="/project.html" class="item-properties__image-ibg">
+                    <img src="https://kvartirivdubai.ru/mediafiles/images/1_WDqvcdh.jpg" alt="" />
+                  </a>
+                  <div class="item-properties__content">
+                    <div class="item-properties__body">
+                      <div class="item-properties__title">Jumeirah</div>
+                      <div class="item-properties__subtitle">
+                        Area:
+                        <span class="item-properties__value"> Jumeirah </span>
+                      </div>
+                      <div class="item-properties__position">
+                        <img
+                          src="./img/icons/building.svg"
+                          class="item-properties__icon"
+                          alt="Building icon"
+                        />
+                        <span class="item-properties__value">Al Ain Holdings</span>
+                      </div>
+                      <div class="item-properties__info">
+                        <a href="null" class="item-properties__col">
+                          <img
+                            src="./img/icons/youtube.svg"
+                            class="item-properties__icon"
+                            alt="Youtube icon"
+                          />
+                          <span class="item-properties__subtitle"> Посмотреть видео </span>
+                        </a>
+                      </div>
+                      <div class="item-properties__subtitle">
+                        <span class="item-properties__price"> Цены от $425,000 </span>
+                      </div>
+                    </div>
+                    <a href="/project.html#23" class="item-properties__next">
+                      <span class="_icon-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="properties-filter__block-show-more">
+                <a href="" class="properties-filter__show-more"> Показать больше </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__expert-appeal expert-appeal">
+          <div class="expert-appeal__container">
+            <div class="expert-appeal__body">
+              <div class="expert-appeal__appeal appeal">
+                <div class="appeal__body" action="#" method="GET" enctype="multipart/form-data">
+                  <div class="appeal__title">
+                    Our Expert Will Help You Buy
+                    <br />
+                    <span class="appeal__subtitle"> The Best Residence in Dubai </span>
+                  </div>
+                  <form action="#" method="GET" enctype="multipart/form-data" class="appeal__form">
+                    <div class="appeal__col">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="Full name *"
+                        class="appeal__input"
+                      />
+                    </div>
+                    <div class="appeal__col">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="Phone number *"
+                        class="appeal__input"
+                      />
+                    </div>
+                    <div class="appeal__col">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="E-mail *"
+                        class="appeal__input"
+                      />
+                    </div>
+                    <button type="submit" class="appeal__button button button_small">
+                      Take a Quick Test
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="expert-appeal__profile-expert profile-expert">
+                <div class="profile-expert__image">
+                  <img data-src="@img/main-page/01.jpg" alt="" />
+                </div>
+                <div class="profile-expert__content">
+                  <div class="profile-expert__info-name">
+                    <div class="profile-expert__full-name">Юля Рошкович</div>
+                    <div class="profile-expert__profession">Региональный менеджер</div>
+                  </div>
+                  <div class="profile-expert__info-expert">
+                    <div class="profile-expert__icon _icon-phone-call"></div>
+                    <a href="tel:971588070001" class="profile-expert__text">+971 58 807 0001</a>
+                  </div>
+                  <div class="profile-expert__info-expert">
+                    <div class="profile-expert__icon _icon-location-mark"></div>
+                    <div class="profile-expert__text">
+                      Дубай, Business Bay, Bay Square, Building 13 - Дубай
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__social-links social-links">
+          <a href="tel:971588070001" class="social-links__link social-links__link_phone">
+            <img
+              src="https://static3.tildacdn.com/tild6636-6437-4261-b163-373962623765/phone.png"
+              alt=""
+            />
+            <span class="social-links__text"> Телефон </span>
+          </a>
+          <a
+            href="https://wa.me/971588070001"
+            class="social-links__link social-links__link_whatsapp"
+          >
+            <img
+              src="https://static3.tildacdn.com/tild3432-6463-4763-b730-333161663965/WhatsApp-Logo-1-01-c.png"
+              alt=""
+            />
+            <span class="social-links__text"> Whatsapp </span>
+          </a>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{}) @@include('html/_popup.htm',{})
     </div>
     @@include('html/_js.htm',{})
-    <script>
-        
-    </script>
-</body>
-
+    <script></script>
+  </body>
 </html>

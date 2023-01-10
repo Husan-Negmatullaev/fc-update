@@ -372,11 +372,10 @@ function initSliders() {
   if (document.querySelector('.hot-project-images__body')) {
 
     const projectImages = document.querySelectorAll('.hot-project-images__body');
-    const projectImagesBackground = document.querySelectorAll('.hot-project-images__background');
 
     if (projectImages.length) {
       projectImages.forEach((item, index) => {
-        const projectSliderImage = new Swiper(item, {
+        new Swiper(item, {
           modules: [Navigation, Pagination, Controller],
           slidesPerView: 1,
           observer: true,
@@ -388,21 +387,9 @@ function initSliders() {
             el: ".hot-project-images__pagination",
             clickable: true,
           },
-        })
-
-        const projectBackgroundSlider = new Swiper(projectImagesBackground[index], {
-          modules: [Navigation],
-          slidesPerView: 1,
-          observer: true,
-          observeParents: true,
-          watchOverflow: true,
-          speed: 800,
-        })
-
-        projectSliderImage.controller.control = projectBackgroundSlider;
-      });
+        });
+      })
     }
-
     // console.dir(sliderImages);
     // sliderImages.controller.control = sliderImagesBackground;
   }
@@ -413,7 +400,7 @@ function initSliders() {
       observeParents: true,
       watchOverflow: true,
       speed: 800,
-      spaceBetween: 9,
+      spaceBetween: 10,
 
       pagination: {
         el: ".hot-project__pagination",

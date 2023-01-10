@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
         start: "top center",
         scrub: 1.5,
       },
-      y: "50",
+      y: "+=50",
     });
   }
 

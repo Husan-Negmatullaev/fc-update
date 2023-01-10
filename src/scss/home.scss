@@ -2598,7 +2598,7 @@
 
 .get-consultation {
   background: linear-gradient(180deg, #1B233E 0%, #0F162D 100%);
-  @include adaptiveValue("margin-top", 90, 80, 767.98, 479.98, 1);
+  @include adaptiveValue("margin-top", 90, 20, 767.98, 479.98, 1);
 
   // .get-consultation__container-min
 
@@ -2831,8 +2831,8 @@
 //========================================================================================================================================================
 
 .google-reviews {
-  @include adaptiveValue("padding-top", 80, 35, $containerWidth, 767.98, 1);
-  @include adaptiveValue("padding-bottom", 80, 35, $containerWidth, 767.98, 1);
+  @include adaptiveValue("padding-top", 80, 25, $containerWidth, 767.98, 1);
+  @include adaptiveValue("padding-bottom", 80, 25, $containerWidth, 767.98, 1);
   position: relative;
 
   // .google-reviews__container-min
@@ -2843,6 +2843,7 @@
 
   &__title {
     position: relative;
+    z-index: 2;
     text-align: center;
     font-family: 'Anglecia Pro Display';
     font-style: italic;
@@ -3095,7 +3096,7 @@
 .index-advantages {
   position: relative;
   @include adaptiveValue("padding-top", 85, 60, $containerWidth, 767.98, 1);
-  @include adaptiveValue("padding-bottom", 100, 45, $containerWidth, 767.98, 1);
+  @include adaptiveValue("padding-bottom", 100, 25, $containerWidth, 767.98, 1);
 
   @media (min-width:$mobile) {
     &::before {
@@ -3288,8 +3289,8 @@
 //========================================================================================================================================================
 
 .hot-project {
-  @include adaptiveValue("padding-top", 50, 30, $containerWidth, 767.98, 1);
-  @include adaptiveValue("padding-bottom", 50, 30, $containerWidth, 767.98, 1);
+  @include adaptiveValue("padding-top", 50, 25, $containerWidth, 767.98, 1);
+  @include adaptiveValue("padding-bottom", 50, 25, $containerWidth, 767.98, 1);
 
   // .hot-project__container-min
 
@@ -3335,6 +3336,8 @@
 
   &__body {
     overflow: hidden;
+    padding: 0 rem(10);
+    margin: 0 rem(-10);
   }
 
   // .hot-project__slider
@@ -3408,6 +3411,7 @@
 .hot-project-images {
   position: relative;
   overflow: hidden;
+  filter: drop-shadow(0px 13px 7px rgba(0, 0, 0, 0.2));
 
   &:not(:last-child) {
     padding-bottom: rem(25);
@@ -3703,7 +3707,7 @@
 
 .questions {
   @include adaptiveValue("padding-top", 150, 90, $containerWidth, 767.98, 1);
-  @include adaptiveValue("padding-bottom", 50, 30, $containerPadding, 767.98, 1);
+  @include adaptiveValue("padding-bottom", 50, 25, $containerPadding, 767.98, 1);
   position: relative;
   max-width: rem(1280);
   margin: 0 auto;
@@ -3858,7 +3862,7 @@
 //========================================================================================================================================================
 
 .index-partners {
-  @include adaptiveValue("padding-bottom", 85, 45, $containerWidth, 767.98, 1);
+  @include adaptiveValue("padding-bottom", 85, 25, $containerWidth, 767.98, 1);
 
   // .index-partners__container-min
 
