@@ -1,7 +1,23 @@
 @font-face {
-	font-family: icons;
-	font-display: swap;
-	src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Anglecia Pro Display";
+  font-display: swap;
+  src: url("../fonts/AngleciaProDisplay-Regular.woff2") format("woff2"), url("../fonts/AngleciaProDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anglecia Pro Display";
+  font-display: swap;
+  src: url("../fonts/AngleciaProDisplay-Italic.woff2") format("woff2"), url("../fonts/AngleciaProDisplay-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
