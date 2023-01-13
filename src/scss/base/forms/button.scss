@@ -2,219 +2,238 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
-	background-color: #163F8E;
-	color: #fff;
-	align-items: center;
-	justify-content: center;
-	transition: opacity 0.3s ease 0s;
-	@include adaptiveValue("gap", 11, 8, $containerWidth, $minWidth, 1);
+  display: inline-flex;
+  background-color: #163F8E;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease 0s;
+  @include adaptiveValue("gap", 11, 8, $containerWidth, $minWidth, 1);
 
-	// @media (any-hover: hover) {
-	// 	&:hover {
-	// 		opacity: .9;
-	// 	}
-	// }
+  // @media (any-hover: hover) {
+  // 	&:hover {
+  // 		opacity: .9;
+  // 	}
+  // }
 
-	&_small-large {
-		text-align: center;
-		border-radius: 5px;
-		font-weight: 600;
-		@include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-top", 20, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-bottom", 20, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-left", 125, 40, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 125, 40, $containerWidth, $minWidth, 1);
-		line-height: math.div(22, 18);
-		background-color: #163F8E;
-		color: #fff;
-		text-shadow: 0px 4px 11px rgba(25, 78, 146, 0.24);
-		border: 1px solid transparent;
-		transition: all 0.3s ease 0s;
-		@media (any-hover: hover){
-			&:hover{
-				border: 1px solid #163F8E;
-				background-color: #fff;
-				color: #163F8E;
-			}
-		}
-	}
-	&_small-large-transparent {
-		text-align: center;
-		border-radius: 5px;
-		font-weight: 500;
-		border: 1px solid #163F8E;
-		@include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-top", 20, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-bottom", 20, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-left", 125, 40, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 125, 40, $containerWidth, $minWidth, 1);
-		line-height: math.div(15, 12);
-		background-color: transparent;
-		color: #2D1905;
-		text-shadow: 0px 4px 11px rgba(25, 78, 146, 0.24);
-		transition: all 0.3s ease 0s;
-		@media (any-hover: hover){
-			&:hover{
-				border: 1px solid #163F8E;
-				background-color: #fff;
-				color: #163F8E;
-			}
-		}
-	}
-	&_small {
-		text-align: center;
-		border-radius: 5px;
-		font-weight: 700;
+  &_small-large {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    @include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-top", 20, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 20, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-left", 125, 40, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 125, 40, $containerWidth, $minWidth, 1);
+    line-height: math.div(22, 18);
+    background-color: #163F8E;
+    color: #fff;
+    text-shadow: 0px 4px 11px rgba(25, 78, 146, 0.24);
+    border: 1px solid transparent;
+    transition: all 0.3s ease 0s;
 
-		@include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-top", 10, 5, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-bottom", 10, 5, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-left", 60, 25, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 60, 25, $containerWidth, $minWidth, 1);
-		line-height: 180%;
-		text-transform: uppercase;
-		transition: all 0.3s ease 0s;
-		border: 1px solid transparent;
-		@media (any-hover: hover){
-			&:hover{
-				border: 1px solid #163F8E;
-				background-color: #fff;
-				color: #163F8E;
-			}
-		}
-	}
-	&_small2 {
-		text-align: center;
-		border-radius: 5px;
-		font-weight: 700;
-		margin-left: 50%;
-		transform: translate(-50%, 0px);
-		@include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-top", 10, 5, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-bottom", 10, 5, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-left", 60, 25, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 60, 25, $containerWidth, $minWidth, 1);
-		line-height: 180%;
-		text-transform: uppercase;
-		transition: all 0.3s ease 0s;
-		border: 1px solid transparent;
-		@media (any-hover: hover){
-			&:hover{
-				border: 1px solid #163F8E;
-				background-color: #fff;
-				color: #163F8E;
-			}
-		}
-	}
-	&_normal {
-		@include adaptiveValue("padding-left", 80, 20, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 80, 20, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-top", 20, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-bottom", 20, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
-		background-color: #163F8E;
-		box-shadow: 4px 5px 20px rgba(252, 246, 232, 0.3);
-		border-radius: 5px;
-		color: #FFFFFF;
-		text-shadow: 0px 4px 11px rgba(25, 78, 146, 0.24);
-		text-align: center;
-		line-height: math.div(22,18);
-		font-weight: 600;
-		transition: all 0.3s ease 0s;
-		border: 1px solid transparent;
-		@media (any-hover: hover){
-			&:hover{
-				border: 1px solid #163F8E;
-				background-color: #fff;
-				color: #163F8E;
-			}
-		}
-	}
-	&_large {
-		@include adaptiveValue("padding-top", 18, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-bottom", 18, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-left", 96, 30, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 96, 30, $containerWidth, $minWidth, 1);
-		font-weight: 700;
-		@include adaptiveValue("font-size", 24, 16, $containerWidth, $minWidth, 1);
-		line-height: 151%;
-		text-align: center;
-		transition: all 0.3s ease 0s;
-		border: 1px solid transparent;
-		@media (any-hover: hover){
-			&:hover{
-				border: 1px solid #163F8E;
-				background-color: #fff;
-				color: #163F8E;
-				span {
-					&::before {
-						color: inherit;						
-					}
-				}
-			}
-		}
-	}
-	&_extra-large {
-		border-radius: 5px;
-		@include adaptiveValue("padding-left", 20, 15, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 20, 15, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-top", 15, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-bottom", 15, 10, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("font-size", 16, 14, $containerWidth, $minWidth, 1);
-		text-align: center;
-		font-weight: 700;
-		line-height: 180%;
-		border: 1px solid transparent;
-		transition: all 0.3s ease 0s;
-		@media (any-hover: hover){
-			&:hover{
-				border: 1px solid #163F8E;
-				background-color: #fff;
-				color: #163F8E;
-			}
-		}
-	}
-	&_extra-large-grey {
-		@extend .button_extra-large;
-		font-weight: 400;
-		background-color: #BCBCBC;
-		border: 1px solid transparent;
-		transition: all 0.3s ease 0s;
-		@media (any-hover: hover){
-			&:hover{
-				border: 1px solid #BCBCBC;
-				background-color: #fff;
-				color: #000;
-			}
-		}
-	}
-	&_red {
-		background: #CA0000;
-		border-radius: 10px;
-		@include adaptiveValue("padding-top", 25, 15, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-bottom", 25, 15, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-left", 30, 15, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 30, 15, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("font-size", 24, 16, $containerWidth, $minWidth, 1);
-		text-align: center;
-		line-height: 180%;
-		font-weight: 700;
-		transition: box-shadow 0.3s ease 0s;
-		border: 1px solid transparent;
-		transition: all 0.3s ease 0s;
-		@media (any-hover: hover){
-			&:hover{
-				opacity: 1;
-				border: 1px solid #CA0000;
-				color: #CA0000;
-				background-color: #fff;
-			}
-		}
-	}
-	&_red-square {
-		@extend .button_red;
-		border-radius: 0px;
-		color: #fff;
-	}
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid #163F8E;
+        background-color: #fff;
+        color: #163F8E;
+      }
+    }
+  }
+
+  &_small-large-transparent {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 1px solid #163F8E;
+    @include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-top", 20, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 20, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-left", 125, 40, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 125, 40, $containerWidth, $minWidth, 1);
+    line-height: math.div(15, 12);
+    background-color: transparent;
+    color: #2D1905;
+    text-shadow: 0px 4px 11px rgba(25, 78, 146, 0.24);
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid #163F8E;
+        background-color: #fff;
+        color: #163F8E;
+      }
+    }
+  }
+
+  &_small {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+
+    @include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-top", 10, 5, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 10, 5, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-left", 60, 25, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 60, 25, $containerWidth, $minWidth, 1);
+    line-height: 180%;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    border: 1px solid transparent;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid #163F8E;
+        background-color: #fff;
+        color: #163F8E;
+      }
+    }
+  }
+
+  &_small2 {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 50%;
+    transform: translate(-50%, 0px);
+    @include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-top", 10, 5, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 10, 5, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-left", 60, 25, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 60, 25, $containerWidth, $minWidth, 1);
+    line-height: 180%;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    border: 1px solid transparent;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid #163F8E;
+        background-color: #fff;
+        color: #163F8E;
+      }
+    }
+  }
+
+  &_normal {
+    @include adaptiveValue("padding-left", 80, 20, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 80, 20, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-top", 20, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 20, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("font-size", 18, 14, $containerWidth, $minWidth, 1);
+    background-color: #163F8E;
+    box-shadow: 4px 5px 20px rgba(252, 246, 232, 0.3);
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 11px rgba(25, 78, 146, 0.24);
+    text-align: center;
+    line-height: math.div(22, 18);
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+    border: 1px solid transparent;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid #163F8E;
+        background-color: #fff;
+        color: #163F8E;
+      }
+    }
+  }
+
+  &_large {
+    @include adaptiveValue("padding-top", 18, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 18, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-left", 96, 30, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 96, 30, $containerWidth, $minWidth, 1);
+    font-weight: 700;
+    @include adaptiveValue("font-size", 24, 16, $containerWidth, $minWidth, 1);
+    line-height: 151%;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    border: 1px solid transparent;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid #163F8E;
+        background-color: #fff;
+        color: #163F8E;
+
+        span {
+          &::before {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  &_extra-large {
+    border-radius: 5px;
+    @include adaptiveValue("padding-left", 15, 15, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 15, 15, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-top", 12, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 12, 10, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("font-size", 16, 14, $containerWidth, $minWidth, 1);
+    text-align: center;
+    font-weight: 700;
+    line-height: 180%;
+    border: 1px solid transparent;
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid #163F8E;
+        background-color: #fff;
+        color: #163F8E;
+      }
+    }
+  }
+
+  &_extra-large-grey {
+    @extend .button_extra-large;
+    font-weight: 400;
+    background-color: #BCBCBC;
+    border: 1px solid transparent;
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid #BCBCBC;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  &_red {
+    background: #CA0000;
+    border-radius: 10px;
+    @include adaptiveValue("padding-top", 25, 15, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-bottom", 25, 15, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-left", 30, 15, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("padding-right", 30, 15, $containerWidth, $minWidth, 1);
+    @include adaptiveValue("font-size", 24, 16, $containerWidth, $minWidth, 1);
+    text-align: center;
+    line-height: 180%;
+    font-weight: 700;
+    transition: box-shadow 0.3s ease 0s;
+    border: 1px solid transparent;
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 1;
+        border: 1px solid #CA0000;
+        color: #CA0000;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &_red-square {
+    @extend .button_red;
+    border-radius: 0px;
+    color: #fff;
+  }
 }

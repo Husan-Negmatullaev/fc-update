@@ -24,6 +24,10 @@
     column-gap: rem(20);
     row-gap: rem(15);
     margin-bottom: rem(15);
+
+    &:not(.index-home &) {
+      max-width: rem(1200);
+    }
   }
 
   // .footer-index-top__item
@@ -85,9 +89,19 @@
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 
+  .page-project & {
+    @media (max-width:$tablet) {
+      padding: rem(20) 0px rem(60);
+    }
+  }
+
   // .footer-index-navigation__container-min
 
-  &__container-min {}
+  &__container-min {
+    &:not(.index-home &) {
+      max-width: rem(1200);
+    }
+  }
 
   // .footer-index-navigation__nav
 

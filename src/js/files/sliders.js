@@ -374,7 +374,7 @@ function initSliders() {
     const projectImages = document.querySelectorAll('.hot-project-images__body');
 
     if (projectImages.length) {
-      projectImages.forEach((item, index) => {
+      projectImages.forEach((item) => {
         new Swiper(item, {
           modules: [Navigation, Pagination, Controller],
           slidesPerView: 1,
@@ -395,12 +395,15 @@ function initSliders() {
   }
   if (document.querySelector('.hot-project__body')) {
     new Swiper('.hot-project__body', {
-      modules: [Navigation, Pagination],
+      modules: [Navigation, Pagination, Autoplay],
       observer: true,
       observeParents: true,
       watchOverflow: true,
       speed: 800,
       spaceBetween: 10,
+      autoplay: {
+        delay: 2500
+      },
 
       pagination: {
         el: ".hot-project__pagination",

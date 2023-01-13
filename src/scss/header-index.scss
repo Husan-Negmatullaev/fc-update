@@ -4,21 +4,18 @@
   left: 0;
   width: 100%;
   z-index: 15;
-  transition: all 0.3s ease 0s;
-  will-change: background-color;
+  background: linear-gradient(90deg, #00398A 16.56%, rgba(0, 57, 138, 0) 116.05%);
+
+  @media (max-width:$mobile) {
+    background: linear-gradient(269deg, #00398A 16.56%, rgba(0, 57, 138, 0) 246.05%);
+  }
 
   &._header-scroll {
-    background-color: rgba(255, 255, 255, 0.9);
-
-    @media (max-width:$mobile) {
-      background-color: rgba(0, 57, 138);
-    }
-
     .header-index__container-min {
-      min-height: rem(90);
+      min-height: rem(85);
 
       @media (max-width:$tablet) {
-        min-height: rem(80);
+        min-height: rem(75);
       }
 
       @media (max-width:$mobile) {
@@ -33,12 +30,16 @@
     display: flex;
     align-items: center;
     gap: rem(15);
-    min-height: rem(115);
+    min-height: rem(90);
     transition: min-height 0.3s ease 0s;
     will-change: min-height;
 
+    &:not(.index-home &) {
+      max-width: rem(1200);
+    }
+
     @media (max-width:$tablet) {
-      min-height: rem(90);
+      min-height: rem(80);
     }
 
     @media (max-width:$mobile) {
@@ -51,6 +52,10 @@
   &__logo {
     position: relative;
     z-index: 5;
+
+    img {
+      max-width: rem(78);
+    }
   }
 
   // .header-index__menu
@@ -86,7 +91,8 @@
       will-change: left;
       z-index: 4;
 
-      &::before {
+      &::before,
+      &::after {
         content: '';
         position: fixed;
         top: 0;
@@ -94,14 +100,18 @@
         transition: left 0.3s ease 0s;
         will-change: left;
         width: 100%;
-        background-color: #fff;
+        background: linear-gradient(269deg, #00398A 16.56%, rgba(0, 57, 138, 0) 246.05%);
         height: rem(70);
         z-index: 2;
       }
 
+      &::after {
+        background-color: #fff;
+      }
 
       .menu-open &,
-      .menu-open &::before {
+      .menu-open &::before,
+      .menu-open &::after {
         left: 0;
       }
     }
@@ -142,7 +152,7 @@
   &__link {
     font-size: rem(14);
     line-height: math.div(17, 14);
-    color: #000;
+    color: #fff;
 
     @media (any-hover: hover) {
       &:hover {
@@ -153,6 +163,7 @@
     @media (max-width:$mobile) {
       font-size: rem(20);
       font-weight: 500;
+      color: #000;
     }
   }
 
@@ -204,11 +215,11 @@
     align-items: center;
     font-size: rem(14);
     line-height: math.div(17, 14);
-    color: #000;
+    color: #fff;
     gap: rem(5);
 
     &::before {
-      color: #000;
+      color: #fff;
       font-size: rem(6);
       transform: rotate(90deg);
       transition: transform 0.3s ease 0s;
@@ -225,8 +236,11 @@
       font-size: rem(20);
       gap: rem(10);
       font-weight: 500;
+      color: #000;
+
 
       &::before {
+        color: #000;
         font-size: rem(10);
       }
     }
@@ -312,7 +326,19 @@
   @include adaptiveValue("column-gap", 40, 15, $containerWidth, 767.98, 1);
   // .actions-header-index__social
 
-  &__social {}
+  &__social {
+    @media (max-width:$mobile) {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      padding: rem(5);
+
+      &:not(.index-home &) {
+        position: static;
+        padding: 0;
+      }
+    }
+  }
 
   // .actions-header-index__link
 
@@ -325,12 +351,30 @@
     border-radius: 50%;
     filter: drop-shadow(0px 4px 33px rgba(41, 167, 26, 0.38));
 
+    @media (max-width:$mobile) {
+      width: rem(50);
+      height: rem(50);
+
+      &:not(.index-home &) {
+        width: rem(42);
+        height: rem(42);
+      }
+    }
+
     &_whatsapp {
       background-color: #29A71A;
     }
 
     img {
       max-width: rem(30);
+
+      @media (max-width:$mobile) {
+        max-width: rem(38);
+
+        &:not(.index-home &) {
+          max-width: rem(30);
+        }
+      }
     }
   }
 
@@ -485,9 +529,9 @@
       height: rem(2);
       background-color: #fff;
 
-      .menu-open & {
-        background-color: #000;
-      }
+      // .menu-open & {
+      //   background-color: #000;
+      // }
     }
 
     &::before {

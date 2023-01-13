@@ -10,14 +10,16 @@ window.addEventListener("load", function () {
 
 
   if (document.querySelectorAll(".questions__images img").length) {
-    gsap.to(".questions__images img", {
-      scrollTrigger: {
-        trigger: ".questions__images img",
-        start: "top center",
-        scrub: 1.5,
+    gsap.to(".questions__images img",
+      {
+        scrollTrigger: {
+          trigger: ".questions__images img",
+          start: "top center",
+          scrub: 1.5,
+        },
+        y: "-=80",
       },
-      y: "+=50",
-    });
+    );
   }
 
   if (document.querySelectorAll(".index-partners__parnters_top .index-partners__item").length) {
