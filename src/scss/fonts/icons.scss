@@ -1,0 +1,84 @@
+%ic {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: "icons";
+	font-display: swap;
+	src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+[class*="_icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+
+._icon-suite-area:before {
+  content: "\e90f";
+}
+._icon-total-area:before {
+  content: "\e910";
+}
+._icon-clock:before {
+  content: "\e900";
+}
+._icon-angle-left:before {
+  color: #fff;
+  content: "\e901";
+}
+._icon-angle-right:before {
+  color: #fff;
+  content: "\e902";
+}
+._icon-arrow-right:before {
+  color: #fff;
+  content: "\e903";
+}
+._icon-bell:before {
+  color: #fff;
+  content: "\e904";
+}
+._icon-calendar:before {
+  color: #fff;
+  content: "\e905";
+}
+._icon-facebook:before {
+  content: "\e906";
+}
+._icon-instagram:before {
+  content: "\e907";
+}
+._icon-linkedin:before {
+  content: "\e908";
+}
+._icon-location-mark:before {
+  content: "\e909";
+}
+._icon-magnify:before {
+  color: #fff;
+  content: "\e90a";
+}
+._icon-phone-call:before {
+  content: "\e90b";
+}
+._icon-play:before {
+  color: #fff;
+  content: "\e90c";
+}
+._icon-twitter:before {
+  content: "\e90d";
+}
+._icon-youtube:before {
+  content: "\e90e";
+}
