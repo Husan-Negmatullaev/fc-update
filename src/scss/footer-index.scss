@@ -4,6 +4,12 @@
   background-color: #1C2743;
   color: #fff;
 
+  @media (max-width:$mobileSmall) {
+    .index-home & {
+      @include adaptiveValue("padding-bottom", 50, 45, $containerWidth, 767.98, 1);
+    }
+  }
+
   // .footer-index__top
 
   &__top {}
@@ -89,6 +95,10 @@
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 
+  @media (max-width:$mobileSmall) {
+    padding: rem(10) rem(0);
+  }
+
   .page-project & {
     @media (max-width:$tablet) {
       padding: rem(20) 0px rem(60);
@@ -116,16 +126,21 @@
     column-gap: rem(20);
     row-gap: rem(30);
 
-    // @media (max-width:$tablet) {
-    //   flex-direction: column;
-    //   align-items: stretch;
-    // }
+    @media (max-width:$mobileSmall) {
+      justify-content: center;
+      column-gap: rem(10);
+      row-gap: rem(20);
+    }
   }
 
   // .footer-index-navigation__item
 
   &__item {
     position: relative;
+
+    @media (max-width:$mobileSmall) {
+      flex: 0 1 auto;
+    }
 
     &:not(:last-child) {
       padding: 0px rem(20) 0px 0px;
@@ -139,6 +154,14 @@
         height: rem(35);
         transform: translateY(-50%);
         background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      @media (max-width:$mobile) {
+        padding: 0px rem(10) 0px 0px;
+
+        &::before {
+          height: rem(20);
+        }
       }
     }
   }
@@ -155,6 +178,11 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+
+    @media (max-width:$mobileSmall) {
+      font-size: rem(9);
+      padding: rem(8) rem(0);
     }
   }
 }

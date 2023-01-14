@@ -169,9 +169,9 @@
   }
 
   &_extra-large {
-    border-radius: 5px;
-    @include adaptiveValue("padding-left", 15, 15, $containerWidth, $minWidth, 1);
-    @include adaptiveValue("padding-right", 15, 15, $containerWidth, $minWidth, 1);
+    border-radius: rem(5);
+    padding-left: rem(15);
+    padding-right: rem(15);
     @include adaptiveValue("padding-top", 12, 10, $containerWidth, $minWidth, 1);
     @include adaptiveValue("padding-bottom", 12, 10, $containerWidth, $minWidth, 1);
     @include adaptiveValue("font-size", 16, 14, $containerWidth, $minWidth, 1);

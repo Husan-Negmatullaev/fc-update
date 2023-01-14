@@ -329,10 +329,10 @@
 
   &__social {
     @media (max-width:$mobile) {
-      position: static;
-      padding: 0;
+      display: none;
 
       .index-home & {
+        display: block;
         position: fixed;
         right: 0;
         bottom: 0;

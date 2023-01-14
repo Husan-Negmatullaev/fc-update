@@ -33,6 +33,7 @@ $maxWidthContainer: 1200;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
+$containerPaddingMobile: 50;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -121,6 +122,10 @@ body {
 
     @if ($containerPadding>0) {
       padding: 0 rem(math.div($containerPadding, 2));
+
+      @media (max-width:$mobileSmall) {
+        padding: 0 rem(math.div($containerPaddingMobile, 2));
+      }
     }
   }
 
@@ -133,6 +138,10 @@ body {
 
     @if ($containerPadding>0) {
       padding: 0 rem(math.div($containerPadding, 2));
+
+      @media (max-width:$mobileSmall) {
+        padding: 0 rem(math.div($containerPaddingMobile, 2));
+      }
     }
   }
 }

@@ -2698,7 +2698,7 @@
     font-family: 'Anglecia Pro Display';
     font-style: italic;
     font-weight: 400;
-    @include adaptiveValue("font-size", 40, 25, $containerWidth, 767.98, 1);
+    @include adaptiveValue("font-size", 40, 22, $containerWidth, 767.98, 1);
     line-height: math.div(43, 40);
 
     &:not(:last-child) {
@@ -2725,7 +2725,7 @@
 
     @media (max-width:$mobile) {
       max-width: rem(250);
-      font-size: rem(13);
+      font-size: rem(12);
 
       &:not(:last-child) {
         margin-bottom: rem(200);
@@ -2772,7 +2772,7 @@
       }
 
       @media (max-width: em(400)) {
-        right: -27%;
+        right: -20%;
       }
     }
   }
