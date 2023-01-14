@@ -33,9 +33,10 @@
     min-height: rem(90);
     transition: min-height 0.3s ease 0s;
     will-change: min-height;
+    max-width: rem(1200);
 
-    &:not(.index-home &) {
-      max-width: rem(1200);
+    .index-home & {
+      max-width: rem(980);
     }
 
     @media (max-width:$tablet) {
@@ -328,14 +329,14 @@
 
   &__social {
     @media (max-width:$mobile) {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      padding: rem(5);
+      position: static;
+      padding: 0;
 
-      &:not(.index-home &) {
-        position: static;
-        padding: 0;
+      .index-home & {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: rem(5);
       }
     }
   }
