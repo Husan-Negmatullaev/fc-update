@@ -25,7 +25,7 @@ import * as flsFunctions from "./files/functions.js";
 
 /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
 /* (i) необходимо для корректного отображения webp из css  */
-flsFunctions.isWebp();
+// flsFunctions.isWebp();
 /* Добавление класса touch для HTML если браузер мобильный */
 flsFunctions.addTouchClass();
 /* Добавление loaded для HTML после полной загрузки страницы */

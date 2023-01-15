@@ -2887,9 +2887,10 @@
 
   &__container-min {
     position: relative;
+    max-width: rem(1200);
 
-    &:not(.index-home &) {
-      max-width: rem(1200);
+    &:not(.index-home .get-consultation__container-min) {
+      max-width: rem(980);
     }
   }
 
@@ -3391,8 +3392,12 @@
 
 .index-advantages {
   position: relative;
-  @include adaptiveValue("padding-top", 85, 60, $containerWidth, 767.98, 1);
+  @include adaptiveValue("padding-top", 85, 50, $containerWidth, 767.98, 1);
   @include adaptiveValue("padding-bottom", 100, 25, $containerWidth, 767.98, 1);
+
+  @media (max-width:$mobile) {
+    padding-top: rem(25);
+  }
 
   @media (min-width:$mobile) {
     &::before {
@@ -3423,10 +3428,15 @@
 
     @media (max-width:$mobile) {
       grid-template-columns: repeat(2, 1fr);
+      row-gap: rem(25);
     }
 
     @media (max-width: em(390)) {
       grid-template-columns: 1fr;
+    }
+
+    @media (max-width:$mobileSmall) {
+      row-gap: rem(20);
     }
   }
 
@@ -3466,11 +3476,9 @@
 
   @media (any-hover: hover) {
     &:hover {
-      &:not(.touch .advantage-item) {
-        .advantage-item__background-image {
-          img {
-            opacity: 1;
-          }
+      .advantage-item__background-image {
+        img {
+          opacity: 1;
         }
       }
     }
@@ -3620,11 +3628,12 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.3s ease 0s;
+      will-change: opcity;
 
-      &:not(.touch img) {
-        opacity: 0;
-        transition: opacity 0.3s ease 0s;
-        will-change: opcity;
+      .touch & {
+        opacity: 1;
       }
 
       @media (max-width:$mobile) {
