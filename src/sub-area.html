@@ -306,10 +306,7 @@
                 <div class="products__item item-products">
                   <div class="item-products__body">
                     <a href="#" class="item-products__image">
-                      <img
-                        src="https://kvartirivdubai.ru/mediafiles/images/deyaar_tria_dubai_si_5.jpg"
-                        alt=""
-                      />
+                      <img src="@img/developers-page/02.jpg" alt="Dubai town" />
                     </a>
                     <div class="item-products__wrapper">
                       <div class="item-products__header">
@@ -386,7 +383,7 @@
                 <div class="products__item item-products">
                   <div class="item-products__body">
                     <a href="#" class="item-products__image">
-                      <img src="https://kvartirivdubai.ru/mediafiles/images/m1.jpg" alt="" />
+                      <img src="@img/developers-page/03.jpg" alt="Dubai town" />
                     </a>
                     <div class="item-products__wrapper">
                       <div class="item-products__header">
@@ -463,10 +460,7 @@
                 <div class="products__item item-products">
                   <div class="item-products__body">
                     <a href="#" class="item-products__image">
-                      <img
-                        src="https://kvartirivdubai.ru/mediafiles/images/01_WkNwVDu.jpg"
-                        alt=""
-                      />
+                      <img src="@img/developers-page/04.jpg" alt="Dubai town" />
                     </a>
                     <div class="item-products__wrapper">
                       <div class="item-products__header">
@@ -541,7 +535,7 @@
                 <div class="products__item item-products">
                   <div class="item-products__body">
                     <a href="#" class="item-products__image">
-                      <img src="https://kvartirivdubai.ru/mediafiles/images/08.jpg" alt="" />
+                      <img src="@img/developers-page/02.jpg" alt="Dubai town" />
                     </a>
                     <div class="item-products__wrapper">
                       <div class="item-products__header">
@@ -649,10 +643,7 @@
                 <div class="products__item item-products">
                   <div class="item-products__body">
                     <a href="#" class="item-products__image">
-                      <img
-                        src="https://kvartirivdubai.ru/mediafiles/images/Mr-C-Residences-Duba.jpg"
-                        alt=""
-                      />
+                      <img src="@img/developers-page/03.jpg" alt="Dubai town" />
                     </a>
                     <div class="item-products__wrapper">
                       <div class="item-products__header">
@@ -729,10 +720,7 @@
                 <div class="products__item item-products">
                   <div class="item-products__body">
                     <a href="#" class="item-products__image">
-                      <img
-                        src="https://kvartirivdubai.ru/mediafiles/images/EBF_ATB_RENDERS3.jpg"
-                        alt=""
-                      />
+                      <img src="@img/developers-page/04.jpg" alt="Dubai town" />
                     </a>
                     <div class="item-products__wrapper">
                       <div class="item-products__header">
@@ -954,78 +942,75 @@
             </div>
           </div>
         </section>
-        <section class="page__expert-appeal expert-appeal">
-          <div class="expert-appeal__container">
-            <div class="expert-appeal__body">
-              <div class="expert-appeal__appeal appeal">
-                <div class="appeal__body" action="#" method="GET" enctype="multipart/form-data">
-                  <div class="appeal__title">
-                    Our Expert Will Help You Buy
-                    <br />
-                    <span class="appeal__subtitle"> The Best Residence in Dubai </span>
+        <section class="page__get-consultation get-consultation">
+          <div class="get-consultation__container-min">
+            <div class="get-consultation__body">
+              <div class="get-consultation__content">
+                <h1 class="get-consultation__title">Получить консультацию</h1>
+                <p class="get-consultation__subtitle">
+                  От наших агентов по любому интересующему вас вопросу
+                </p>
+                <form
+                  action="#"
+                  method="post"
+                  enctype="multipart/form-data"
+                  class="get-consultation__form form-consultation"
+                >
+                  <div class="form-consultation__body">
+                    <div class="form-consultation__row">
+                      <div class="form-consultation__column">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          name="form[name]"
+                          data-validate
+                          data-error="Поле не должно быть пустым"
+                          placeholder="Ваше Имя"
+                          data-required
+                          class="form-consultation__input"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-consultation__row">
+                      <div class="form-consultation__column">
+                        <input
+                          autocomplete="off"
+                          type="tel"
+                          inputmode="tel"
+                          name="form[phone]"
+                          class="form-consultation__input form-consultation__input_phone country-phones"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-consultation__row">
+                      <div class="form-consultation__column">
+                        <input
+                          autocomplete="off"
+                          type="email"
+                          name="form[email]"
+                          data-validate
+                          data-error="Неправильно заполнено поле"
+                          placeholder="E-mail"
+                          data-required="email"
+                          class="form-consultation__input"
+                        />
+                      </div>
+                    </div>
                   </div>
-                  <form action="#" method="GET" enctype="multipart/form-data" class="appeal__form">
-                    <div class="appeal__col">
-                      <input
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        data-error="Ошибка"
-                        placeholder="Full name *"
-                        class="appeal__input"
-                      />
-                    </div>
-                    <div class="appeal__col">
-                      <input
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        data-error="Ошибка"
-                        placeholder="Phone number *"
-                        class="appeal__input"
-                      />
-                    </div>
-                    <div class="appeal__col">
-                      <input
-                        autocomplete="off"
-                        type="text"
-                        name="form[]"
-                        data-error="Ошибка"
-                        placeholder="E-mail *"
-                        class="appeal__input"
-                      />
-                    </div>
-                    <button type="submit" class="appeal__button button button_small">
-                      Take a Quick Test
-                    </button>
-                  </form>
-                </div>
+                  <button type="submit" class="form-consultation__button">
+                    Получить консультацию
+                  </button>
+                </form>
               </div>
-              <div class="expert-appeal__profile-expert profile-expert">
-                <div class="profile-expert__image">
-                  <img data-src="@img/main-page/01.jpg" alt="" />
-                </div>
-                <div class="profile-expert__content">
-                  <div class="profile-expert__info-name">
-                    <div class="profile-expert__full-name">Alena Pazniak</div>
-                    <div class="profile-expert__profession">Area Manager</div>
-                  </div>
-                  <div class="profile-expert__info-expert">
-                    <div class="profile-expert__icon _icon-phone-call"></div>
-                    <a href="971588070001" class="profile-expert__text">+971 58 807 0001</a>
-                  </div>
-                  <div class="profile-expert__info-expert">
-                    <div class="profile-expert__icon _icon-location-mark"></div>
-                    <div class="profile-expert__text">
-                      Dubai, Business Bay, Bay Square, Building 13 - Dubai
-                    </div>
-                  </div>
+              <div class="get-consultation__picture">
+                <div class="get-consultation__image">
+                  <img src="@img/properties/consultant.png" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <div class="page__social-links social-links">
+        <!-- <div class="page__social-links social-links">
           <a href="tel:+971588070001" class="social-links__link social-links__link_phone">
             <img src="@img/more/24.png" alt="" />
             <span class="social-links__text"> Телефон </span>
@@ -1037,7 +1022,7 @@
             <img src="@img/more/25.png" alt="" />
             <span class="social-links__text"> Whatsapp </span>
           </a>
-        </div>
+        </div> -->
       </main>
       @@include('html/_footer-index.htm',{})
     </div>

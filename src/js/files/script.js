@@ -65,6 +65,17 @@ window.onload = function () {
     const questionTitle = document.querySelector(".questions__title");
     questionTitle.insertAdjacentHTML("beforeend", `<span class="questions__title-stroke">${questionTitle.innerHTML}</span>`);
   }
+
+  if (window.innerWidth < 767.98) {
+    const mainTabIndex = document.querySelector(".main-index-tabs");
+
+    mainTabIndex.removeAttribute("data-tabs-titles");
+
+    Array.from(mainTabIndex.children).forEach(item => {
+      item.removeAttribute("data-tabs-titles");
+      item.removeAttribute("data-tabs-body");
+    });
+  }
 }
 
 document.addEventListener("click", documentActions);

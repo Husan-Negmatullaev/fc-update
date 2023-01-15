@@ -22,10 +22,14 @@
 .select {
   font-family: inherit;
   background: #fff url('@img/icons/select-icon.svg') 96% no-repeat;
-  @include adaptiveValue("background-size", 16, 13, $containerWidth, $minWidth, 1);
-  padding-left: 15px;
+  background-size: rem(16);
+  padding-left: rem(15);
   @include adaptiveValue("padding-right", 30, 15, $containerWidth, 991, 1);
   -webkit-appearance: none;
+
+  @media (max-width:$tablet) {
+    background-size: rem(13);
+  }
 }
 
 @keyframes border {

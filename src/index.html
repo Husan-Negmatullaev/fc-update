@@ -17,27 +17,101 @@
                   <button type="button" class="main-index-tabs__tab">Ready property</button>
                   <button type="button" class="main-index-tabs__tab">Off-Plan</button>
                 </div>
-                <div data-tabs-body class="main-index-tabs__body">
+                <div
+                  data-tabs-body
+                  data-spollers="767.98, min"
+                  data-spollers-speed="500"
+                  class="main-index-tabs__body"
+                >
                   <div class="main-index-tabs__content">
                     <form
                       action="#"
                       method="post"
                       enctype="multipart/form-data"
-                      class="main-index-tabs__form main-index-tabs-form"
+                      class="main-index-tabs__form main-index-tabs-form main-index-tabs-form_residential"
                     >
-                      <div class="main-index-tabs-form__input-wrapper">
-                        <input
-                          autocomplete="off"
-                          type="text"
-                          name="form[search]"
-                          data-error="Не нйдено"
-                          placeholder="Key words"
-                          class="main-index-tabs-form__input _req"
-                        />
-                        <button
-                          type="submit"
-                          class="main-index-tabs-form__button _icon-magnify"
-                        ></button>
+                      <div class="main-index-tabs-form__form-body">
+                        <div class="main-index-tabs-form__column">
+                          <select name="form[purchase-type]" class="main-index-tabs-form__select">
+                            <option value="1" selected>Rent</option>
+                            <option value="2">Buy</option>
+                          </select>
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_border"
+                        >
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            required
+                            data-required
+                            placeholder="Community and building"
+                            class="main-index-tabs-form__main-search-input main-index-tabs-form__input _req"
+                          />
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_trigger"
+                        >
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            required
+                            data-required
+                            placeholder="Price, Type and Bedrooms"
+                            data-spoller
+                            data-spoller-close
+                            disabled
+                            class="main-index-tabs-form__trigger-input main-index-tabs-form__input _req"
+                          />
+                          <div
+                            class="main-index-tabs-form__sub-form main-sub-form"
+                            data-da=".main-index-tabs-form_residential, 767.98"
+                          >
+                            <div class="main-sub-form__body">
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Budget</h4>
+                                <select name="form[min-price]" class="main-sub-form__select">
+                                  <option value="0">Budget</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Bedroom</h4>
+                                <select name="form[max-price]" class="main-sub-form__select">
+                                  <option value="0">Bedroom</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Property Type</h4>
+                                <select name="form[type-property]" class="main-sub-form__select">
+                                  <option value="0">Property Type</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Type</h4>
+                                <select name="form[type]" class="main-sub-form__select">
+                                  <option value="0">Type</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__actions">
+                                <button type="submit" class="main-sub-form__button">Search</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_button"
+                        >
+                          <button
+                            type="submit"
+                            class="main-index-tabs-form__button _icon-magnify"
+                          ></button>
+                        </div>
                       </div>
                     </form>
                   </div>
@@ -46,21 +120,90 @@
                       action="#"
                       method="post"
                       enctype="multipart/form-data"
-                      class="main-index-tabs__form main-index-tabs-form"
+                      class="main-index-tabs__form main-index-tabs-form main-index-tabs-form_ready-property"
                     >
-                      <div class="main-index-tabs-form__input-wrapper">
-                        <input
-                          autocomplete="off"
-                          type="text"
-                          name="form[search]"
-                          data-error="Не нйдено"
-                          placeholder="Key words"
-                          class="main-index-tabs-form__input _req"
-                        />
-                        <button
-                          type="submit"
-                          class="main-index-tabs-form__button _icon-magnify"
-                        ></button>
+                      <div class="main-index-tabs-form__form-body">
+                        <div class="main-index-tabs-form__column">
+                          <select name="form[purchase-type]" class="main-index-tabs-form__select">
+                            <option value="1" selected>Rent</option>
+                            <option value="2">Buy</option>
+                          </select>
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_border"
+                        >
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            required
+                            data-required
+                            placeholder="Community and building"
+                            class="main-index-tabs-form__main-search-input main-index-tabs-form__input _req"
+                          />
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_trigger"
+                        >
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            required
+                            data-required
+                            placeholder="Price, Type and Bedrooms"
+                            data-spoller
+                            data-spoller-close
+                            disabled
+                            class="main-index-tabs-form__trigger-input main-index-tabs-form__input _req"
+                          />
+                          <div
+                            class="main-index-tabs-form__sub-form main-sub-form"
+                            data-da=".main-index-tabs-form_ready-property, 767.98"
+                          >
+                            <div class="main-sub-form__body">
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Minimum Price</h4>
+                                <select name="form[min-price]" class="main-sub-form__select">
+                                  <option value="0">Price Min</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Maximum Price</h4>
+                                <select name="form[max-price]" class="main-sub-form__select">
+                                  <option value="0">Price Max</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Property Type</h4>
+                                <select name="form[type-property]" class="main-sub-form__select">
+                                  <option value="0">Property Type</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Type</h4>
+                                <select name="form[type]" class="main-sub-form__select">
+                                  <option value="0">Type</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__actions">
+                                <button type="submit" class="main-sub-form__button">Search</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_button"
+                        >
+                          <button
+                            type="submit"
+                            class="main-index-tabs-form__button _icon-magnify"
+                          ></button>
+                        </div>
                       </div>
                     </form>
                   </div>
@@ -69,21 +212,90 @@
                       action="#"
                       method="post"
                       enctype="multipart/form-data"
-                      class="main-index-tabs__form main-index-tabs-form"
+                      class="main-index-tabs__form main-index-tabs-form main-index-tabs-form_off-plan"
                     >
-                      <div class="main-index-tabs-form__input-wrapper">
-                        <input
-                          autocomplete="off"
-                          type="text"
-                          name="form[search]"
-                          data-error="Не нйдено"
-                          placeholder="Key words"
-                          class="main-index-tabs-form__input _req"
-                        />
-                        <button
-                          type="submit"
-                          class="main-index-tabs-form__button _icon-magnify"
-                        ></button>
+                      <div class="main-index-tabs-form__form-body">
+                        <div class="main-index-tabs-form__column">
+                          <select name="form[purchase-type]" class="main-index-tabs-form__select">
+                            <option value="1" selected>Rent</option>
+                            <option value="2">Buy</option>
+                          </select>
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_border"
+                        >
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            required
+                            data-required
+                            placeholder="Community and building"
+                            class="main-index-tabs-form__main-search-input main-index-tabs-form__input _req"
+                          />
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_trigger"
+                        >
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            required
+                            data-required
+                            placeholder="Price, Type and Bedrooms"
+                            data-spoller
+                            data-spoller-close
+                            disabled
+                            class="main-index-tabs-form__trigger-input main-index-tabs-form__input _req"
+                          />
+                          <div
+                            class="main-index-tabs-form__sub-form main-sub-form"
+                            data-da=".main-index-tabs-form_off-plan, 767.98"
+                          >
+                            <div class="main-sub-form__body">
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Minimum Price</h4>
+                                <select name="form[min-price]" class="main-sub-form__select">
+                                  <option value="0">Price Min</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Maximum Price</h4>
+                                <select name="form[max-price]" class="main-sub-form__select">
+                                  <option value="0">Price Max</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Property Type</h4>
+                                <select name="form[type-property]" class="main-sub-form__select">
+                                  <option value="0">Property Type</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__column">
+                                <h4 class="main-sub-form__title">Type</h4>
+                                <select name="form[type]" class="main-sub-form__select">
+                                  <option value="0">Type</option>
+                                  <option value="0">100 000 AED</option>
+                                </select>
+                              </div>
+                              <div class="main-sub-form__actions">
+                                <button type="submit" class="main-sub-form__button">Search</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="main-index-tabs-form__column main-index-tabs-form__column_button"
+                        >
+                          <button
+                            type="submit"
+                            class="main-index-tabs-form__button _icon-magnify"
+                          ></button>
+                        </div>
                       </div>
                     </form>
                   </div>
@@ -105,54 +317,54 @@
         <section class="page__index-advantages index-advantages">
           <div class="index-advantages__container-min">
             <div class="index-advantages__body">
-              <div class="index-advantages__item advantage-item">
+              <a href="" class="index-advantages__item advantage-item">
                 <div class="advantage-item__icon">
-                  <picture>
-                    <source srcset="@img/icons/build-blue.svg" media="(max-width: 767.98px)" />
-                    <img src="@img/icons/build.svg" alt="" />
-                  </picture>
+                  <img src="@img/icons/build.svg" alt="" />
                 </div>
                 <div class="advantage-item__content">
                   <h4 class="advantage-item__title">New Projects</h4>
                   <span class="advantage-item__count">10</span>
                 </div>
-              </div>
-              <div class="index-advantages__item advantage-item">
+                <div class="advantage-item__background-image">
+                  <img src="@img/main-page/15.jpg" alt="" />
+                </div>
+              </a>
+              <a href="" class="index-advantages__item advantage-item">
                 <div class="advantage-item__icon">
-                  <picture>
-                    <source srcset="@img/icons/build-area-blue.svg" media="(max-width: 767.98px)" />
-                    <img src="@img/icons/build-area.svg" alt="" />
-                  </picture>
+                  <img src="@img/icons/build-area.svg" alt="" />
                 </div>
                 <div class="advantage-item__content">
                   <h4 class="advantage-item__title">Dubai Projects Map</h4>
                   <span class="advantage-item__count">56</span>
                 </div>
-              </div>
-              <div class="index-advantages__item advantage-item">
+                <div class="advantage-item__background-image">
+                  <img src="@img/main-page/16.jpg" alt="" />
+                </div>
+              </a>
+              <a href="" class="index-advantages__item advantage-item">
                 <div class="advantage-item__icon">
-                  <picture>
-                    <source srcset="@img/icons/build-mark-blue.svg" media="(max-width: 767.98px)" />
-                    <img src="@img/icons/build-mark.svg" alt="" />
-                  </picture>
+                  <img src="@img/icons/build-mark.svg" alt="" />
                 </div>
                 <div class="advantage-item__content">
                   <h4 class="advantage-item__title">Dubai Areas</h4>
                   <span class="advantage-item__count">48</span>
                 </div>
-              </div>
-              <div class="index-advantages__item advantage-item">
+                <div class="advantage-item__background-image">
+                  <img src="@img/main-page/17.jpg" alt="" />
+                </div>
+              </a>
+              <a href="" class="index-advantages__item advantage-item">
                 <div class="advantage-item__icon">
-                  <picture>
-                    <source srcset="@img/icons/build-mark-blue.svg" media="(max-width: 767.98px)" />
-                    <img src="@img/icons/build-mark.svg" alt="" />
-                  </picture>
+                  <img src="@img/icons/build-mark.svg" alt="" />
                 </div>
                 <div class="advantage-item__content">
                   <h4 class="advantage-item__title">Ready Properties</h4>
                   <span class="advantage-item__count">1380</span>
                 </div>
-              </div>
+                <div class="advantage-item__background-image">
+                  <img src="@img/main-page/18.jpg" alt="" />
+                </div>
+              </a>
             </div>
           </div>
           <div class="index-advantages__image">
