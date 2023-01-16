@@ -1785,31 +1785,27 @@ body::after {
 }
 
 .footer-index {
-  background-color: #1C2743;
+  background-color: #1c2743;
   color: #fff;
 }
-
-@supports (padding-top: clamp( 1.5625rem , -1.0347225228rem  +  5.4110211679vw , 3.125rem )) {
+@supports (padding-top: clamp(1.5625rem, -1.0347225228rem + 5.4110211679vw, 3.125rem)) {
   .footer-index {
-    padding-top: clamp( 1.5625rem , -1.0347225228rem  +  5.4110211679vw , 3.125rem );
+    padding-top: clamp(1.5625rem, -1.0347225228rem + 5.4110211679vw, 3.125rem);
   }
 }
-
-@supports not (padding-top: clamp( 1.5625rem , -1.0347225228rem  +  5.4110211679vw , 3.125rem )) {
+@supports not (padding-top: clamp(1.5625rem, -1.0347225228rem + 5.4110211679vw, 3.125rem)) {
   .footer-index {
     padding-top: calc(1.5625rem + 1.5625 * (100vw - 47.99875rem) / 28.87625);
   }
 }
-
-@supports (padding-bottom: clamp( 1.5625rem , -1.0347225228rem  +  5.4110211679vw , 3.125rem )) {
+@supports (padding-bottom: clamp(2.1875rem, 0.6291664863rem + 3.2466127007vw, 3.125rem)) {
   .footer-index {
-    padding-bottom: clamp( 1.5625rem , -1.0347225228rem  +  5.4110211679vw , 3.125rem );
+    padding-bottom: clamp(2.1875rem, 0.6291664863rem + 3.2466127007vw, 3.125rem);
   }
 }
-
-@supports not (padding-bottom: clamp( 1.5625rem , -1.0347225228rem  +  5.4110211679vw , 3.125rem )) {
+@supports not (padding-bottom: clamp(2.1875rem, 0.6291664863rem + 3.2466127007vw, 3.125rem)) {
   .footer-index {
-    padding-bottom: calc(1.5625rem + 1.5625 * (100vw - 47.99875rem) / 28.87625);
+    padding-bottom: calc(2.1875rem + 0.9375 * (100vw - 47.99875rem) / 28.87625);
   }
 }
 
@@ -15288,17 +15284,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-bottom: 65.490066%;
   }
 
-@supports (padding-bottom: clamp( 2.8125rem , 2.2930554954rem  +  1.0822042336vw , 3.125rem )) {
-    .index-home .footer-index {
-      padding-bottom: clamp( 2.8125rem , 2.2930554954rem  +  1.0822042336vw , 3.125rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 2.8125rem , 2.2930554954rem  +  1.0822042336vw , 3.125rem )) {
-    .index-home .footer-index {
-      padding-bottom: calc(2.8125rem + 0.3125 * (100vw - 47.99875rem) / 28.87625);
-    }
-}
+.footer-index {
+    padding-bottom: 6.25rem;
+  }
 
   .footer-index-navigation {
     padding: 0.625rem 0rem;

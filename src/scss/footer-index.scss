@@ -1,14 +1,18 @@
 .footer-index {
   @include adaptiveValue("padding-top", 50, 25, $containerWidth, 767.98, 1);
-  @include adaptiveValue("padding-bottom", 50, 25, $containerWidth, 767.98, 1);
+  @include adaptiveValue("padding-bottom", 50, 35, $containerWidth, 767.98, 1);
   background-color: #1C2743;
   color: #fff;
 
-  @media (max-width:$mobileSmall) {
-    .index-home & {
-      @include adaptiveValue("padding-bottom", 50, 45, $containerWidth, 767.98, 1);
-    }
+  @media (max-width:$mobile) {
+    padding-bottom: rem(100);
   }
+
+  // @media (max-width:$mobileSmall) {
+  //   .index-home & {
+  //     @include adaptiveValue("padding-bottom", 50, 45, $containerWidth, 767.98, 1);
+  //   }
+  // }
 
   // .footer-index__top
 
