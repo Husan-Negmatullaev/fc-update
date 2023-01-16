@@ -21,9 +21,9 @@ window.onload = function () {
 
   const quizButton = document.querySelector(".quiz__button")
 
-  if (isMobile.iOS()) {
+  if (isMobile.iOS() || body.classList.contains("_is-iphone")) {
     body.classList.add("_is-iphone");
-
+    alert('msg IPHONE');
     const pictures = document.querySelectorAll("picture");
 
     pictures.forEach((item) => {
