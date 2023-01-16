@@ -3854,12 +3854,12 @@ body::after {
 }
 @supports (font-size: clamp(0.9375rem, 0.8276098901rem + 0.5494505495vw, 1.25rem)) {
   .quiz__less-time {
-    font-size: clamp(0.9375rem, 0.8276098901rem + 0.5494505495vw, 1.25rem);
+    font-size: clamp(0.9375rem, 0.8276098901rem + 0.5494505495vw, 1.1rem);
   }
 }
 @supports not (font-size: clamp(0.9375rem, 0.8276098901rem + 0.5494505495vw, 1.25rem)) {
   .quiz__less-time {
-    font-size: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 56.875);
+    font-size: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 45.875);
   }
 }
 .quiz__less-time span {
@@ -11196,17 +11196,17 @@ body:not(.lg-from-hash)
     }
   }
   .quiz__button {
-    padding: 0.9375rem 1.5625rem;
+    padding: 0.9375rem 1.0625rem;
     width: auto;
   }
   @supports (margin-right: clamp(1.25rem, 0.9203296703rem + 1.6483516484vw, 2.1875rem)) {
     .quiz__button {
-      margin-right: clamp(1.25rem, 0.9203296703rem + 1.6483516484vw, 2.1875rem);
+      margin-right: clamp(1.25rem, 0.9203296703rem + 1.6483516484vw, 1.1875rem);
     }
   }
   @supports not (margin-right: clamp(1.25rem, 0.9203296703rem + 1.6483516484vw, 2.1875rem)) {
     .quiz__button {
-      margin-right: calc(1.25rem + 0.9375 * (100vw - 20rem) / 56.875);
+      margin-right: calc(1.25rem + 0.9375 * (100vw - 20rem) / 50.875);
     }
   }
   .main-index__body {
