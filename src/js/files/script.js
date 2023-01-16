@@ -21,6 +21,10 @@ window.onload = function () {
 
   const quizButton = document.querySelector(".quiz__button")
 
+  // if (isMobile.iOS()) {
+  //   body.classList.add("_is-iphone");
+  // }
+
   if (quizButton) {
     quizButton.addEventListener("click", (e) => {
       e.preventDefault()
