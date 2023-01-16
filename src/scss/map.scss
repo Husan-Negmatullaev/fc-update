@@ -1971,10 +1971,8 @@ h1 {
   // .quiz__button
 
   &__button {
-    @include adaptiveValue("padding-left", 80, 20, $containerWidth, $minWidth, 1);
-    @include adaptiveValue("padding-right", 80, 20, $containerWidth, $minWidth, 1);
-    @include adaptiveValue("padding-top", 20, 10, $containerWidth, $minWidth, 1);
-    @include adaptiveValue("padding-bottom", 20, 10, $containerWidth, $minWidth, 1);
+    width: 100%;
+    padding: rem(12) rem(15);
     background-color: #163F8E;
     box-shadow: 4px 5px 20px rgba(252, 246, 232, 0.3);
     border-radius: 5px;
@@ -1987,6 +1985,8 @@ h1 {
 
     @media (min-width:$mobile) {
       @include adaptiveValue("margin-right", 35, 20, $containerWidth, $minWidth, 1);
+      padding: rem(15) rem(25);
+      width: auto;
     }
   }
 

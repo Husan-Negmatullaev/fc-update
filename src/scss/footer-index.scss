@@ -36,7 +36,7 @@
     margin-bottom: rem(15);
     max-width: rem(1200);
 
-    &:not(.index-home .footer-index-top__container-min) {
+    .index-home & {
       max-width: rem(980);
     }
   }
@@ -104,18 +104,18 @@
     padding: rem(10) rem(0);
   }
 
-  .page-project & {
-    @media (max-width:$tablet) {
-      padding: rem(20) 0px rem(60);
-    }
-  }
+  // .page-project & {
+  //   @media (max-width:$tablet) {
+  //     padding: rem(20) 0px rem(60);
+  //   }
+  // }
 
   // .footer-index-navigation__container-min
 
   &__container-min {
     max-width: rem(1200);
 
-    &:not(.index-home .footer-index-navigation__container-min) {
+    .index-home & {
       max-width: rem(980);
     }
   }

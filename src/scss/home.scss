@@ -1404,10 +1404,6 @@
 .slider-arrow {
   @include adaptiveValue("width", 70, 50, $containerWidth, $minWidth, 1);
   @include adaptiveValue("height", 70, 50, $containerWidth, $minWidth, 1);
-  // @media (max-width:$tablet){
-  // 	height: 80px;
-  // 	width: 80px;
-  // }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2025,7 +2021,7 @@
 
   &__button {
     width: 100%;
-    padding: rem(15) rem(20);
+    padding: rem(12) rem(15);
     background-color: #163F8E;
     box-shadow: 4px 5px 20px rgba(252, 246, 232, 0.3);
     border-radius: 5px;
@@ -2038,7 +2034,7 @@
 
     @media (min-width:$mobile) {
       @include adaptiveValue("margin-right", 35, 20, $containerWidth, $minWidth, 1);
-      padding: rem(20) rem(35);
+      padding: rem(15) rem(25);
       width: auto;
     }
   }
@@ -2889,7 +2885,7 @@
     position: relative;
     max-width: rem(1200);
 
-    &:not(.index-home .get-consultation__container-min) {
+    .index-home & {
       max-width: rem(980);
     }
   }
