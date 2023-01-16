@@ -21,19 +21,19 @@ window.onload = function () {
 
   const quizButton = document.querySelector(".quiz__button")
 
-  if (isMobile.iOS() || body.classList.contains("_is-iphone")) {
-    body.classList.add("_is-iphone");
-    alert('msg IPHONE');
-    const pictures = document.querySelectorAll("picture");
+  // if (isMobile.iOS() || body.classList.contains("_is-iphone")) {
+  //   body.classList.add("_is-iphone");
+  //   alert('msg IPHONE');
+  //   const pictures = document.querySelectorAll("picture");
 
-    pictures.forEach((item) => {
-      const img = item.querySelector("img");
-      const sourceImageUrl = item.querySelector("source").getAttribute("data-srcset") ? item.querySelector("source").getAttribute("data-srcset") : item.querySelector("source").getAttribute("srcset");
+  //   pictures.forEach((item) => {
+  //     const img = item.querySelector("img");
+  //     const sourceImageUrl = item.querySelector("source").getAttribute("data-srcset") ? item.querySelector("source").getAttribute("data-srcset") : item.querySelector("source").getAttribute("srcset");
 
-      img.src = sourceImageUrl;
-      img.setAttribute("data-src", sourceImageUrl);
-    })
-  }
+  //     img.src = sourceImageUrl;
+  //     img.setAttribute("data-src", sourceImageUrl);
+  //   })
+  // }
 
   if (quizButton) {
     quizButton.addEventListener("click", (e) => {
