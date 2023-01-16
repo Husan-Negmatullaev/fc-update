@@ -2071,6 +2071,7 @@ textarea {
     font-size: rem(40);
     position: relative;
     z-index: 2;
+    text-align: center;
 
     @media (max-width:$mobile) {
       font-size: rem(30);
